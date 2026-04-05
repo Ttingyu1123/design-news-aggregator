@@ -11,8 +11,8 @@
 - **UI_UX_Design_Tools**：Figma Blog, Adobe Blog, Sketch Blog, UX Planet, Nielsen Norman Group, UX Collective, Penpot Blog, Prototypr
 - **Web_Design_and_NoCode**：Smashing Magazine, CSS-Tricks, A List Apart, Webflow Blog, Framer Blog, Codrops
 - **AI_Design_and_Creative_Tech**：The Verge AI, It's Nice That, Creative Bloq, Digital Arts, Runway Blog, ComfyUI Releases, Krita News, GIMP News, Blender Releases
-- **Design_Inspiration_and_Community**：Awwwards Blog, Dribbble Stories, Designboom, Brand New, SiteInspire, Muzli Design Inspiration, Reddit r/web_design, Reddit r/comfyui, Reddit r/UI_Design, Reddit r/midjourney
-- **Design_Systems_and_Typography**：Google Design, Typewolf, Fonts In Use, Design Milk, Abduzeedo
+- **Design_Inspiration_and_Community**：Awwwards Blog, Dribbble Stories, Brand New, SiteInspire, Muzli Design Inspiration, Reddit r/web_design, Reddit r/comfyui, Reddit r/UI_Design, Reddit r/midjourney
+- **Design_Systems_and_Typography**：Google Design, Typewolf, Fonts In Use, Abduzeedo
 
 ## 報告子分類
 - 🛠️ 設計工具與 UI/UX（設計工具動態 / 使用者研究與方法論 / 互動與動態設計）
