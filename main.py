@@ -131,8 +131,11 @@ def summarize_with_gemini(feed_data, issue_number):
     )
 
     prompt = "請根據以下 RSS 爬取的最新文章，為我整理出一份「今日設計情報日報」。\n"
-    prompt += "要求：\n1. 【嚴格規定】全文必須使用「繁體中文」(zh-TW)，嚴禁出現任何簡體中文字元（例如：「进」應寫為「進」、「关」應寫為「關」、「项目」應寫為「專案」）。所有新聞標題都必須翻譯為繁體中文（可在括號中附上英文原標題），絕對不可只列英文標題。\n2. **焦點設計導讀**：從所有資訊中篩選出最具影響力、最值得設計師關注的 5-8 條消息做詳細導讀，請加入你對設計手法、工具趨勢或產業影響的專業分析。\n"
-    prompt += "3. **精細分類**：其餘資訊請務必依照屬性歸類到以下子類別中，並且【每一則資訊都必須用 2~3 句話 (約 50-80 字) 對其設計理念與實務價值進行精要敘述】，不可僅有一句話或單純列出標題：\n"
+    prompt += "要求：\n1. 【嚴格規定】全文必須使用「繁體中文」(zh-TW)，嚴禁出現任何簡體中文字元（例如：「进」應寫為「進」、「关」應寫為「關」、「项目」應寫為「專案」）。所有新聞標題都必須翻譯為繁體中文（可在括號中附上英文原標題），絕對不可只列英文標題。\n"
+    prompt += "2. 【內容過濾規則 — 嚴格執行】本日報的讀者是「數位產品設計師」，只收錄與以下領域**直接相關**的內容：UI/UX 設計、網頁設計、平面設計、品牌識別、設計工具（Figma/Adobe/Sketch 等）、設計系統、字體排印、互動設計、動態設計、AI 輔助設計工具、No-Code 建站工具、CSS/前端視覺技術、設計靈感與作品集。\n"
+    prompt += "   **必須排除**以下與設計無關的內容，即使它出現在 RSS 來源中也不可收錄：醫療/健康/藥物、政治/政策/法規、財經/股市/加密貨幣、純軟體工程（無設計面向）、純 AI 研究（無視覺/設計應用）、社會新聞、體育、娛樂八卦。若一篇文章的核心主題不是設計，即使標題含有「設計」二字也應排除。\n"
+    prompt += "3. **焦點設計導讀**：從通過上述過濾的資訊中，篩選出最具影響力、最值得設計師關注的 5-8 條消息做詳細導讀，請加入你對設計手法、工具趨勢或產業影響的專業分析。\n"
+    prompt += "4. **精細分類**：其餘資訊請務必依照屬性歸類到以下子類別中，並且【每一則資訊都必須用 2~3 句話 (約 50-80 字) 對其設計理念與實務價值進行精要敘述】，不可僅有一句話或單純列出標題：\n"
     prompt += "   【設計工具與 UI/UX (Design Tools & UI/UX)】\n"
     prompt += "   - Design Tools Updates (設計工具動態：Figma、Sketch、Penpot 等)\n"
     prompt += "   - UI/UX Research & Methods (使用者研究與設計方法論)\n"
@@ -152,11 +155,11 @@ def summarize_with_gemini(feed_data, issue_number):
     prompt += "   【設計系統與字體排印 (Design Systems & Typography)】\n"
     prompt += "   - Design Systems & Tokens (設計系統與 Design Tokens)\n"
     prompt += "   - Typography & Type Design (字體排印與字型設計)\n"
-    prompt += "4. 每一條資訊都必須附上【原文連結】。\n5. 輸出格式必須是乾淨、易讀的 Markdown，請善用 H2 (##) 或 H3 (###) 標題來呈現。\n"
+    prompt += "5. 每一條資訊都必須附上【原文連結】。\n6. 輸出格式必須是乾淨、易讀的 Markdown，請善用 H2 (##) 或 H3 (###) 標題來呈現。\n"
     today_str = datetime.datetime.now(TW).strftime("%Y-%m-%d")
-    prompt += f"6. 輸出文章最開頭必須包含 YAML Frontmatter 屬性: date: {today_str}，請從內容中提取出 3~5 個設計相關關鍵字加入 tags (例如: tags: [Figma, 設計系統, AI設計, 網頁動效, 品牌識別])\n"
-    prompt += f"7. 文章的大標題必須剛好是這行字且不可改變：`# ✏️ 設計情報日報 - 第 {issue_number:03d} 期 ({today_str})`\n"
-    prompt += "8. 在繁中報告最末尾，加上一段 `---` 分隔線後，附上 **English Daily Highlights** (300-500 words)，精要回顧今日亮點。\n\n"
+    prompt += f"7. 輸出文章最開頭必須包含 YAML Frontmatter 屬性: date: {today_str}，請從內容中提取出 3~5 個設計相關關鍵字加入 tags (例如: tags: [Figma, 設計系統, AI設計, 網頁動效, 品牌識別])\n"
+    prompt += f"8. 文章的大標題必須剛好是這行字且不可改變：`# ✏️ 設計情報日報 - 第 {issue_number:03d} 期 ({today_str})`\n"
+    prompt += "9. 在繁中報告最末尾，加上一段 `---` 分隔線後，附上 **English Daily Highlights** (300-500 words)，精要回顧今日亮點。\n\n"
 
     prompt += "【今日抓取內容如下】：\n"
     for category, articles in feed_data.items():
