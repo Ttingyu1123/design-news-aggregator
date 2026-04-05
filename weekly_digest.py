@@ -65,7 +65,7 @@ def generate_weekly_digest(reports):
     year, week_num, _ = today.isocalendar()
     date_range = f"{reports[0]['date']} ~ {reports[-1]['date']}"
 
-    prompt = f"以下是本週 ({date_range}) 的每日設計情報摘要共 {len(reports)} 篇。\n"
+    prompt = f"以下是本週 ({date_range}) 的每日設計脈動摘要共 {len(reports)} 篇。\n"
     prompt += "請根據這些內容，為我整理出一份「本週設計精華回顧」。\n\n"
     prompt += "要求：\n"
     prompt += "1. 【嚴格規定】全文必須使用「繁體中文」(zh-TW)。\n"

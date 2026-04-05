@@ -130,7 +130,7 @@ def summarize_with_gemini(feed_data, issue_number):
         system_instruction="你是一位資深數位產品設計師與設計趨勢分析師，擁有 10 年以上的 UI/UX、品牌設計與設計系統經驗，熟悉 Figma、Framer 等現代設計工具生態。你必須全程使用「繁體中文」(Traditional Chinese, zh-TW) 回覆，絕對不可使用簡體中文。所有標點符號也必須使用全形標點。"
     )
 
-    prompt = "請根據以下 RSS 爬取的最新文章，為我整理出一份「今日設計情報日報」。\n"
+    prompt = "請根據以下 RSS 爬取的最新文章，為我整理出一份「今日設計脈動日報」。\n"
     prompt += "要求：\n1. 【嚴格規定】全文必須使用「繁體中文」(zh-TW)，嚴禁出現任何簡體中文字元（例如：「进」應寫為「進」、「关」應寫為「關」、「项目」應寫為「專案」）。所有新聞標題都必須翻譯為繁體中文（可在括號中附上英文原標題），絕對不可只列英文標題。\n"
     prompt += "2. 【內容過濾規則 — 嚴格執行】本日報的讀者是「數位產品設計師」，只收錄與以下領域**直接相關**的內容：UI/UX 設計、網頁設計、平面設計、品牌識別、設計工具（Figma/Adobe/Sketch 等）、設計系統、字體排印、互動設計、動態設計、AI 輔助設計工具、No-Code 建站工具、CSS/前端視覺技術、設計靈感與作品集。\n"
     prompt += "   **必須排除**以下與設計無關的內容，即使它出現在 RSS 來源中也不可收錄：醫療/健康/藥物、政治/政策/法規、財經/股市/加密貨幣、純軟體工程（無設計面向）、純 AI 研究（無視覺/設計應用）、社會新聞、體育、娛樂八卦。若一篇文章的核心主題不是設計，即使標題含有「設計」二字也應排除。\n"
@@ -158,7 +158,7 @@ def summarize_with_gemini(feed_data, issue_number):
     prompt += "5. 每一條資訊都必須附上【原文連結】。\n6. 輸出格式必須是乾淨、易讀的 Markdown，請善用 H2 (##) 或 H3 (###) 標題來呈現。\n"
     today_str = datetime.datetime.now(TW).strftime("%Y-%m-%d")
     prompt += f"7. 輸出文章最開頭必須包含 YAML Frontmatter 屬性: date: {today_str}，請從內容中提取出 3~5 個設計相關關鍵字加入 tags (例如: tags: [Figma, 設計系統, AI設計, 網頁動效, 品牌識別])\n"
-    prompt += f"8. 文章的大標題必須剛好是這行字且不可改變：`# ✏️ 設計情報日報 - 第 {issue_number:03d} 期 ({today_str})`\n"
+    prompt += f"8. 文章的大標題必須剛好是這行字且不可改變：`# ✏️ 設計脈動日報 - 第 {issue_number:03d} 期 ({today_str})`\n"
     prompt += "9. 在繁中報告最末尾，加上一段 `---` 分隔線後，附上 **English Daily Highlights** (300-500 words)，精要回顧今日亮點。\n\n"
 
     prompt += "【今日抓取內容如下】：\n"
@@ -230,7 +230,7 @@ def save_report(content):
         print(f"⚠️ 更新索引或刪除舊檔時發生錯誤: {e}")
 
 if __name__ == "__main__":
-    print(f"🚀 開始執行每日設計情報彙整 ({datetime.datetime.now(TW).strftime('%Y-%m-%d %H:%M')})")
+    print(f"🚀 開始執行每日設計脈動彙整 ({datetime.datetime.now(TW).strftime('%Y-%m-%d %H:%M')})")
     data = fetch_feeds()
 
     # 計算期數

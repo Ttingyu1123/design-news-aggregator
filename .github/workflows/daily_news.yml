@@ -53,7 +53,7 @@ jobs:
           if [ -n "$REPORT" ]; then
             TITLE=$(grep -m1 '^# ' "$REPORT" | sed 's/^# //')
             DATE=$(basename "$REPORT" | cut -d'_' -f1)
-            MSG="✏️ *設計情報日報已更新*%0A📅 ${DATE}%0A📋 ${TITLE}%0A🔗 [閱讀全文](https://tingyusdeco.com/daily-reports/)"
+            MSG="✏️ *設計脈動日報已更新*%0A📅 ${DATE}%0A📋 ${TITLE}%0A🔗 [閱讀全文](https://tingyusdeco.com/daily-reports/)"
             curl -s -X POST "https://api.telegram.org/bot${TELEGRAM_BOT_TOKEN}/sendMessage" \
               -d chat_id="${TELEGRAM_CHAT_ID}" \
               -d text="${MSG}" \

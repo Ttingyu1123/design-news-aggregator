@@ -1,11 +1,11 @@
-# 設計情報日報 (design-news-aggregator)
+# 設計脈動日報 (design-news-aggregator)
 
 > 共用規範見上層 [../CLAUDE.md](../CLAUDE.md)，本檔僅記錄此日報的差異。
 
 ## 專案概述
 - **線上閱讀**：部署後填入 Vercel URL
 - **Gemini 角色**：資深數位產品設計師與設計趨勢分析師
-- **報告標題**：`# ✏️ 設計情報日報 - 第 XXX 期`
+- **報告標題**：`# ✏️ 設計脈動日報 - 第 XXX 期`
 
 ## 訂閱源分類
 - **UI_UX_Design_Tools**：Figma Blog, Adobe Blog, Sketch Blog, UX Planet, Nielsen Norman Group, UX Collective, Penpot Blog, Prototypr
