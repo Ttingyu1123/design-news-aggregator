@@ -156,6 +156,10 @@ def summarize_with_gemini(feed_data, issue_number):
     prompt += "   - Design Systems & Tokens (設計系統與 Design Tokens)\n"
     prompt += "   - Typography & Type Design (字體排印與字型設計)\n"
     prompt += "5. 每一條資訊都必須附上【原文連結】。\n6. 輸出格式必須是乾淨、易讀的 Markdown，請善用 H2 (##) 或 H3 (###) 標題來呈現。\n"
+    prompt += "10. 【格式規定 — 嚴格執行】禁止使用 Markdown 引用區塊（即 `>` blockquote 語法）。所有分析內容請用「無序列表 + 粗體標籤」格式呈現，例如：\n"
+    prompt += "   - **原文連結**：https://example.com\n"
+    prompt += "   - **趨勢分析**：這篇文章探討了...\n"
+    prompt += "   - **設計啟示**：對於設計師而言...\n"
     today_str = datetime.datetime.now(TW).strftime("%Y-%m-%d")
     prompt += f"7. 輸出文章最開頭必須包含 YAML Frontmatter 屬性: date: {today_str}，請從內容中提取出 3~5 個設計相關關鍵字加入 tags (例如: tags: [Figma, 設計系統, AI設計, 網頁動效, 品牌識別])\n"
     prompt += f"8. 文章的大標題必須剛好是這行字且不可改變：`# ✏️ 設計脈動日報 - 第 {issue_number:03d} 期 ({today_str})`\n"
