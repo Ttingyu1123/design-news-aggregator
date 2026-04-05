@@ -1,0 +1,21 @@
+{
+    "name": "設計情報日報",
+    "short_name": "Design Daily",
+    "start_url": "./index.html",
+    "display": "standalone",
+    "background_color": "#F3EFF8",
+    "theme_color": "#F3EFF8",
+    "description": "每日追蹤 UI/UX 設計工具、網頁設計趨勢、AI 設計與設計靈感的個人專屬報紙。",
+    "icons": [
+        {
+            "src": "icon-192.png",
+            "sizes": "192x192",
+            "type": "image/png"
+        },
+        {
+            "src": "icon-512.png",
+            "sizes": "512x512",
+            "type": "image/png"
+        }
+    ]
+}

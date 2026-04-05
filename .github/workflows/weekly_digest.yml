@@ -1,0 +1,41 @@
+name: Weekly Design Digest
+
+on:
+  schedule:
+    # 每週六 UTC 23:20 = 台灣時間 週日 07:20
+    - cron: '20 23 * * 6'
+  workflow_dispatch: # 手動觸發
+
+permissions:
+  contents: write
+
+jobs:
+  generate-weekly:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          token: ${{ secrets.PAT_TOKEN }}
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: Install dependencies
+        run: pip install -r requirements.txt
+
+      - name: Generate weekly digest
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+        run: python weekly_digest.py
+
+      - name: Commit and push
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "github-actions[bot]@users.noreply.github.com"
+          git add public/
+          git diff --cached --quiet || git commit -m "⭐ Auto-generate weekly design digest $(date +'%Y-W%V')"
+          git push
