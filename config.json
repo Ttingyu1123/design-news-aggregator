@@ -157,6 +157,7 @@
     },
     "summary": {
         "max_items_per_feed": 5,
-        "model": "gemini-3.1-pro-preview"
+        "model": "gemma-4-31b-it",
+        "fallback_model": "gemini-3.1-pro-preview"
     }
 }

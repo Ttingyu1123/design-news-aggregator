@@ -23,6 +23,7 @@ with open("config.json", "r", encoding="utf-8") as f:
 FEEDS = config.get("feeds", {})
 MAX_ITEMS = config.get("summary", {}).get("max_items_per_feed", 3)
 MODEL_NAME = config.get("summary", {}).get("model", "gemini-1.5-pro-latest")
+FALLBACK_MODEL = config.get("summary", {}).get("fallback_model", "")
 
 # 2. 去重機制：載入與儲存已出現過的文章 URL
 SEEN_URLS_FILE = "seen_urls.json"
@@ -174,7 +175,18 @@ def summarize_with_gemini(feed_data, issue_number):
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        print(f"❌ Gemini API 呼叫失敗: {e}")
+        print(f"⚠️ {MODEL_NAME} 呼叫失敗: {e}")
+        if FALLBACK_MODEL:
+            print(f"🔄 切換到 fallback 模型: {FALLBACK_MODEL}")
+            try:
+                fallback = genai.GenerativeModel(
+                    FALLBACK_MODEL,
+                    system_instruction=model._system_instruction,
+                )
+                response = fallback.generate_content(prompt)
+                return response.text
+            except Exception as e2:
+                print(f"❌ Fallback 也失敗: {e2}")
         return None
 
 # 6. 儲存報表與維護索引
