@@ -94,9 +94,21 @@ def generate_weekly_digest(reports):
         print(f"❌ Gemini API 呼叫失敗: {e}")
         return None
 
+def strip_code_fence(text):
+    """移除 Gemini 回傳的 markdown code fence 包裝"""
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        first_newline = stripped.index("\n")
+        stripped = stripped[first_newline + 1:]
+    if stripped.endswith("```"):
+        stripped = stripped[:-3]
+    return stripped.strip()
+
 def save_weekly(content):
     if not content:
         return
+
+    content = strip_code_fence(content)
 
     vault_path = "public/reports"
     os.makedirs(vault_path, exist_ok=True)
