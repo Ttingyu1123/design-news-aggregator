@@ -1,163 +1,163 @@
 {
-    "feeds": {
-        "UI_UX_Design_Tools": [
-            {
-                "name": "Figma Blog",
-                "url": "https://www.figma.com/blog/feed/"
-            },
-            {
-                "name": "Adobe Blog",
-                "url": "https://blog.adobe.com/feed.xml"
-            },
-            {
-                "name": "Sketch Blog",
-                "url": "https://www.sketch.com/blog/feed.xml"
-            },
-            {
-                "name": "UX Planet",
-                "url": "https://uxplanet.org/feed"
-            },
-            {
-                "name": "Nielsen Norman Group",
-                "url": "https://www.nngroup.com/feed/rss/"
-            },
-            {
-                "name": "UX Collective",
-                "url": "https://uxdesign.cc/feed"
-            },
-            {
-                "name": "Penpot Blog",
-                "url": "https://penpot.app/blog/rss.xml"
-            },
-            {
-                "name": "Prototypr",
-                "url": "https://blog.prototypr.io/feed"
-            }
-        ],
-        "Web_Design_and_NoCode": [
-            {
-                "name": "Smashing Magazine",
-                "url": "https://www.smashingmagazine.com/feed/"
-            },
-            {
-                "name": "CSS-Tricks",
-                "url": "https://css-tricks.com/feed/"
-            },
-            {
-                "name": "A List Apart",
-                "url": "https://alistapart.com/main/feed/"
-            },
-            {
-                "name": "Webflow Blog",
-                "url": "https://webflow.com/blog/rss.xml"
-            },
-            {
-                "name": "Framer Blog",
-                "url": "https://www.framer.com/blog/rss.xml"
-            },
-            {
-                "name": "Codrops",
-                "url": "https://tympanus.net/codrops/feed/"
-            }
-        ],
-        "AI_Design_and_Creative_Tech": [
-            {
-                "name": "The Verge - AI",
-                "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
-            },
-            {
-                "name": "It's Nice That",
-                "url": "https://www.itsnicethat.com/rss"
-            },
-            {
-                "name": "Creative Bloq",
-                "url": "https://www.creativebloq.com/feed"
-            },
-            {
-                "name": "Digital Arts",
-                "url": "https://www.digitalartsonline.co.uk/rss/"
-            },
-            {
-                "name": "Runway Blog",
-                "url": "https://runwayml.com/blog/rss/"
-            },
-            {
-                "name": "ComfyUI Releases",
-                "url": "https://github.com/comfyanonymous/ComfyUI/releases.atom"
-            },
-            {
-                "name": "Krita News",
-                "url": "https://krita.org/en/feed/"
-            },
-            {
-                "name": "GIMP News",
-                "url": "https://www.gimp.org/feeds/atom.xml"
-            },
-            {
-                "name": "Blender Releases",
-                "url": "https://github.com/blender/blender/tags.atom"
-            }
-        ],
-        "Design_Inspiration_and_Community": [
-            {
-                "name": "Awwwards Blog",
-                "url": "https://www.awwwards.com/blog/feed/"
-            },
-            {
-                "name": "Dribbble Stories",
-                "url": "https://dribbble.com/stories.rss"
-            },
-            {
-                "name": "Brand New",
-                "url": "https://www.underconsideration.com/brandnew/feed"
-            },
-            {
-                "name": "SiteInspire",
-                "url": "https://www.siteinspire.com/feed"
-            },
-            {
-                "name": "Muzli Design Inspiration",
-                "url": "https://medium.com/feed/muzli-design-inspiration"
-            },
-            {
-                "name": "Reddit r/web_design",
-                "url": "https://www.reddit.com/r/web_design/.rss"
-            },
-            {
-                "name": "Reddit r/comfyui",
-                "url": "https://www.reddit.com/r/comfyui/.rss"
-            },
-            {
-                "name": "Reddit r/UI_Design",
-                "url": "https://www.reddit.com/r/UI_Design/.rss"
-            },
-            {
-                "name": "Reddit r/midjourney",
-                "url": "https://www.reddit.com/r/midjourney/.rss"
-            }
-        ],
-        "Design_Systems_and_Typography": [
-            {
-                "name": "Google Design",
-                "url": "https://design.google/feed"
-            },
-            {
-                "name": "Typewolf",
-                "url": "https://www.typewolf.com/feed"
-            },
-            {
-                "name": "Fonts In Use",
-                "url": "https://fontsinuse.com/feed"
-            },
-            {
-                "name": "Abduzeedo",
-                "url": "https://abduzeedo.com/rss.xml"
-            }
-        ]
-    },
-    "summary": {
-        "max_items_per_feed": 5,
-        "model": "gemini-2.5-flash",
-        "fallback_model": "gemini-2.5-pro"
-    }
+  "feeds": {
+    "UI_UX_Design_Tools": [
+      {
+        "name": "Figma Blog",
+        "url": "https://www.figma.com/blog/feed/"
+      },
+      {
+        "name": "Adobe Blog",
+        "url": "https://blog.adobe.com/feed.xml"
+      },
+      {
+        "name": "Sketch Blog",
+        "url": "https://www.sketch.com/blog/feed.xml"
+      },
+      {
+        "name": "UX Planet",
+        "url": "https://uxplanet.org/feed"
+      },
+      {
+        "name": "Nielsen Norman Group",
+        "url": "https://www.nngroup.com/feed/rss/"
+      },
+      {
+        "name": "UX Collective",
+        "url": "https://uxdesign.cc/feed"
+      },
+      {
+        "name": "Penpot Blog",
+        "url": "https://penpot.app/blog/rss.xml"
+      },
+      {
+        "name": "Prototypr",
+        "url": "https://blog.prototypr.io/feed"
+      }
+    ],
+    "Web_Design_and_NoCode": [
+      {
+        "name": "Smashing Magazine",
+        "url": "https://www.smashingmagazine.com/feed/"
+      },
+      {
+        "name": "CSS-Tricks",
+        "url": "https://css-tricks.com/feed/"
+      },
+      {
+        "name": "A List Apart",
+        "url": "https://alistapart.com/main/feed/"
+      },
+      {
+        "name": "Webflow Blog",
+        "url": "https://webflow.com/blog/rss.xml"
+      },
+      {
+        "name": "Framer Blog",
+        "url": "https://www.framer.com/blog/rss.xml"
+      },
+      {
+        "name": "Codrops",
+        "url": "https://tympanus.net/codrops/feed/"
+      }
+    ],
+    "AI_Design_and_Creative_Tech": [
+      {
+        "name": "The Verge - AI",
+        "url": "https://www.theverge.com/rss/ai-artificial-intelligence/index.xml"
+      },
+      {
+        "name": "It's Nice That",
+        "url": "https://www.itsnicethat.com/rss"
+      },
+      {
+        "name": "Creative Bloq",
+        "url": "https://www.creativebloq.com/feed"
+      },
+      {
+        "name": "Digital Arts",
+        "url": "https://www.digitalartsonline.co.uk/rss/"
+      },
+      {
+        "name": "Runway Blog",
+        "url": "https://runwayml.com/blog/rss/"
+      },
+      {
+        "name": "ComfyUI Releases",
+        "url": "https://github.com/comfyanonymous/ComfyUI/releases.atom"
+      },
+      {
+        "name": "Krita News",
+        "url": "https://krita.org/en/feed/"
+      },
+      {
+        "name": "GIMP News",
+        "url": "https://www.gimp.org/feeds/atom.xml"
+      },
+      {
+        "name": "Blender Releases",
+        "url": "https://github.com/blender/blender/tags.atom"
+      }
+    ],
+    "Design_Inspiration_and_Community": [
+      {
+        "name": "Awwwards Blog",
+        "url": "https://www.awwwards.com/blog/feed/"
+      },
+      {
+        "name": "Dribbble Stories",
+        "url": "https://dribbble.com/stories.rss"
+      },
+      {
+        "name": "Brand New",
+        "url": "https://www.underconsideration.com/brandnew/feed"
+      },
+      {
+        "name": "SiteInspire",
+        "url": "https://www.siteinspire.com/feed"
+      },
+      {
+        "name": "Muzli Design Inspiration",
+        "url": "https://medium.com/feed/muzli-design-inspiration"
+      },
+      {
+        "name": "Reddit r/web_design",
+        "url": "https://www.reddit.com/r/web_design/.rss"
+      },
+      {
+        "name": "Reddit r/comfyui",
+        "url": "https://www.reddit.com/r/comfyui/.rss"
+      },
+      {
+        "name": "Reddit r/UI_Design",
+        "url": "https://www.reddit.com/r/UI_Design/.rss"
+      },
+      {
+        "name": "Reddit r/midjourney",
+        "url": "https://www.reddit.com/r/midjourney/.rss"
+      }
+    ],
+    "Design_Systems_and_Typography": [
+      {
+        "name": "Google Design",
+        "url": "https://design.google/feed"
+      },
+      {
+        "name": "Typewolf",
+        "url": "https://www.typewolf.com/feed"
+      },
+      {
+        "name": "Fonts In Use",
+        "url": "https://fontsinuse.com/feed"
+      },
+      {
+        "name": "Abduzeedo",
+        "url": "https://abduzeedo.com/rss.xml"
+      }
+    ]
+  },
+  "summary": {
+    "max_items_per_feed": 5,
+    "model": "gemini-2.5-flash",
+    "fallback_model": "gemini-2.5-flash-lite"
+  }
 }
