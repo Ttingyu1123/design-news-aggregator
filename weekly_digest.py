@@ -9,6 +9,7 @@ from datetime import timezone, timedelta
 TW = timezone(timedelta(hours=8))
 import google.generativeai as genai
 from dotenv import load_dotenv
+import re
 
 load_dotenv()
 API_KEY = os.getenv("GEMINI_API_KEY")
@@ -104,11 +105,34 @@ def strip_code_fence(text):
         stripped = stripped[:-3]
     return stripped.strip()
 
+def normalize_frontmatter(text):
+    """確保 YAML frontmatter 使用正確的 --- 分隔符"""
+    lines = text.split("\n")
+    if not lines:
+        return text
+    if lines[0].strip() == "---":
+        return text
+    if not re.match(r"^(date|type|tags|title):", lines[0].strip()):
+        return text
+    for i in range(1, min(len(lines), 10)):
+        stripped = lines[i].strip()
+        if stripped == "```":
+            lines[i] = "---"
+            break
+        if stripped == "---":
+            break
+        if stripped.startswith("#"):
+            lines.insert(i, "---")
+            break
+    lines.insert(0, "---")
+    return "\n".join(lines)
+
 def save_weekly(content):
     if not content:
         return
 
     content = strip_code_fence(content)
+    content = normalize_frontmatter(content)
 
     vault_path = "public/reports"
     os.makedirs(vault_path, exist_ok=True)

@@ -8,6 +8,7 @@ TW = timezone(timedelta(hours=8))
 import feedparser
 import google.generativeai as genai
 from dotenv import load_dotenv
+import re
 
 # 1. 載入環境變數與設定
 load_dotenv()
@@ -190,9 +191,44 @@ def summarize_with_gemini(feed_data, issue_number):
         return None
 
 # 6. 儲存報表與維護索引
+def strip_code_fence(text):
+    """移除 Gemini 回傳的 markdown code fence 包裝"""
+    stripped = text.strip()
+    if stripped.startswith("```"):
+        first_newline = stripped.index("\n")
+        stripped = stripped[first_newline + 1:]
+    if stripped.endswith("```"):
+        stripped = stripped[:-3]
+    return stripped.strip()
+
+def normalize_frontmatter(text):
+    """確保 YAML frontmatter 使用正確的 --- 分隔符"""
+    lines = text.split("\n")
+    if not lines:
+        return text
+    if lines[0].strip() == "---":
+        return text
+    if not re.match(r"^(date|type|tags|title):", lines[0].strip()):
+        return text
+    for i in range(1, min(len(lines), 10)):
+        stripped = lines[i].strip()
+        if stripped == "```":
+            lines[i] = "---"
+            break
+        if stripped == "---":
+            break
+        if stripped.startswith("#"):
+            lines.insert(i, "---")
+            break
+    lines.insert(0, "---")
+    return "\n".join(lines)
+
 def save_report(content):
     if not content:
         return
+
+    content = strip_code_fence(content)
+    content = normalize_frontmatter(content)
 
     vault_path = "public/reports"
     os.makedirs(vault_path, exist_ok=True)
