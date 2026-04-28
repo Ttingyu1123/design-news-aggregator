@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://design-pulse.tingyudeco.com/sitemap.xml
