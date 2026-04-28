@@ -513,9 +513,7 @@
                 <input type="text" id="searchInput" placeholder="🔍 搜尋報告...">
             </div>
             <nav>
-                <ul class="sidebar-nav" id="navList">
-                    {{SIDEBAR_HTML}}
-                </ul>
+                <ul class="sidebar-nav" id="navList"></ul>
             </nav>
             <div class="sidebar-footer">
                 MADE BY <a href="https://tingyudeco.com" target="_blank">tingyudeco.com</a>
@@ -551,21 +549,67 @@
             document.getElementById('sidebar').classList.remove('open');
         });
 
-        // Section toggle
-        document.querySelectorAll('.nav-section-header').forEach(btn => {
-            btn.addEventListener('click', () => {
-                btn.closest('.nav-section').classList.toggle('open');
-            });
-        });
-
-        // Search
+        // Search (filters dynamically rendered links)
         document.getElementById('searchInput')?.addEventListener('input', (e) => {
             const q = e.target.value.trim().toLowerCase();
             document.querySelectorAll('.nav-link').forEach(link => {
-                const text = link.textContent.toLowerCase();
-                link.style.display = (!q || text.includes(q)) ? '' : 'none';
+                link.style.display = (!q || link.textContent.toLowerCase().includes(q)) ? '' : 'none';
             });
         });
+
+        // Dynamic sidebar from index.json
+        (async function() {
+            const navList = document.getElementById('navList');
+            try {
+                const res = await fetch('/index.json');
+                const reports = await res.json();
+                const now = new Date();
+                const sevenDaysAgo = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+                const currentPath = location.pathname;
+
+                const recent = [], weekly = [], older = {};
+                for (const r of reports) {
+                    if (r.filename.includes('Weekly')) {
+                        weekly.push(r);
+                    } else if (r.date >= sevenDaysAgo) {
+                        recent.push(r);
+                    } else {
+                        const month = r.date.slice(0, 7);
+                        (older[month] = older[month] || []).push(r);
+                    }
+                }
+
+                function section(icon, title, items, isOpen) {
+                    const cls = isOpen ? ' open' : '';
+                    let h = `<li class="nav-section${cls}"><button class="nav-section-header"><span class="icon">${icon}</span> ${title} <span class="nav-count">${items.length}</span> <span class="nav-arrow">▼</span></button><ul class="nav-items">`;
+                    for (const item of items) {
+                        const label = item.filename.includes('Weekly') ? `⭐ ${item.date}` : item.date;
+                        const href = `/reports/${item.filename.replace('.md', '.html')}`;
+                        const active = currentPath === href ? ' active' : '';
+                        h += `<li><a class="nav-link${active}" href="${href}">${label}</a></li>`;
+                    }
+                    return h + '</ul></li>';
+                }
+
+                let html = '';
+                if (recent.length) html += section('🕐', '最近日報', recent, true);
+                if (weekly.length) html += section('⭐', '每週精華', weekly, false);
+                for (const mk of Object.keys(older).sort().reverse()) {
+                    const [y, m] = mk.split('-');
+                    html += section('📂', `${y} 年 ${parseInt(m)} 月`, older[mk], false);
+                }
+                navList.innerHTML = html;
+
+                navList.querySelectorAll('.nav-section-header').forEach(btn => {
+                    btn.addEventListener('click', () => btn.closest('.nav-section').classList.toggle('open'));
+                });
+
+                const active = navList.querySelector('.nav-link.active');
+                if (active) active.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            } catch (e) {
+                console.warn('Sidebar load failed:', e);
+            }
+        })();
     </script>
 </body>
 </html>

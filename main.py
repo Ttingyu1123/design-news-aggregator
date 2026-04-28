@@ -314,46 +314,6 @@ def _extract_preview(md_text, length=160):
     text = re.sub(r'\n+', ' ', text)[:length]
     return text
 
-def _build_sidebar_html(reports, current_filename):
-    now = datetime.datetime.now(TW)
-    seven_days_ago = (now - timedelta(days=7)).strftime("%Y-%m-%d")
-
-    recent, weekly, older = [], [], {}
-    for r in reports:
-        is_weekly = "Weekly" in r["filename"]
-        if is_weekly:
-            weekly.append(r)
-        elif r["date"] >= seven_days_ago:
-            recent.append(r)
-        else:
-            month = r["date"][:7]
-            older.setdefault(month, []).append(r)
-
-    html = ""
-    def section(icon, title, items, is_open):
-        nonlocal html
-        open_cls = " open" if is_open else ""
-        html += f'<li class="nav-section{open_cls}">'
-        html += f'<button class="nav-section-header"><span class="icon">{icon}</span> {title} <span class="nav-count">{len(items)}</span> <span class="nav-arrow">▼</span></button>'
-        html += '<ul class="nav-items">'
-        for item in items:
-            is_weekly = "Weekly" in item["filename"]
-            label = f"⭐ {item['date']}" if is_weekly else item["date"]
-            active = " active" if item["filename"] == current_filename else ""
-            href = f'/reports/{item["filename"].replace(".md", ".html")}'
-            html += f'<li><a class="nav-link{active}" href="{href}">{label}</a></li>'
-        html += '</ul></li>'
-
-    if recent:
-        section("🕐", "最近日報", recent, True)
-    if weekly:
-        section("⭐", "每週精華", weekly, False)
-    for month_key in sorted(older.keys(), reverse=True):
-        y, m = month_key.split("-")
-        section("📂", f"{y} 年 {int(m)} 月", older[month_key], False)
-
-    return html
-
 def _xml_escape(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
 
@@ -368,65 +328,80 @@ def generate_html_pages():
         template = f.read()
 
     md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)
-    reports = []
+
+    needs_gen = set()
     for fname in md_files:
-        date_str = fname.split('_')[0]
-        with open(os.path.join(vault_path, fname), "r", encoding="utf-8") as f:
-            content = f.read()
-        reports.append({
-            "date": date_str,
-            "filename": fname,
-            "title": _extract_title(content),
-            "preview": _extract_preview(content),
-            "md_content": content,
-        })
+        html_path = os.path.join(vault_path, fname.replace(".md", ".html"))
+        if not os.path.exists(html_path):
+            needs_gen.add(fname)
+
+    if not needs_gen:
+        print("✅ 所有 HTML 頁面已是最新")
+        return
+
+    new_pages = set(needs_gen)
+    for i, fname in enumerate(md_files):
+        if fname in new_pages and i + 1 < len(md_files):
+            needs_gen.add(md_files[i + 1])
 
     md_converter = markdown.Markdown(extensions=['tables', 'fenced_code', 'nl2br'])
     _url_re = re.compile(r'(?<!["\'>=/])(https?://[^\s<>\)\"]+)')
 
-    for i, report in enumerate(reports):
+    generated = 0
+    for i, fname in enumerate(md_files):
+        if fname not in needs_gen:
+            continue
+
+        date_str = fname.split('_')[0]
+        with open(os.path.join(vault_path, fname), "r", encoding="utf-8") as f:
+            content = f.read()
+
+        title = _extract_title(content)
+        preview = _extract_preview(content)
+
         md_converter.reset()
-        md_body = report["md_content"]
+        md_body = content
         if md_body.startswith("---"):
             parts = md_body.split("---", 2)
             md_body = parts[2] if len(parts) > 2 else md_body
 
         article_html = md_converter.convert(md_body)
         article_html = _url_re.sub(r'<a href="\1" target="_blank" rel="noopener">\1</a>', article_html)
-        sidebar_html = _build_sidebar_html(reports, report["filename"])
 
         prev_link = ""
         next_link = ""
-        if i < len(reports) - 1:
-            older = reports[i + 1]
-            prev_link = f'<a href="/reports/{older["filename"].replace(".md", ".html")}">← {older["date"]}</a>'
+        if i < len(md_files) - 1:
+            older_fname = md_files[i + 1]
+            older_date = older_fname.split('_')[0]
+            prev_link = f'<a href="/reports/{older_fname.replace(".md", ".html")}">← {older_date}</a>'
         if i > 0:
-            newer = reports[i - 1]
-            next_link = f'<a href="/reports/{newer["filename"].replace(".md", ".html")}">{newer["date"]} →</a>'
+            newer_fname = md_files[i - 1]
+            newer_date = newer_fname.split('_')[0]
+            next_link = f'<a href="/reports/{newer_fname.replace(".md", ".html")}">{newer_date} →</a>'
 
-        page_title = report["title"] or f'{SITE_CONFIG["name"]} - {report["date"]}'
+        page_title = title or f'{SITE_CONFIG["name"]} - {date_str}'
 
         html = template
         html = html.replace("{{PAGE_TITLE}}", page_title)
-        html = html.replace("{{META_DESCRIPTION}}", report["preview"])
-        html = html.replace("{{CANONICAL_URL}}", f'{SITE_CONFIG["base_url"]}/reports/{report["filename"].replace(".md", ".html")}')
+        html = html.replace("{{META_DESCRIPTION}}", preview)
+        html = html.replace("{{CANONICAL_URL}}", f'{SITE_CONFIG["base_url"]}/reports/{fname.replace(".md", ".html")}')
         html = html.replace("{{OG_IMAGE}}", SITE_CONFIG["og_image"])
         html = html.replace("{{THEME_COLOR}}", SITE_CONFIG["theme_color"])
         html = html.replace("{{ACCENT_COLOR}}", SITE_CONFIG["accent"])
         html = html.replace("{{ACCENT_DARK}}", SITE_CONFIG["accent_dark"])
         html = html.replace("{{SITE_NAME}}", SITE_CONFIG["name"])
         html = html.replace("{{BRAND_ICON}}", SITE_CONFIG["brand_icon"])
-        html = html.replace("{{TOPBAR_TITLE}}", f'{report["date"]} 日報')
-        html = html.replace("{{SIDEBAR_HTML}}", sidebar_html)
+        html = html.replace("{{TOPBAR_TITLE}}", f'{date_str} 日報')
         html = html.replace("{{ARTICLE_HTML}}", article_html)
         html = html.replace("{{PREV_LINK}}", prev_link)
         html = html.replace("{{NEXT_LINK}}", next_link)
 
-        out_path = os.path.join(vault_path, report["filename"].replace(".md", ".html"))
+        out_path = os.path.join(vault_path, fname.replace(".md", ".html"))
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(html)
+        generated += 1
 
-    print(f"✅ 已生成 {len(reports)} 個 HTML 頁面")
+    print(f"✅ 已生成 {generated} 個新 HTML 頁面（共 {len(md_files)} 個報告）")
 
 def generate_sitemap():
     vault_path = "public/reports"
