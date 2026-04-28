@@ -18,8 +18,8 @@ SITE_CONFIG = {
     "accent": "#9B7EC8",
     "accent_dark": "#7B5EA8",
     "theme_color": "#E0E5EC",
-    "base_url": "https://design-news-aggregator.vercel.app",
-    "og_image": "https://design-news-aggregator.vercel.app/icon-512.png",
+    "base_url": "https://design-pulse.tingyudeco.com",
+    "og_image": "https://design-pulse.tingyudeco.com/icon-512.png",
 }
 
 # 1. 載入環境變數與設定
@@ -308,14 +308,22 @@ def _extract_title(md_text):
             return line[2:].strip()
     return ""
 
-def _extract_preview(md_text, length=160):
+def _extract_preview(md_text, length=155):
     body = md_text.split("---", 2)[-1] if md_text.startswith("---") else md_text
     text = re.sub(r'[#*\[\]()>_`]', '', body).strip()
-    text = re.sub(r'\n+', ' ', text)[:length]
-    return text
+    text = re.sub(r'[\U0001F000-\U0001FFFF\U00002600-\U000027BF\U0000FE00-\U0000FE0F]', '', text)
+    text = re.sub(r'\n+', ' ', text).strip()
+    return text[:length]
 
 def _xml_escape(text):
     return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+def generate_robots_txt():
+    base_url = SITE_CONFIG["base_url"]
+    content = f"User-agent: *\nAllow: /\n\nSitemap: {base_url}/sitemap.xml\n"
+    with open("public/robots.txt", "w", encoding="utf-8") as f:
+        f.write(content)
+    print("✅ robots.txt 已生成")
 
 def generate_html_pages():
     vault_path = "public/reports"
@@ -329,15 +337,19 @@ def generate_html_pages():
 
     md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)
 
+    force = os.environ.get("FORCE_REBUILD") == "1"
+
     needs_gen = set()
     for fname in md_files:
         html_path = os.path.join(vault_path, fname.replace(".md", ".html"))
         if not os.path.exists(html_path):
             needs_gen.add(fname)
 
-    if not needs_gen:
+    if not force and not needs_gen:
         print("✅ 所有 HTML 頁面已是最新")
         return
+    if force:
+        needs_gen = set(md_files)
 
     new_pages = set(needs_gen)
     for i, fname in enumerate(md_files):
@@ -396,6 +408,22 @@ def generate_html_pages():
         html = html.replace("{{PREV_LINK}}", prev_link)
         html = html.replace("{{NEXT_LINK}}", next_link)
 
+        json_ld = json.dumps({
+            "@context": "https://schema.org",
+            "@type": "Article",
+            "headline": page_title,
+            "datePublished": date_str,
+            "description": preview,
+            "url": f'{SITE_CONFIG["base_url"]}/reports/{fname.replace(".md", ".html")}',
+            "publisher": {
+                "@type": "Organization",
+                "name": "tingyudeco.com",
+                "url": "https://tingyudeco.com"
+            },
+            "inLanguage": "zh-TW"
+        }, ensure_ascii=False)
+        html = html.replace("{{JSON_LD}}", json_ld)
+
         out_path = os.path.join(vault_path, fname.replace(".md", ".html"))
         with open(out_path, "w", encoding="utf-8") as f:
             f.write(html)
@@ -408,9 +436,16 @@ def generate_sitemap():
     base_url = SITE_CONFIG["base_url"]
     md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)
 
-    urls = [f'  <url><loc>{base_url}/</loc><priority>1.0</priority></url>']
+    today = datetime.datetime.now(TW).strftime("%Y-%m-%d")
+    urls = [f'  <url><loc>{base_url}/</loc><lastmod>{today}</lastmod><priority>1.0</priority></url>']
     for fname in md_files:
         date_str = fname.split('_')[0]
+        if '-W' in date_str:
+            try:
+                year, week = date_str.split('-W')
+                date_str = datetime.datetime.strptime(f"{year} {week} 1", "%Y %W %w").strftime("%Y-%m-%d")
+            except ValueError:
+                date_str = today
         html_name = fname.replace(".md", ".html")
         urls.append(f'  <url><loc>{base_url}/reports/{html_name}</loc><lastmod>{date_str}</lastmod><priority>0.8</priority></url>')
 
@@ -438,6 +473,12 @@ def generate_rss():
         title = _extract_title(content) or f"{site_name} - {date_str}"
         preview = _extract_preview(content, 300)
         html_name = fname.replace(".md", ".html")
+        if '-W' in date_str:
+            try:
+                year, week = date_str.split('-W')
+                date_str = datetime.datetime.strptime(f"{year} {week} 1", "%Y %W %w").strftime("%Y-%m-%d")
+            except ValueError:
+                date_str = datetime.datetime.now(TW).strftime("%Y-%m-%d")
         try:
             pub_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").strftime("%a, %d %b %Y 06:00:00 +0800")
         except ValueError:
@@ -489,4 +530,5 @@ if __name__ == "__main__":
     generate_html_pages()
     generate_sitemap()
     generate_rss()
+    generate_robots_txt()
     print("🎉 任務完成！")
