@@ -1,281 +1,63 @@
 <!DOCTYPE html>
 <html lang="zh-TW">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>設計脈動日報</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="manifest" href="manifest.json">
-    <meta name="theme-color" content="#F3EFF8">
-    <meta name="apple-mobile-web-app-capable" content="yes">
-    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
-    <link rel="apple-touch-icon" href="icon-192.png">
-
-    <!-- Marked.js 解析 Markdown -->
-    <script src="https://cdn.jsdelivr.net/npm/marked/marked.min.js"></script>
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link
-        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap"
-        rel="stylesheet">
-</head>
-
-<body>
-    <div class="glass-container">
-        <!-- 側邊選單 -->
-        <aside class="sidebar glass-panel" id="sidebar">
-            <div class="sidebar-header">
-                <h2><i class="fas fa-newspaper"></i> 歷史報表</h2>
-                <button class="mobile-close" id="closeSidebar" aria-label="關閉選單"><i class="fas fa-times"></i></button>
-            </div>
-            <div style="padding: 10px 15px;">
-                <input type="text" id="searchInput" placeholder="🔍 搜尋報告..."
-                    style="width:100%;padding:10px 14px;border:1px solid rgba(255,255,255,0.5);border-radius:10px;background:rgba(255,255,255,0.3);font-size:0.9rem;outline:none;font-family:inherit;" />
-            </div>
-            <ul id="historyList">
-                <!-- 列表由 JS 動態生成 -->
-            </ul>
-            <div style="padding: 10px 15px; border-top: 1px solid rgba(255,255,255,0.5);">
-                <button id="feedStatusBtn"
-                    style="width:100%;padding:10px;background:rgba(255,255,255,0.2);border:1px solid transparent;border-radius:10px;cursor:pointer;font-size:0.85rem;font-family:inherit;color:var(--text-secondary);transition:all 0.3s;">
-                    <i class="fas fa-satellite-dish"></i> Feed 狀態
-                </button>
-            </div>
-            <div
-                style="padding:10px 15px;text-align:center;font-size:0.75rem;color:var(--text-secondary);letter-spacing:0.5px;">
-                MADE BY <a href="https://tingyusdeco.com" target="_blank"
-                    style="color:var(--accent-color);text-decoration:none;">TINGYUSDECO.COM</a>
-            </div>
-        </aside>
-
-        <!-- 主內容區 -->
-        <main class="content-area">
-            <header class="glass-nav">
-                <button class="menu-toggle" id="openSidebar" aria-label="開啟選單"><i class="fas fa-bars"></i></button>
-                <h1 id="pageTitle">最新日報</h1>
-                <a href="https://tingyusdeco.com/daily-reports/" target="_blank" title="Home"
-                    style="color:var(--text-secondary);font-size:1.2rem;text-decoration:none;transition:color 0.3s;"><i
-                        class="fas fa-home"></i></a>
-            </header>
-
-            <article class="glass-panel" id="content">
-                <div class="loader">
-                    <i class="fas fa-circle-notch fa-spin fa-3x"></i>
-                    <p>正在載入設計脈動...</p>
-                </div>
-            </article>
-        </main>
-    </div>
-
-    <!-- PWA Service Worker 註冊 -->
-    <script>
-        if ('serviceWorker' in navigator) {
-            window.addEventListener('load', () => {
-                navigator.serviceWorker.register('/sw.js');
-            });
+    <title>設計脈動日報 — tingyudeco.com</title>
+    <meta name="description" content="每日自動彙整設計工具、UI/UX、網頁設計與 AI 創意科技最新動態。">
+    <meta property="og:title" content="設計脈動日報">
+    <meta property="og:description" content="每日自動彙整設計趨勢與工具動態">
+    <meta property="og:type" content="website">
+    <meta name="theme-color" content="#E0E5EC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="alternate" type="application/rss+xml" title="設計脈動日報 RSS" href="/feed.xml">
+    <style>
+        body {
+            margin: 0;
+            background: #F8F7EE;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            color: #4A5568;
         }
-    </script>
-
-    <!-- 邏輯應用程式 -->
+        .loading {
+            text-align: center;
+        }
+        .spinner {
+            width: 36px; height: 36px;
+            border: 3px solid #E3F3F1;
+            border-top-color: #9B7EC8;
+            border-radius: 50%;
+            animation: spin 0.8s linear infinite;
+            margin: 0 auto 16px;
+        }
+        @keyframes spin { to { transform: rotate(360deg); } }
+    </style>
+</head>
+<body>
+    <div class="loading">
+        <div class="spinner"></div>
+        <p>載入最新日報...</p>
+    </div>
     <script>
-        document.addEventListener('DOMContentLoaded', async () => {
-            const historyList = document.getElementById('historyList');
-            const contentDiv = document.getElementById('content');
-            const pageTitle = document.getElementById('pageTitle');
-            const searchInput = document.getElementById('searchInput');
-            let allReports = [];
-            let searchIndex = [];
-
-            // 讀取索引檔
+        (async () => {
             try {
-                const ts = new Date().getTime();
-                const response = await fetch(`index.json?t=${ts}`);
-                if (!response.ok) throw new Error("找不到索引檔");
-                allReports = await response.json();
-
-                // 讀取搜尋索引
-                try {
-                    const sr = await fetch(`search_index.json?t=${ts}`);
-                    if (sr.ok) searchIndex = await sr.json();
-                } catch (e) { }
-
-                if (allReports.length === 0) {
-                    contentDiv.innerHTML = '<p class="empty-state"><i class="fas fa-inbox fa-3x"></i><br>目前還沒有任何報表。</p>';
-                    return;
+                const res = await fetch('/index.json?t=' + Date.now());
+                if (!res.ok) throw new Error('index.json not found');
+                const reports = await res.json();
+                reports.sort((a, b) => b.date.localeCompare(a.date));
+                const latest = reports.find(r => r.filename.includes('Daily_Report')) || reports[0];
+                if (latest) {
+                    const htmlName = latest.filename.replace('.md', '.html');
+                    window.location.replace('/reports/' + htmlName);
                 }
-
-                allReports.sort((a, b) => b.date.localeCompare(a.date));
-                renderList(allReports);
-
-                // 預設載入最新的日報（跳過 weekly digest）
-                const defaultReport = allReports.find(r => r.filename.includes('Daily_Report')) || allReports[0];
-                const firstBtn = historyList.querySelector(`.report-btn[data-url="reports/${defaultReport.filename}"]`);
-                if (firstBtn) {
-                    firstBtn.classList.add('active');
-                    loadMarkdown(`reports/${defaultReport.filename}`, defaultReport.date);
-                }
-            } catch (error) {
-                console.error("載入失敗:", error);
-                contentDiv.innerHTML = '<p class="error-state"><i class="fas fa-exclamation-triangle fa-3x"></i><br>無法載入報表索引。</p>';
+            } catch (e) {
+                document.querySelector('.loading p').textContent = '無法載入索引，請稍後再試。';
             }
-
-            function renderList(reports) {
-                historyList.innerHTML = '';
-                const now = new Date();
-                const sevenDaysAgo = new Date(now);
-                sevenDaysAgo.setDate(now.getDate() - 7);
-                const sevenDaysStr = sevenDaysAgo.toISOString().slice(0, 10);
-
-                // 分組：最近 7 天、每週精華、歷史月份
-                const recentDaily = [];
-                const weeklyDigests = [];
-                const olderByMonth = {};
-
-                reports.forEach(r => {
-                    const isWeekly = r.type === 'weekly' || r.filename.includes('Weekly');
-                    if (isWeekly) {
-                        weeklyDigests.push(r);
-                    } else if (r.date >= sevenDaysStr) {
-                        recentDaily.push(r);
-                    } else {
-                        const month = r.date.slice(0, 7); // YYYY-MM
-                        if (!olderByMonth[month]) olderByMonth[month] = [];
-                        olderByMonth[month].push(r);
-                    }
-                });
-
-                // 最近 7 天
-                if (recentDaily.length > 0) {
-                    appendSection('far fa-clock', '最近日報', recentDaily, false);
-                }
-
-                // 每週精華（預設收起）
-                if (weeklyDigests.length > 0) {
-                    appendSection('fas fa-star', '每週精華', weeklyDigests, true);
-                }
-
-                // 歷史月份（預設收起）
-                const months = Object.keys(olderByMonth).sort().reverse();
-                months.forEach(month => {
-                    const [y, m] = month.split('-');
-                    const label = `${y} 年 ${parseInt(m)} 月`;
-                    appendSection('fas fa-archive', label, olderByMonth[month], true);
-                });
-
-                function appendSection(iconClass, title, items, collapsed) {
-                    const header = document.createElement('li');
-                    header.className = 'sidebar-section-header';
-                    header.innerHTML = `<button class="section-toggle${collapsed ? '' : ' open'}">
-                        <i class="${iconClass}"></i> ${title}
-                        <span class="section-count">${items.length}</span>
-                        <i class="fas fa-chevron-down toggle-arrow"></i>
-                    </button>`;
-                    historyList.appendChild(header);
-
-                    const section = document.createElement('div');
-                    section.className = 'sidebar-section' + (collapsed ? ' collapsed' : '');
-                    historyList.appendChild(section);
-
-                    header.querySelector('.section-toggle').addEventListener('click', () => {
-                        section.classList.toggle('collapsed');
-                        header.querySelector('.section-toggle').classList.toggle('open');
-                    });
-
-                    items.forEach(report => {
-                        const li = document.createElement('li');
-                        const isWeekly = report.type === 'weekly' || report.filename.includes('Weekly');
-                        const icon = isWeekly ? 'fas fa-star' : 'far fa-calendar-alt';
-                        const label = isWeekly ? `${report.date}` : report.date;
-                        li.innerHTML = `<button class="report-btn${isWeekly ? ' weekly' : ''}" data-url="reports/${report.filename}">
-                            <i class="${icon}"></i> ${label}
-                        </button>`;
-                        section.appendChild(li);
-
-                        li.querySelector('button').addEventListener('click', (e) => {
-                            document.querySelectorAll('.report-btn').forEach(btn => btn.classList.remove('active'));
-                            e.currentTarget.classList.add('active');
-                            loadMarkdown(`reports/${report.filename}`, report.date);
-                            if (window.innerWidth <= 768) {
-                                document.getElementById('sidebar').classList.remove('active');
-                            }
-                        });
-                    });
-                }
-            }
-
-            // 搜尋功能
-            searchInput.addEventListener('input', (e) => {
-                const q = e.target.value.trim().toLowerCase();
-                if (!q) {
-                    renderList(allReports);
-                    return;
-                }
-                // 從 search_index 中過濾
-                const matchedFiles = new Set();
-                searchIndex.forEach(item => {
-                    if ((item.title && item.title.toLowerCase().includes(q)) ||
-                        (item.preview && item.preview.toLowerCase().includes(q)) ||
-                        (item.date && item.date.includes(q))) {
-                        matchedFiles.add(item.filename);
-                    }
-                });
-                const filtered = allReports.filter(r => matchedFiles.has(r.filename) || r.date.includes(q));
-                renderList(filtered);
-            });
-
-            // Feed 狀態
-            document.getElementById('feedStatusBtn').addEventListener('click', async () => {
-                contentDiv.innerHTML = '<div class="loader"><i class="fas fa-circle-notch fa-spin fa-2x"></i></div>';
-                pageTitle.innerText = '📡 Feed 健康狀態';
-                try {
-                    const ts = new Date().getTime();
-                    const res = await fetch(`feed_status.json?t=${ts}`);
-                    if (!res.ok) throw new Error('尚未執行過健康檢查');
-                    const data = await res.json();
-                    let html = `<h1>📡 Feed 健康狀態</h1>`;
-                    html += `<p>最後檢查：${data.last_check} | ✅ ${data.ok}/${data.total} 正常</p>`;
-                    if (data.error > 0) html += `<p style="color:#e57373">⚠️ ${data.error} 個 feed 有問題</p>`;
-                    html += '<ul>';
-                    data.feeds.forEach(f => {
-                        const icon = f.status === 'ok' ? '🟢' : '🔴';
-                        const detail = f.status === 'ok'
-                            ? `${f.entries} entries, latest: ${f.latest || 'N/A'}, ${f.response_time}s`
-                            : f.error;
-                        html += `<li>${icon} <strong>${f.name}</strong> (${f.category})<br><small>${detail}</small></li>`;
-                    });
-                    html += '</ul>';
-                    contentDiv.innerHTML = html;
-                } catch (err) {
-                    contentDiv.innerHTML = '<p class="empty-state"><i class="fas fa-satellite-dish fa-3x"></i><br>尚未執行過 Feed 健康檢查。<br>請先執行 check_feeds.py 或等待每日自動檢查。</p>';
-                }
-                document.querySelectorAll('.report-btn').forEach(btn => btn.classList.remove('active'));
-            });
-
-            async function loadMarkdown(url, dateLabel) {
-                contentDiv.innerHTML = '<div class="loader"><i class="fas fa-circle-notch fa-spin fa-2x"></i></div>';
-                pageTitle.innerText = `${dateLabel} 日報`;
-                try {
-                    const ts = new Date().getTime();
-                    const response = await fetch(`${url}?t=${ts}`);
-                    if (!response.ok) throw new Error('找不檔案');
-                    const mdText = await response.text();
-                    contentDiv.innerHTML = marked.parse(mdText);
-                } catch (error) {
-                    contentDiv.innerHTML = `<p class="error-state"><i class="fas fa-unlink fa-3x"></i><br>讀取 ${dateLabel} 報表失敗。</p>`;
-                }
-            }
-
-            // 側邊欄開關
-            document.getElementById('openSidebar').addEventListener('click', () => {
-                document.getElementById('sidebar').classList.add('active');
-            });
-            document.getElementById('closeSidebar').addEventListener('click', () => {
-                document.getElementById('sidebar').classList.remove('active');
-            });
-        });
+        })();
     </script>
 </body>
-
 </html>

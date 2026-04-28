@@ -9,6 +9,18 @@ import feedparser
 import google.generativeai as genai
 from dotenv import load_dotenv
 import re
+import markdown
+
+# --- Site config (for HTML generation) ---
+SITE_CONFIG = {
+    "name": "設計脈動日報",
+    "brand_icon": "✏️",
+    "accent": "#9B7EC8",
+    "accent_dark": "#7B5EA8",
+    "theme_color": "#E0E5EC",
+    "base_url": "https://design-news-aggregator.vercel.app",
+    "og_image": "https://design-news-aggregator.vercel.app/icon-512.png",
+}
 
 # 1. 載入環境變數與設定
 load_dotenv()
@@ -137,6 +149,14 @@ def summarize_with_gemini(feed_data, issue_number):
     prompt += "2. 【內容過濾規則 — 嚴格執行】本日報的讀者是「數位產品設計師」，只收錄與以下領域**直接相關**的內容：UI/UX 設計、網頁設計、平面設計、品牌識別、設計工具（Figma/Adobe/Sketch 等）、設計系統、字體排印、互動設計、動態設計、AI 輔助設計工具、No-Code 建站工具、CSS/前端視覺技術、設計靈感與作品集。\n"
     prompt += "   **必須排除**以下與設計無關的內容，即使它出現在 RSS 來源中也不可收錄：醫療/健康/藥物、政治/政策/法規、財經/股市/加密貨幣、純軟體工程（無設計面向）、純 AI 研究（無視覺/設計應用）、社會新聞、體育、娛樂八卦。若一篇文章的核心主題不是設計，即使標題含有「設計」二字也應排除。\n"
     prompt += "3. **焦點設計導讀**：從通過上述過濾的資訊中，篩選出最具影響力、最值得設計師關注的 5-8 條消息做詳細導讀，請加入你對設計手法、工具趨勢或產業影響的專業分析。\n"
+    prompt += "   【格式嚴格規範 — 每條重點導讀必須使用以下結構，禁止使用編號列表(1. 2. 3.)】：\n"
+    prompt += "   ```\n"
+    prompt += "   ### 序號. 中文標題（English Title）\n"
+    prompt += "   \n"
+    prompt += "   分析段落：2-3 句說明為何重要、有何影響。\n"
+    prompt += "   \n"
+    prompt += "   - 原文連結：https://...\n"
+    prompt += "   ```\n"
     prompt += "4. **精細分類**：其餘資訊請務必依照屬性歸類到以下子類別中，並且【每一則資訊都必須用 2~3 句話 (約 50-80 字) 對其設計理念與實務價值進行精要敘述】，不可僅有一句話或單純列出標題：\n"
     prompt += "   【設計工具與 UI/UX (Design Tools & UI/UX)】\n"
     prompt += "   - Design Tools Updates (設計工具動態：Figma、Sketch、Penpot 等)\n"
@@ -157,7 +177,7 @@ def summarize_with_gemini(feed_data, issue_number):
     prompt += "   【設計系統與字體排印 (Design Systems & Typography)】\n"
     prompt += "   - Design Systems & Tokens (設計系統與 Design Tokens)\n"
     prompt += "   - Typography & Type Design (字體排印與字型設計)\n"
-    prompt += "5. 每一條資訊都必須附上【原文連結】。\n6. 輸出格式必須是乾淨、易讀的 Markdown，請善用 H2 (##) 或 H3 (###) 標題來呈現。\n"
+    prompt += "5. 每一條資訊都必須附上【原文連結】。\n6. 【Markdown 結構規範】大區塊用 H2 (##)，重點導讀的每條用 H3 (###)，精細分類的子類別用 H4 (####)。每個段落之間必須空一行。嚴禁將重點導讀寫成編號列表。\n"
     prompt += "10. 【格式規定 — 嚴格執行】禁止使用 Markdown 引用區塊（即 `>` blockquote 語法）。所有分析內容請用「無序列表 + 粗體標籤」格式呈現，例如：\n"
     prompt += "   - **原文連結**：https://example.com\n"
     prompt += "   - **趨勢分析**：這篇文章探討了...\n"
@@ -281,6 +301,199 @@ def save_report(content):
     except Exception as e:
         print(f"⚠️ 更新索引或刪除舊檔時發生錯誤: {e}")
 
+# HTML / Sitemap / RSS 生成
+def _extract_title(md_text):
+    for line in md_text.split("\n"):
+        if line.startswith("# "):
+            return line[2:].strip()
+    return ""
+
+def _extract_preview(md_text, length=160):
+    body = md_text.split("---", 2)[-1] if md_text.startswith("---") else md_text
+    text = re.sub(r'[#*\[\]()>_`]', '', body).strip()
+    text = re.sub(r'\n+', ' ', text)[:length]
+    return text
+
+def _build_sidebar_html(reports, current_filename):
+    now = datetime.datetime.now(TW)
+    seven_days_ago = (now - timedelta(days=7)).strftime("%Y-%m-%d")
+
+    recent, weekly, older = [], [], {}
+    for r in reports:
+        is_weekly = "Weekly" in r["filename"]
+        if is_weekly:
+            weekly.append(r)
+        elif r["date"] >= seven_days_ago:
+            recent.append(r)
+        else:
+            month = r["date"][:7]
+            older.setdefault(month, []).append(r)
+
+    html = ""
+    def section(icon, title, items, is_open):
+        nonlocal html
+        open_cls = " open" if is_open else ""
+        html += f'<li class="nav-section{open_cls}">'
+        html += f'<button class="nav-section-header"><span class="icon">{icon}</span> {title} <span class="nav-count">{len(items)}</span> <span class="nav-arrow">▼</span></button>'
+        html += '<ul class="nav-items">'
+        for item in items:
+            is_weekly = "Weekly" in item["filename"]
+            label = f"⭐ {item['date']}" if is_weekly else item["date"]
+            active = " active" if item["filename"] == current_filename else ""
+            href = f'/reports/{item["filename"].replace(".md", ".html")}'
+            html += f'<li><a class="nav-link{active}" href="{href}">{label}</a></li>'
+        html += '</ul></li>'
+
+    if recent:
+        section("🕐", "最近日報", recent, True)
+    if weekly:
+        section("⭐", "每週精華", weekly, False)
+    for month_key in sorted(older.keys(), reverse=True):
+        y, m = month_key.split("-")
+        section("📂", f"{y} 年 {int(m)} 月", older[month_key], False)
+
+    return html
+
+def _xml_escape(text):
+    return text.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;").replace('"', "&quot;")
+
+def generate_html_pages():
+    vault_path = "public/reports"
+    template_path = "public/report_template.html"
+    if not os.path.exists(template_path):
+        print("⚠️ report_template.html not found, skipping HTML generation")
+        return
+
+    with open(template_path, "r", encoding="utf-8") as f:
+        template = f.read()
+
+    md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)
+    reports = []
+    for fname in md_files:
+        date_str = fname.split('_')[0]
+        with open(os.path.join(vault_path, fname), "r", encoding="utf-8") as f:
+            content = f.read()
+        reports.append({
+            "date": date_str,
+            "filename": fname,
+            "title": _extract_title(content),
+            "preview": _extract_preview(content),
+            "md_content": content,
+        })
+
+    md_converter = markdown.Markdown(extensions=['tables', 'fenced_code', 'nl2br'])
+    _url_re = re.compile(r'(?<!["\'>=/])(https?://[^\s<>\)\"]+)')
+
+    for i, report in enumerate(reports):
+        md_converter.reset()
+        md_body = report["md_content"]
+        if md_body.startswith("---"):
+            parts = md_body.split("---", 2)
+            md_body = parts[2] if len(parts) > 2 else md_body
+
+        article_html = md_converter.convert(md_body)
+        article_html = _url_re.sub(r'<a href="\1" target="_blank" rel="noopener">\1</a>', article_html)
+        sidebar_html = _build_sidebar_html(reports, report["filename"])
+
+        prev_link = ""
+        next_link = ""
+        if i < len(reports) - 1:
+            older = reports[i + 1]
+            prev_link = f'<a href="/reports/{older["filename"].replace(".md", ".html")}">← {older["date"]}</a>'
+        if i > 0:
+            newer = reports[i - 1]
+            next_link = f'<a href="/reports/{newer["filename"].replace(".md", ".html")}">{newer["date"]} →</a>'
+
+        page_title = report["title"] or f'{SITE_CONFIG["name"]} - {report["date"]}'
+
+        html = template
+        html = html.replace("{{PAGE_TITLE}}", page_title)
+        html = html.replace("{{META_DESCRIPTION}}", report["preview"])
+        html = html.replace("{{CANONICAL_URL}}", f'{SITE_CONFIG["base_url"]}/reports/{report["filename"].replace(".md", ".html")}')
+        html = html.replace("{{OG_IMAGE}}", SITE_CONFIG["og_image"])
+        html = html.replace("{{THEME_COLOR}}", SITE_CONFIG["theme_color"])
+        html = html.replace("{{ACCENT_COLOR}}", SITE_CONFIG["accent"])
+        html = html.replace("{{ACCENT_DARK}}", SITE_CONFIG["accent_dark"])
+        html = html.replace("{{SITE_NAME}}", SITE_CONFIG["name"])
+        html = html.replace("{{BRAND_ICON}}", SITE_CONFIG["brand_icon"])
+        html = html.replace("{{TOPBAR_TITLE}}", f'{report["date"]} 日報')
+        html = html.replace("{{SIDEBAR_HTML}}", sidebar_html)
+        html = html.replace("{{ARTICLE_HTML}}", article_html)
+        html = html.replace("{{PREV_LINK}}", prev_link)
+        html = html.replace("{{NEXT_LINK}}", next_link)
+
+        out_path = os.path.join(vault_path, report["filename"].replace(".md", ".html"))
+        with open(out_path, "w", encoding="utf-8") as f:
+            f.write(html)
+
+    print(f"✅ 已生成 {len(reports)} 個 HTML 頁面")
+
+def generate_sitemap():
+    vault_path = "public/reports"
+    base_url = SITE_CONFIG["base_url"]
+    md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)
+
+    urls = [f'  <url><loc>{base_url}/</loc><priority>1.0</priority></url>']
+    for fname in md_files:
+        date_str = fname.split('_')[0]
+        html_name = fname.replace(".md", ".html")
+        urls.append(f'  <url><loc>{base_url}/reports/{html_name}</loc><lastmod>{date_str}</lastmod><priority>0.8</priority></url>')
+
+    sitemap = '<?xml version="1.0" encoding="UTF-8"?>\n'
+    sitemap += '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n'
+    sitemap += '\n'.join(urls)
+    sitemap += '\n</urlset>'
+
+    with open("public/sitemap.xml", "w", encoding="utf-8") as f:
+        f.write(sitemap)
+    print(f"✅ sitemap.xml 已更新（{len(md_files)} 頁）")
+
+def generate_rss():
+    vault_path = "public/reports"
+    base_url = SITE_CONFIG["base_url"]
+    site_name = SITE_CONFIG["name"]
+    md_files = sorted([f for f in os.listdir(vault_path) if f.endswith('.md')], reverse=True)[:20]
+
+    items = []
+    for fname in md_files:
+        date_str = fname.split('_')[0]
+        fpath = os.path.join(vault_path, fname)
+        with open(fpath, "r", encoding="utf-8") as f:
+            content = f.read()
+        title = _extract_title(content) or f"{site_name} - {date_str}"
+        preview = _extract_preview(content, 300)
+        html_name = fname.replace(".md", ".html")
+        try:
+            pub_date = datetime.datetime.strptime(date_str, "%Y-%m-%d").strftime("%a, %d %b %Y 06:00:00 +0800")
+        except ValueError:
+            pub_date = datetime.datetime.now(TW).strftime("%a, %d %b %Y 06:00:00 +0800")
+
+        items.append(f'''    <item>
+      <title>{_xml_escape(title)}</title>
+      <link>{base_url}/reports/{html_name}</link>
+      <guid>{base_url}/reports/{html_name}</guid>
+      <pubDate>{pub_date}</pubDate>
+      <description>{_xml_escape(preview)}</description>
+    </item>''')
+
+    rss = f'''<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>{_xml_escape(site_name)}</title>
+    <link>{base_url}</link>
+    <description>{_xml_escape(site_name)} — 每日自動彙整</description>
+    <language>zh-TW</language>
+    <atom:link href="{base_url}/feed.xml" rel="self" type="application/rss+xml"/>
+    <lastBuildDate>{datetime.datetime.now(TW).strftime("%a, %d %b %Y %H:%M:%S +0800")}</lastBuildDate>
+{chr(10).join(items)}
+  </channel>
+</rss>'''
+
+    with open("public/feed.xml", "w", encoding="utf-8") as f:
+        f.write(rss)
+    print(f"✅ feed.xml 已更新（{len(items)} 篇）")
+
+
 if __name__ == "__main__":
     print(f"🚀 開始執行每日設計脈動彙整 ({datetime.datetime.now(TW).strftime('%Y-%m-%d %H:%M')})")
     data = fetch_feeds()
@@ -297,4 +510,8 @@ if __name__ == "__main__":
 
     report_md = summarize_with_gemini(data, issue_num)
     save_report(report_md)
+
+    generate_html_pages()
+    generate_sitemap()
+    generate_rss()
     print("🎉 任務完成！")
