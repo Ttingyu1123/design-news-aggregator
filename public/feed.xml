@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 29 Apr 2026 07:15:55 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 30 Apr 2026 07:24:08 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第17週 (2026-04-20 ~ 2026-04-26)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W17_Weekly_Digest.html</link>
@@ -27,6 +27,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 028 期 (2026-04-30)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-04-30_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-30_Daily_Report.html</guid>
+      <pubDate>Thu, 30 Apr 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 028 期 2026-04-30  焦點設計導讀  1. AI 轉型下將消失的 10 種 UI 模式 10 UI patterns that won’t survive the AI shift 分析段落：這篇文章深入探討了 AI 技術對現有 UI 模式的顛覆性影響，點出了哪些傳統設計元素將因 AI 的介入而不再適用或需要進化。對於數位產品設計師而言，理解這些改變至關重要，能幫助我們預見未來的設計方向，並開始思考如何在 AI 時代創造更直覺、更個人化的使用者體驗。 - 原文連結：https://uxdesign.cc/10-ui-patterns-that-wont-su</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 027 期 (2026-04-29)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-13_Daily_Report.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-13 tags: UI/UX, AI設計, 設計系統, 網頁設計, 字體排印   設計脈動日報 - 第 010 期 2026-04-13 各位數位產品設計師們，早安！本日的設計脈動日報為您精選了今日最前沿的設計趨勢、工具更新與深度解析。在 AI 加速設計流程的同時，我們也將探討如何回歸使用者核心，並透過精良的設計系統與字體應用，打造更具影響力的產品體驗。  焦點設計導讀 Featured Design Insights 以下是今日最值得關注的 8 條設計資訊，伴隨我的專業分析： - Midjourney V8 Alpha：速度提升 5 倍，原生支援 2K </description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 008 期 (2026-04-12)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-12_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-12_Daily_Report.html</guid>
-      <pubDate>Sun, 12 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-12 tags: AI設計, UI/UX設計, 網頁設計, 設計工具, 品牌識別   設計脈動日報 - 第 008 期 2026-04-12 親愛的數位產品設計師們，歡迎來到今天的「設計脈動日報」！今天我們將聚焦於 AI 如何持續革新設計工作流程、UI/UX 實務的深度思考，以及網頁設計領域的最新趨勢。從精準的 AI 提示詞工程到跨文化在地化，設計世界的每個角落都充滿了值得探索的洞見。   焦點設計導讀 以下是本日最值得關注的 7 條設計動態，附上我的專業分析：  1. 產品設計師必看的 7 大 Claude 編碼技能儲存庫 Top 7 Claude Co</description>
     </item>
   </channel>
 </rss>
