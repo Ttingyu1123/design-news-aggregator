@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 30 Apr 2026 07:24:08 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 01 May 2026 07:24:10 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第17週 (2026-04-20 ~ 2026-04-26)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W17_Weekly_Digest.html</link>
@@ -27,6 +27,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 029 期 (2026-05-01)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-01_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-01_Daily_Report.html</guid>
+      <pubDate>Fri, 01 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 029 期 2026-05-01  焦點設計導讀  Three Ways Generative AI Can Disrupt Design AI 輔助設計工具將如何顛覆設計領域的三種方式 這篇文章深入探討了生成式 AI 在設計領域的潛在影響，特別是它如何改變現有的設計流程與創作模式。對於設計師而言，理解這些變革至關重要，以便提前佈局並掌握新技術帶來的機會與挑戰。 - 原文連結：https://uxplanet.org/troubleshooting-claude-code-skills-bf29c8383abd?source=rss----819cc2aaeee0---4</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 028 期 (2026-04-30)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-14_Daily_Report.html</guid>
       <pubDate>Tue, 14 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-14 tags: AI設計, 網頁設計, 互動動態設計, 品牌識別, 設計師職涯   設計脈動日報 - 第 011 期 2026-04-14 數位產品設計師們，大家好！今天是 2026 年 4 月 14 日，為您帶來一份精選的「今日設計脈動日報」。本期日報聚焦於 AI 在設計工具與策略中的新應用、網頁互動體驗的技術突破，以及設計師在快速變革時代所面臨的職業挑戰與發展。讓我們一起洞察最新的設計趨勢與實務見解！  焦點設計導讀  1. 隆重推出 Webflow AEO：一種代理式、閉環的 AI 發現系統 Introducing Webflow AEO: an </description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 010 期 (2026-04-13)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-13_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-13_Daily_Report.html</guid>
-      <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-13 tags: UI/UX, AI設計, 設計系統, 網頁設計, 字體排印   設計脈動日報 - 第 010 期 2026-04-13 各位數位產品設計師們，早安！本日的設計脈動日報為您精選了今日最前沿的設計趨勢、工具更新與深度解析。在 AI 加速設計流程的同時，我們也將探討如何回歸使用者核心，並透過精良的設計系統與字體應用，打造更具影響力的產品體驗。  焦點設計導讀 Featured Design Insights 以下是今日最值得關注的 8 條設計資訊，伴隨我的專業分析： - Midjourney V8 Alpha：速度提升 5 倍，原生支援 2K </description>
     </item>
   </channel>
 </rss>
