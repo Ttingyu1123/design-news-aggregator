@@ -6,7 +6,14 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 03 May 2026 07:10:49 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 04 May 2026 07:11:59 +0800</lastBuildDate>
+    <item>
+      <title>⭐ 本週設計精華回顧 - 2026年第18週 (2026-04-27 ~ 2026-05-03)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</guid>
+      <pubDate>Mon, 04 May 2026 06:00:00 +0800</pubDate>
+      <description>⭐ 本週設計精華回顧 - 2026年第18週 2026-04-27 ~ 2026-05-03 本週的設計脈動再次證明，我們正處於一個由人工智慧（AI）深度革新設計產業的時代。從產品開發到品牌識別，再到使用者體驗的細微之處，AI 的影響力無所不在，挑戰著設計師的傳統角色，同時也開啟了前所未有的創意與效率潛力。設計師們不僅需要學習如何與 AI 協作，更要關注其倫理意涵、使用者體驗新範式，並將系統性思考融入每個設計環節。本週的精華回顧將帶您深入解析這些關鍵議題。  本週最重要的 5-10 件設計大事  1. AI 代理型設計與工作流程的全面革新 本週多篇文章深入探討了 AI 如何從根本上重塑設計流程</description>
+    </item>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第17週 (2026-04-20 ~ 2026-04-26)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W17_Weekly_Digest.html</link>
@@ -27,6 +34,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 033 期 (2026-05-04)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-04_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-04_Daily_Report.html</guid>
+      <pubDate>Mon, 04 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 033 期 2026-05-04  焦點設計導讀  1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.） 分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層重新構思使用者介面與體驗。它呼應了 Jakob Nielsen 提出的「AI 是 60 年來第一個新的使用者介面典範」觀點，提醒設計師必須深入理解 AI 的潛力，讓 AI 承擔產品的抽象複雜性，為使用者帶來更直觀、更自然的互動。 - 原文連結：https://uxdesign.cc/don</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 031 期 (2026-05-03)</title>
@@ -132,20 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-18_Daily_Report.html</guid>
       <pubDate>Sat, 18 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-18 tags: AI設計工具, Figma, 設計系統, UI/UX研究, 互動設計, 字體排印   設計脈動日報 - 第 015 期 2026-04-18  焦點設計導讀 今日設計脈動聚焦於 AI 如何重塑設計工具與工作流程，從新的 AI 設計協作工具到 AI 代理的產品知識整合，以及跨平台設計系統與互動設計的實踐。同時，我們也看到設計師對於色彩、暗色模式、觸覺回饋等使用者體驗細節的深入探討，以及動態設計工具的民主化趨勢。這些議題共同指向了設計領域在數位化與智能化浪潮下的進化方向。  1. Claude 設計的崛起：Figma 殺手或強大協作者？ Cl</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 014 期 (2026-04-17)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-17_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-17_Daily_Report.html</guid>
-      <pubDate>Fri, 17 Apr 2026 06:00:00 +0800</pubDate>
-      <description>markdown --- date: 2026-04-17 tags: Figma, AI設計, 品牌識別, 互動動態, 字體排印 ---   設計脈動日報 - 第 014 期 2026-04-17 數位產品設計師們，大家好！今天是 2026 年 4 月 17 日，為您整理今日的設計脈動。本期聚焦於 AI 在設計工具中的深度整合，從 Figma 內建 AI 圖像編輯到 Canva 的品牌活動生成，AI 正以前所未有的速度改變設計工作流程。同時，動態設計的實驗性探索與品牌識別的創新手法也值得關注，顯示設計領域持續在技術與創意之間尋找新的平衡點。  焦點設計導讀  1. Figma 內建 AI 圖</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 013 期 (2026-04-16)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-16_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-16_Daily_Report.html</guid>
-      <pubDate>Thu, 16 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-16 tags: Figma, AI設計, 設計系統, 網頁重塑, 互動設計   設計脈動日報 - 第 013 期 2026-04-16   焦點設計導讀 本日焦點彙集了 AI 在設計領域的最新突破，從 UI/UX 協作到設計系統生成，再到網頁內容策略的影響。同時，互動設計的微創新也提醒我們使用者體驗的細節不可忽略。  1. UI 設計的未來：代理式設計 The Future of UI Design is Agentic Design - 原文連結：https://uxplanet.org/the-future-of-ui-design-is-agent</description>
     </item>
   </channel>
 </rss>

@@ -1,0 +1,662 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✏️ 設計脈動日報 - 第 033 期 (2026-05-04)</title>
+    <meta name="description" content="設計脈動日報 - 第 033 期 2026-05-04  焦點設計導讀  1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.） 分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層">
+    <meta property="og:title" content="✏️ 設計脈動日報 - 第 033 期 (2026-05-04)">
+    <meta property="og:description" content="設計脈動日報 - 第 033 期 2026-05-04  焦點設計導讀  1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.） 分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://design-pulse.tingyudeco.com/reports/2026-05-04_Daily_Report.html">
+    <meta property="og:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="✏️ 設計脈動日報 - 第 033 期 (2026-05-04)">
+    <meta name="twitter:description" content="設計脈動日報 - 第 033 期 2026-05-04  焦點設計導讀  1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.） 分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層">
+    <meta name="twitter:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <link rel="canonical" href="https://design-pulse.tingyudeco.com/reports/2026-05-04_Daily_Report.html">
+    <meta name="theme-color" content="#E0E5EC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="alternate" type="application/rss+xml" title="設計脈動日報 RSS" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F8F7EE;
+            --cream: #F8F7EE;
+            --mint: #E3F3F1;
+            --accent: #9B7EC8;
+            --accent-dark: #7B5EA8;
+            --gold: #C9A96E;
+            --gold-light: #E8D5A8;
+            --text: #1A202C;
+            --text-muted: #4A5568;
+            --text-secondary: #718096;
+            --panel-bg: rgba(255,255,255,0.45);
+            --panel-border: rgba(255,255,255,0.7);
+            --radius: 12px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            background: var(--bg);
+            background-image:
+                radial-gradient(at 0% 0%, var(--mint) 0, transparent 55%),
+                radial-gradient(at 100% 100%, color-mix(in srgb, var(--accent) 15%, transparent) 0, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Layout === */
+        .page-wrapper {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        /* === Sidebar === */
+        .sidebar {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 40px -10px color-mix(in srgb, var(--accent) 25%, transparent);
+            z-index: 100;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+
+        .sidebar-brand {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-brand h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-brand .brand-icon {
+            font-size: 1.2rem;
+        }
+
+        .sidebar-brand a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+        .sidebar-brand a:hover { color: var(--accent); }
+
+        .mobile-close {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .sidebar-search {
+            padding: 12px 16px;
+        }
+        .sidebar-search input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.3);
+            font-size: 0.88rem;
+            font-family: inherit;
+            outline: none;
+            color: var(--text);
+        }
+        .sidebar-search input:focus {
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 16px;
+            list-style: none;
+        }
+
+        .nav-section { margin-bottom: 6px; }
+        .nav-section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+        .nav-section-header:hover { background: rgba(255,255,255,0.35); }
+        .nav-section-header .icon { color: var(--accent); font-size: 0.85rem; }
+        .nav-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.4);
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .nav-arrow {
+            font-size: 0.6rem;
+            transition: transform 0.3s;
+            color: var(--text-secondary);
+        }
+        .nav-section.open .nav-arrow { transform: rotate(180deg); }
+
+        .nav-items {
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s;
+            padding-left: 4px;
+        }
+        .nav-section.open .nav-items {
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 14px;
+            margin: 4px 0;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid transparent;
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.6);
+            color: var(--text);
+            transform: translateX(4px);
+        }
+        .nav-link.active {
+            background: rgba(255,255,255,0.9);
+            border-color: rgba(255,255,255,1);
+            color: var(--text);
+            box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 20%, transparent);
+            font-weight: 600;
+        }
+
+        .sidebar-footer {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+        .sidebar-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* === Main Content === */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px 35px;
+        }
+        .menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            color: var(--text);
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-soft);
+        }
+        .topbar-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .topbar-home {
+            margin-left: auto;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.3);
+            border: 1px solid var(--panel-border);
+            transition: all 0.3s;
+        }
+        .topbar-home:hover { color: var(--accent); background: rgba(255,255,255,0.6); }
+
+        .article-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 20px 20px;
+        }
+
+        /* === Article === */
+        .article-card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), var(--shadow-soft);
+            padding: 48px 56px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #3b4252;
+        }
+
+        /* Article typography — matching website classical style */
+        .article-card h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            border-bottom: 2px solid var(--gold-light);
+            padding-bottom: 12px;
+            margin-bottom: 1.2em;
+            line-height: 1.3;
+        }
+
+        .article-card h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+        }
+
+        .article-card h4 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 1.4em;
+            margin-bottom: 0.5em;
+        }
+
+        .article-card p {
+            margin-bottom: 1.2em;
+        }
+
+        .article-card a {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-decoration-color: var(--gold-light);
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .article-card a:hover {
+            color: var(--accent);
+        }
+
+        .article-card strong {
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .article-card ul, .article-card ol {
+            margin-bottom: 1.5em;
+            padding: 18px 18px 18px 36px;
+            background: rgba(255,255,255,0.4);
+            border-radius: var(--radius);
+        }
+
+        .article-card li {
+            margin-bottom: 1.4em;
+            line-height: 1.9;
+        }
+        .article-card li:last-child {
+            margin-bottom: 0;
+        }
+        .article-card li::marker {
+            color: var(--gold);
+        }
+
+        .article-card blockquote {
+            border-left: 3px solid var(--gold);
+            background: var(--mint);
+            padding: 14px 20px;
+            margin: 1.5em 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .article-card hr {
+            border: none;
+            height: 1px;
+            margin: 2.5em 0;
+            position: relative;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            overflow: visible;
+        }
+        .article-card hr::after {
+            content: '◆ ✦ ◆';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--panel-bg);
+            padding: 0 1.5rem;
+            color: var(--gold);
+            font-size: 0.7rem;
+            letter-spacing: 0.4em;
+        }
+
+        .article-card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+        }
+        .article-card th {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold-light);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .article-card td {
+            padding: 6px 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Prev/Next navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+            padding-top: 1.5em;
+            border-top: 1px solid var(--gold-light);
+            gap: 1em;
+        }
+        .article-nav a {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .article-nav a:hover {
+            background: rgba(255,255,255,0.8);
+            color: var(--accent-dark);
+        }
+        .article-nav .spacer { flex: 1; }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent) 60%, transparent);
+        }
+
+        /* === Mobile === */
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 0; gap: 0; }
+            .sidebar {
+                position: fixed;
+                left: 0; top: 0;
+                transform: translateX(-100%);
+                width: 85%;
+                max-width: 320px;
+                border-radius: 0;
+                background: rgba(248,247,238,0.97);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 20px 0 50px rgba(0,0,0,0.15);
+            }
+            .mobile-close { display: block; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .article-card {
+                border-radius: 0;
+                border: none;
+                padding: 24px 20px;
+                box-shadow: none;
+                background: transparent;
+            }
+            .article-card h1 { font-size: 1.5rem; }
+            .topbar { padding: 12px 16px; background: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        }
+    </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Article", "headline": "✏️ 設計脈動日報 - 第 033 期 (2026-05-04)", "datePublished": "2026-05-04", "description": "設計脈動日報 - 第 033 期 2026-05-04  焦點設計導讀  1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.） 分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層", "url": "https://design-pulse.tingyudeco.com/reports/2026-05-04_Daily_Report.html", "publisher": {"@type": "Organization", "name": "tingyudeco.com", "url": "https://tingyudeco.com"}, "inLanguage": "zh-TW"}
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h2><span class="brand-icon">✏️</span> 設計脈動日報</h2>
+                <button class="mobile-close" id="closeSidebar" aria-label="關閉選單">✕</button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="searchInput" placeholder="🔍 搜尋報告...">
+            </div>
+            <nav>
+                <ul class="sidebar-nav" id="navList"></ul>
+            </nav>
+            <div class="sidebar-footer">
+                MADE BY <a href="https://tingyudeco.com" target="_blank">tingyudeco.com</a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="menu-toggle" id="openSidebar" aria-label="開啟選單">☰</button>
+                <span class="topbar-title">2026-05-04 日報</span>
+                <a href="https://tingyudeco.com/insights" class="topbar-home" title="All Insights">⌂</a>
+            </header>
+            <div class="article-scroll">
+                <article class="article-card">
+                    <h1>✏️ 設計脈動日報 - 第 033 期 (2026-05-04)</h1>
+<h2>焦點設計導讀</h2>
+<h3>1. 別只是附加 AI，要從根本重新思考（Don’t simply bolt on AI. Rethink from the ground up.）</h3>
+<p>分析段落：這篇文章強調在產品設計中整合 AI 時，不應只將其視為附加功能，而是要從底層重新構思使用者介面與體驗。它呼應了 Jakob Nielsen 提出的「AI 是 60 年來第一個新的使用者介面典範」觀點，提醒設計師必須深入理解 AI 的潛力，讓 AI 承擔產品的抽象複雜性，為使用者帶來更直觀、更自然的互動。</p>
+<ul>
+<li>原文連結：<a href="https://uxdesign.cc/dont-simply-bolt-on-ai-rethink-from-the-ground-up-ae73a9093cd2?source=rss----138adf9c44c---4" target="_blank" rel="noopener">https://uxdesign.cc/dont-simply-bolt-on-ai-rethink-from-the-ground-up-ae73a9093cd2?source=rss----138adf9c44c---4</a></li>
+</ul>
+<h3>2. 網路熱門松鼠奶爸如何打造 2026 年最火紅的相機應用程式（How the internet’s favorite squirrel dad made the hottest camera app of 2026）</h3>
+<p>分析段落：這則報導揭示了一款相機應用程式 DualShot Recorder 成功背後的驚人故事，它在短短 12 小時內即登上 App Store 付費應用程式榜首。這證明了獨特的產品概念和精準的市場切入點，即便沒有龐大資源，也能創造出轟動的數位產品，對於產品設計師來說，這是一個關於使用者洞察與敏捷開發的絕佳案例。</p>
+<ul>
+<li>原文連結：<a href="https://www.theverge.com/tech/921690/dualshot-recorder-iphone-camera-app-derrick-downey-jr" target="_blank" rel="noopener">https://www.theverge.com/tech/921690/dualshot-recorder-iphone-camera-app-derrick-downey-jr</a></li>
+</ul>
+<h3>3. Reallusion iClone 8 評測：輕鬆實現角色動畫的黃金標準（Reallusion iClone 8 review: the gold standard for easy character animation）</h3>
+<p>分析段落：Reallusion iClone 8 作為一款易於使用的角色動畫工具，為 3D 動態設計師提供高效的工作流程。這篇評測強調其在簡化角色動畫方面的優勢，並能無縫整合至各種創意工作流中，對於希望快速製作高品質動畫的設計師而言，是值得關注的利器。它代表了動態設計工具在易用性與整合性上的發展趨勢。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/3d/reallusion-iclone-8-the-gold-standard-for-fast-and-effective-character-animation" target="_blank" rel="noopener">https://www.creativebloq.com/3d/reallusion-iclone-8-the-gold-standard-for-fast-and-effective-character-animation</a></li>
+</ul>
+<h3>4. 迪士尼和皮克斯都喜愛的拿鐵藝術師的迷人動畫（Disney and Pixar love this latte artist's delightful animations）</h3>
+<p>分析段落：這篇文章展示了一位將拿鐵藝術與動畫結合的藝術家，其作品的細節與創意令人驚嘆。它不僅是跨界藝術的典範，也提醒設計師創意靈感無處不在，並可透過不同媒介融合，創造出超越傳統的視覺體驗。這對於尋求突破性視覺表現的設計師提供了豐富的靈感。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/creative-inspiration/optical-illusions/from-hoppers-to-hello-kitty-and-severance-these-latte-art-animations-are-on-another-level" target="_blank" rel="noopener">https://www.creativebloq.com/creative-inspiration/optical-illusions/from-hoppers-to-hello-kitty-and-severance-these-latte-art-animations-are-on-another-level</a></li>
+</ul>
+<h3>5. ComfyUI v0.20.2 版本更新：支援 OneTainer ERNIE LoRA（ComfyUI v0.20.2）</h3>
+<p>分析段落：ComfyUI 的最新版本 v0.20.2 帶來了 OneTainer ERNIE LoRA 的支援，這對生成式 AI 藝術與設計領域而言是重要進展。這表示設計師和藝術家將能透過 ComfyUI 更加靈活地利用最新的 AI 模型進行創作，進一步擴展視覺內容生成的可能性，提升藝術表現力。</p>
+<ul>
+<li>原文連結：<a href="https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.20.2" target="_blank" rel="noopener">https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.20.2</a></li>
+</ul>
+<h3>6. 本週精選：動態、質量與材質設計（Best of the Week: Motion, Mass, and Material）</h3>
+<p>分析段落：Abduzeedo 網站的本週精選內容，聚焦於動態、物質感與材質的設計案例，並特別提及了一款名為「Million」的字體展示。這些精選作品為設計師提供了豐富的視覺靈感，提醒我們在數位產品設計中，動態效果、虛擬物質的質感呈現以及字體排印，都是提升使用者體驗和視覺吸引力的關鍵要素。</p>
+<ul>
+<li>原文連結：<a href="https://abduzeedo.com/best-week-motion-mass-and-material" target="_blank" rel="noopener">https://abduzeedo.com/best-week-motion-mass-and-material</a></li>
+</ul>
+<hr />
+<p><strong>English Daily Highlights</strong></p>
+<p>Today's design pulse reveals a strong emphasis on integrating AI thoughtfully into product design and exploring diverse creative technologies. An insightful article from UX Collective advises designers to "Rethink from the ground up" when incorporating AI, suggesting it's not merely an add-on but a paradigm shift demanding fundamental rethinking of UI/UX. This highlights the growing need for designers to understand AI's core capabilities and leverage them to simplify user interactions.</p>
+<p>In the realm of successful digital products, the story behind DualShot Recorder's overnight success on the App Store provides a compelling case study. It demonstrates that innovative product concepts and keen user insights can lead to immense popularity, even from unexpected sources, inspiring product designers to focus on unique value propositions.</p>
+<p>For 3D and motion designers, the review of Reallusion iClone 8 is significant. Hailed as the "gold standard for easy character animation," it underscores the industry's move towards more accessible yet powerful tools that streamline complex animation workflows and integrate seamlessly into broader creative pipelines. This trend empowers designers to achieve high-quality motion graphics more efficiently.</p>
+<p>Creative inspiration today spans an unusual yet delightful fusion: a latte artist whose charming animations have captivated Disney and Pixar. This cross-medium artistry reminds designers that innovative visual experiences can emerge from unexpected places, encouraging them to seek inspiration beyond traditional design boundaries and experiment with novel combinations of art forms.</p>
+<p>Finally, the ComfyUI v0.20.2 release, with its support for OneTainer ERNIE LoRA, marks a notable advancement in AI-powered design tools. For generative AI artists and designers, this update means enhanced flexibility and expanded possibilities in visual content creation, enabling them to harness sophisticated AI models for more nuanced and expressive artistic outputs. The "Best of the Week" from Abduzeedo further reinforces the importance of motion, materiality, and typography in contemporary design, offering a diverse collection of visual inspirations for elevating user experience and aesthetic appeal across various design applications.</p>
+                    <nav class="article-nav">
+                        <a href="/reports/2026-05-03_Daily_Report.html">← 2026-05-03</a>
+                        <span class="spacer"></span>
+                        <a href="/reports/2026-W15_Weekly_Digest.html">2026-W15 →</a>
+                    </nav>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Sidebar toggle (mobile)
+        document.getElementById('openSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.add('open');
+        });
+        document.getElementById('closeSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.remove('open');
+        });
+
+        // Search (filters dynamically rendered links)
+        document.getElementById('searchInput')?.addEventListener('input', (e) => {
+            const q = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.style.display = (!q || link.textContent.toLowerCase().includes(q)) ? '' : 'none';
+            });
+        });
+
+        // Dynamic sidebar from index.json
+        (async function() {
+            const navList = document.getElementById('navList');
+            try {
+                const res = await fetch('/index.json');
+                const reports = await res.json();
+                const now = new Date();
+                const sevenDaysAgo = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+                const currentPath = location.pathname;
+
+                const recent = [], weekly = [], older = {};
+                for (const r of reports) {
+                    if (r.filename.includes('Weekly')) {
+                        weekly.push(r);
+                    } else if (r.date >= sevenDaysAgo) {
+                        recent.push(r);
+                    } else {
+                        const month = r.date.slice(0, 7);
+                        (older[month] = older[month] || []).push(r);
+                    }
+                }
+
+                function section(icon, title, items, isOpen) {
+                    const cls = isOpen ? ' open' : '';
+                    let h = `<li class="nav-section${cls}"><button class="nav-section-header"><span class="icon">${icon}</span> ${title} <span class="nav-count">${items.length}</span> <span class="nav-arrow">▼</span></button><ul class="nav-items">`;
+                    for (const item of items) {
+                        const label = item.filename.includes('Weekly') ? `⭐ ${item.date}` : item.date;
+                        const href = `/reports/${item.filename.replace('.md', '.html')}`;
+                        const active = currentPath === href ? ' active' : '';
+                        h += `<li><a class="nav-link${active}" href="${href}">${label}</a></li>`;
+                    }
+                    return h + '</ul></li>';
+                }
+
+                let html = '';
+                if (recent.length) html += section('🕐', '最近日報', recent, true);
+                if (weekly.length) html += section('⭐', '每週精華', weekly, false);
+                for (const mk of Object.keys(older).sort().reverse()) {
+                    const [y, m] = mk.split('-');
+                    html += section('📂', `${y} 年 ${parseInt(m)} 月`, older[mk], false);
+                }
+                navList.innerHTML = html;
+
+                navList.querySelectorAll('.nav-section-header').forEach(btn => {
+                    btn.addEventListener('click', () => btn.closest('.nav-section').classList.toggle('open'));
+                });
+
+                const active = navList.querySelector('.nav-link.active');
+                if (active) active.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            } catch (e) {
+                console.warn('Sidebar load failed:', e);
+            }
+        })();
+    </script>
+</body>
+</html>
