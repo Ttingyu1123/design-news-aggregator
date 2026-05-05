@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 05 May 2026 07:15:27 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 06 May 2026 07:17:04 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第18週 (2026-04-27 ~ 2026-05-03)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</link>
@@ -34,6 +34,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 035 期 (2026-05-06)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-06_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-06_Daily_Report.html</guid>
+      <pubDate>Wed, 06 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 035 期 2026-05-06  焦點設計導讀  1. 為端到端設計流程設計 AI 提示，讓您工作更快（Designed a prompt end-to-end for the design process and it will make you faster） - 分析與影響：這篇文章介紹了一個涵蓋從研究到交付的詳細 AI 提示設計，旨在提升設計流程的效率。它揭示了 AI 在設計工作流程中，不僅能輔助單一任務，更能透過結構化的提示，實現從概念發想、使用者研究到最終交付的全面加速。 - 設計師啟示：對於數位產品設計師而言，這意味著學習如何撰寫精準且全面的 AI 提示詞</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 034 期 (2026-05-05)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-20_Daily_Report.html</guid>
       <pubDate>Mon, 20 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-20 tags: AI設計, 設計團隊, 設計技能, 設計工具, 創意科技   設計脈動日報 - 第 018 期 2026-04-20 親愛的數位產品設計師們，今日的設計脈動日報為您精選了業界最新動態與深度洞察。本期聚焦於 AI 對設計團隊與個人職涯的深遠影響、設計核心技能的重新審視、以及最新設計工具的發佈與創意科技的應用。讓我們一同探索今日的設計世界！  焦點設計導讀 今日設計產業的焦點落在 AI 科技的持續進化及其對設計師工作模式與團隊組織的顛覆。從個人技能的適應到團隊結構的重塑，AI 正在加速推動設計領域的轉型。同時，我們也將探討設計師的核心價值，以</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 016 期 (2026-04-19)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-19_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-19_Daily_Report.html</guid>
-      <pubDate>Sun, 19 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-19 tags: AI設計, 設計策略, 品牌識別, 3D設計, 設計團隊   設計脈動日報 - 第 016 期 2026-04-19 今日，設計領域的脈動持續加速，AI 對設計價值觀的影響，以及團隊建構與專業成長的議題，成為數位產品設計師們關注的焦點。在設計工具與思維模式不斷演進的背景下，我們更需要審視自身的創作本質，並積極探索跨領域的設計可能性。以下是為您精選的本日設計脈動導讀，以及各領域的最新動態。  焦點設計導讀  1. 哦，還有一件事：AI 時代的設計價值 Oh, but there’s one more thing: The value of </description>
     </item>
   </channel>
 </rss>
