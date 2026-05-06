@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 06 May 2026 07:17:04 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2026 07:11:19 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第18週 (2026-04-27 ~ 2026-05-03)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</link>
@@ -34,6 +34,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 036 期 (2026-05-07)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-07_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-07_Daily_Report.html</guid>
+      <pubDate>Thu, 07 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 036 期 2026-05-07  焦點設計導讀  1. AI 不會取代你，但使用 AI 的設計師會：2026 年使用者經驗的新法則（AI Won’t Replace You But Designers Who Use AI Will: The New Rule of UX in 2026） 分析段落：這篇文章深入探討了 AI 時代下，UX 設計師如何透過擁抱 AI 工具來保持競爭力。對於數位產品設計師而言，這不僅是對未來趨勢的預警，更是職涯發展的關鍵指引，強調了學習與應用 AI 技能的重要性，以提升工作效率和創新能力。 - 原文連結：https://medium.muz</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 035 期 (2026-05-06)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-22_Daily_Report.html</guid>
       <pubDate>Wed, 22 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-22 tags: AI設計工具, 設計系統, UIUX設計, 網頁前端, 品牌識別   設計脈動日報 - 第 019 期 2026-04-22   焦點設計導讀 Focus Design Highlights 今日設計領域脈動頻繁，多數聚焦於 AI 於設計工具與流程的深度整合，以及前瞻網頁視覺技術的突破。以下為您精選本日最具影響力與討論價值的 7 條資訊：  1. DESIGN.md：Google 推出適用於 AI 設計語彙的開放格式 DESIGN.md: Google's Open Format for AI Design Tokens - 原文連結：h</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 018 期 (2026-04-20)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-20_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-20_Daily_Report.html</guid>
-      <pubDate>Mon, 20 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-20 tags: AI設計, 設計團隊, 設計技能, 設計工具, 創意科技   設計脈動日報 - 第 018 期 2026-04-20 親愛的數位產品設計師們，今日的設計脈動日報為您精選了業界最新動態與深度洞察。本期聚焦於 AI 對設計團隊與個人職涯的深遠影響、設計核心技能的重新審視、以及最新設計工具的發佈與創意科技的應用。讓我們一同探索今日的設計世界！  焦點設計導讀 今日設計產業的焦點落在 AI 科技的持續進化及其對設計師工作模式與團隊組織的顛覆。從個人技能的適應到團隊結構的重塑，AI 正在加速推動設計領域的轉型。同時，我們也將探討設計師的核心價值，以</description>
     </item>
   </channel>
 </rss>
