@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 07 May 2026 07:11:19 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 08 May 2026 07:16:04 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第18週 (2026-04-27 ~ 2026-05-03)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</link>
@@ -34,6 +34,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 037 期 (2026-05-08)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-08_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-08_Daily_Report.html</guid>
+      <pubDate>Fri, 08 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 037 期 2026-05-08  焦點設計導讀  1. 什麼是 DESIGN.md 以及如何運用它（What is DESIGN.md and How To Use It） 分析段落：DESIGN.md 旨在為 AI 設計生成工具提供一致的輸出規範，解決了 AI 輔助設計中長期存在的「不穩定性」挑戰。對於數位產品設計師而言，掌握這個新興標準有助於在團隊中更有效率地整合 AI，確保設計資產與設計系統保持高度同步，進而提升設計工作流程的效率與品質。 - 原文連結：https://uxplanet.org/what-is-design-md-and-how-to-use-it</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 036 期 (2026-05-07)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-23_Daily_Report.html</guid>
       <pubDate>Thu, 23 Apr 2026 06:00:00 +0800</pubDate>
       <description>date: 2026-04-23 tags: AI設計, 設計系統, Figma, 互動設計, UX設計   設計脈動日報 - 第 020 期 2026-04-23   焦點設計導讀 今日設計脈動聚焦於 AI 如何重新定義設計工具與設計師的角色，以及設計系統在不同層面的應用，從靜態元件庫到動態效果皆有所涉獵。我們也觀察到，設計師的個人品牌與作品呈現方式正從傳統作品集轉向更具「存在感」的線上體驗。  1. Anthropic 推出 AI 原型工具 Claude Design Claude Design: Anthropic Launches AI Prototyping Tool Anthrop</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 019 期 (2026-04-22)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-22_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-22_Daily_Report.html</guid>
-      <pubDate>Wed, 22 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-22 tags: AI設計工具, 設計系統, UIUX設計, 網頁前端, 品牌識別   設計脈動日報 - 第 019 期 2026-04-22   焦點設計導讀 Focus Design Highlights 今日設計領域脈動頻繁，多數聚焦於 AI 於設計工具與流程的深度整合，以及前瞻網頁視覺技術的突破。以下為您精選本日最具影響力與討論價值的 7 條資訊：  1. DESIGN.md：Google 推出適用於 AI 設計語彙的開放格式 DESIGN.md: Google's Open Format for AI Design Tokens - 原文連結：h</description>
     </item>
   </channel>
 </rss>
