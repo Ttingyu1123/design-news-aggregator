@@ -1,0 +1,722 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✏️ 設計脈動日報 - 第 041 期 (2026-05-11)</title>
+    <meta name="description" content="設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計">
+    <meta property="og:title" content="✏️ 設計脈動日報 - 第 041 期 (2026-05-11)">
+    <meta property="og:description" content="設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html">
+    <meta property="og:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="✏️ 設計脈動日報 - 第 041 期 (2026-05-11)">
+    <meta name="twitter:description" content="設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計">
+    <meta name="twitter:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <link rel="canonical" href="https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html">
+    <meta name="theme-color" content="#E0E5EC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="alternate" type="application/rss+xml" title="設計脈動日報 RSS" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F8F7EE;
+            --cream: #F8F7EE;
+            --mint: #E3F3F1;
+            --accent: #9B7EC8;
+            --accent-dark: #7B5EA8;
+            --gold: #C9A96E;
+            --gold-light: #E8D5A8;
+            --text: #1A202C;
+            --text-muted: #4A5568;
+            --text-secondary: #718096;
+            --panel-bg: rgba(255,255,255,0.45);
+            --panel-border: rgba(255,255,255,0.7);
+            --radius: 12px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            background: var(--bg);
+            background-image:
+                radial-gradient(at 0% 0%, var(--mint) 0, transparent 55%),
+                radial-gradient(at 100% 100%, color-mix(in srgb, var(--accent) 15%, transparent) 0, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Layout === */
+        .page-wrapper {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        /* === Sidebar === */
+        .sidebar {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 40px -10px color-mix(in srgb, var(--accent) 25%, transparent);
+            z-index: 100;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+
+        .sidebar-brand {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-brand h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-brand .brand-icon {
+            font-size: 1.2rem;
+        }
+
+        .sidebar-brand a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+        .sidebar-brand a:hover { color: var(--accent); }
+
+        .mobile-close {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .sidebar-search {
+            padding: 12px 16px;
+        }
+        .sidebar-search input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.3);
+            font-size: 0.88rem;
+            font-family: inherit;
+            outline: none;
+            color: var(--text);
+        }
+        .sidebar-search input:focus {
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 16px;
+            list-style: none;
+        }
+
+        .nav-section { margin-bottom: 6px; }
+        .nav-section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+        .nav-section-header:hover { background: rgba(255,255,255,0.35); }
+        .nav-section-header .icon { color: var(--accent); font-size: 0.85rem; }
+        .nav-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.4);
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .nav-arrow {
+            font-size: 0.6rem;
+            transition: transform 0.3s;
+            color: var(--text-secondary);
+        }
+        .nav-section.open .nav-arrow { transform: rotate(180deg); }
+
+        .nav-items {
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s;
+            padding-left: 4px;
+        }
+        .nav-section.open .nav-items {
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 14px;
+            margin: 4px 0;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid transparent;
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.6);
+            color: var(--text);
+            transform: translateX(4px);
+        }
+        .nav-link.active {
+            background: rgba(255,255,255,0.9);
+            border-color: rgba(255,255,255,1);
+            color: var(--text);
+            box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 20%, transparent);
+            font-weight: 600;
+        }
+
+        .sidebar-footer {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+        .sidebar-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* === Main Content === */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px 35px;
+        }
+        .menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            color: var(--text);
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-soft);
+        }
+        .topbar-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .topbar-home {
+            margin-left: auto;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.3);
+            border: 1px solid var(--panel-border);
+            transition: all 0.3s;
+        }
+        .topbar-home:hover { color: var(--accent); background: rgba(255,255,255,0.6); }
+
+        .article-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 20px 20px;
+        }
+
+        /* === Article === */
+        .article-card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), var(--shadow-soft);
+            padding: 48px 56px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #3b4252;
+        }
+
+        /* Article typography — matching website classical style */
+        .article-card h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            border-bottom: 2px solid var(--gold-light);
+            padding-bottom: 12px;
+            margin-bottom: 1.2em;
+            line-height: 1.3;
+        }
+
+        .article-card h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+        }
+
+        .article-card h4 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 1.4em;
+            margin-bottom: 0.5em;
+        }
+
+        .article-card p {
+            margin-bottom: 1.2em;
+        }
+
+        .article-card a {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-decoration-color: var(--gold-light);
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .article-card a:hover {
+            color: var(--accent);
+        }
+
+        .article-card strong {
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .article-card ul, .article-card ol {
+            margin-bottom: 1.5em;
+            padding: 18px 18px 18px 36px;
+            background: rgba(255,255,255,0.4);
+            border-radius: var(--radius);
+        }
+
+        .article-card li {
+            margin-bottom: 1.4em;
+            line-height: 1.9;
+        }
+        .article-card li:last-child {
+            margin-bottom: 0;
+        }
+        .article-card li::marker {
+            color: var(--gold);
+        }
+
+        .article-card blockquote {
+            border-left: 3px solid var(--gold);
+            background: var(--mint);
+            padding: 14px 20px;
+            margin: 1.5em 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .article-card hr {
+            border: none;
+            height: 1px;
+            margin: 2.5em 0;
+            position: relative;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            overflow: visible;
+        }
+        .article-card hr::after {
+            content: '◆ ✦ ◆';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--panel-bg);
+            padding: 0 1.5rem;
+            color: var(--gold);
+            font-size: 0.7rem;
+            letter-spacing: 0.4em;
+        }
+
+        .article-card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+        }
+        .article-card th {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold-light);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .article-card td {
+            padding: 6px 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Prev/Next navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+            padding-top: 1.5em;
+            border-top: 1px solid var(--gold-light);
+            gap: 1em;
+        }
+        .article-nav a {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .article-nav a:hover {
+            background: rgba(255,255,255,0.8);
+            color: var(--accent-dark);
+        }
+        .article-nav .spacer { flex: 1; }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent) 60%, transparent);
+        }
+
+        /* === Mobile === */
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 0; gap: 0; }
+            .sidebar {
+                position: fixed;
+                left: 0; top: 0;
+                transform: translateX(-100%);
+                width: 85%;
+                max-width: 320px;
+                border-radius: 0;
+                background: rgba(248,247,238,0.97);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 20px 0 50px rgba(0,0,0,0.15);
+            }
+            .mobile-close { display: block; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .article-card {
+                border-radius: 0;
+                border: none;
+                padding: 24px 20px;
+                box-shadow: none;
+                background: transparent;
+            }
+            .article-card h1 { font-size: 1.5rem; }
+            .topbar { padding: 12px 16px; background: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        }
+    </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Article", "headline": "✏️ 設計脈動日報 - 第 041 期 (2026-05-11)", "datePublished": "2026-05-11", "description": "設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計", "url": "https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html", "publisher": {"@type": "Organization", "name": "tingyudeco.com", "url": "https://tingyudeco.com"}, "inLanguage": "zh-TW"}
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h2><span class="brand-icon">✏️</span> 設計脈動日報</h2>
+                <button class="mobile-close" id="closeSidebar" aria-label="關閉選單">✕</button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="searchInput" placeholder="🔍 搜尋報告...">
+            </div>
+            <nav>
+                <ul class="sidebar-nav" id="navList"></ul>
+            </nav>
+            <div class="sidebar-footer">
+                MADE BY <a href="https://tingyudeco.com" target="_blank">tingyudeco.com</a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="menu-toggle" id="openSidebar" aria-label="開啟選單">☰</button>
+                <span class="topbar-title">2026-05-11 日報</span>
+                <a href="https://tingyudeco.com/insights" class="topbar-home" title="All Insights">⌂</a>
+            </header>
+            <div class="article-scroll">
+                <article class="article-card">
+                    <h1>✏️ 設計脈動日報 - 第 041 期 (2026-05-11)</h1>
+<h2>焦點設計導讀</h2>
+<h3>1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories）</h3>
+<p>分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計變革及其引發的廣泛討論。對於品牌設計師而言，這不僅是一個品牌視覺更新的案例，更是一個學習如何透過簡潔符號傳達深層意義，並引導公眾對品牌未來發展產生共鳴的絕佳機會。觀察這些猜測，也能洞察品牌與消費者之間如何透過視覺溝通建立連結與想像空間。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/design/logos-icons/teslas-new-logo-sparks-wild-speculation" target="_blank" rel="noopener">https://www.creativebloq.com/design/logos-icons/teslas-new-logo-sparks-wild-speculation</a></li>
+</ul>
+<h3>2. 《最後生還者》的學習如何幫助這位 3D 藝術家完善角色設計（How studying The Last of Us has helped this 3D artist perfect character design）</h3>
+<p>分析段落：這篇文章深入探討了 3D 藝術家如何透過研究知名遊戲《最後生還者》來精進其角色設計技巧。對於視覺及 3D 設計師而言，這提供了寶貴的設計流程與靈感來源，強調了背景故事對於角色深度與真實感的關鍵影響，同時也展示了跨媒體學習對個人技能提升的重要性。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/3d/3d-art/how-studying-the-last-of-us-has-helped-this-3d-artist-perfect-character-design" target="_blank" rel="noopener">https://www.creativebloq.com/3d/3d-art/how-studying-the-last-of-us-has-helped-this-3d-artist-perfect-character-design</a></li>
+</ul>
+<h3>3. 為何人人都在推崇側邊導航欄？（Why is everyone pushing the side nav narrative?）</h3>
+<p>分析段落：這是一篇關於 UI 設計模式中側邊導航與頂部導航之爭的社群討論。對於 UI/UX 設計師而言，理解不同導航模式的優缺點及其對用戶體驗的影響至關重要，尤其是針對資訊密集型介面的空間管理與效率考量，這篇文章能引發設計師對於最佳實踐的思辨。</p>
+<ul>
+<li>原文連結：<a href="https://www.reddit.com/r/UI_Design/comments/1t9f7ba/why_is_everyone_pushing_the_side_nav_narrative/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1t9f7ba/why_is_everyone_pushing_the_side_nav_narrative/</a></li>
+</ul>
+<h3>4. ComfyUI 教學：LTX 2.3 影片推理 LoRA 實現 AI 動態（Comfyui Tutorial: LTX 2.3 Video Reasoning LoRA make AI Motion Actually）</h3>
+<p>分析段落：此教學文揭示了如何使用 ComfyUI 中的 LTX 2.3 影片推理 LoRA 模型來實現 AI 生成的動態效果。對於動態設計師和對 AI 創意應用感興趣的設計師而言，這代表著 AI 在動態圖像生成領域的最新進展，開啟了全新的動畫創作可能性與工作流程優化空間。</p>
+<ul>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1t96ixr/comfyui_tutorial_ltx_23_video_reasoning_lora_make/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1t96ixr/comfyui_tutorial_ltx_23_video_reasoning_lora_make/</a></li>
+</ul>
+<h3>5. 人們如何使用相同背景製作不同姿勢的相同角色？（How are people making the SAME character in different poses with the SAME background?）</h3>
+<p>分析段落：這篇文章探討了 AI 圖像生成中保持角色和背景一致性的進階技巧，特別提到了 Z-Image、SDXL IP Adapter 和 WAS + CR Image Grid 等工具。對於需要利用 AI 進行系列視覺創作的設計師來說，這提供了實用的方法來確保生成內容的連貫性與品牌一致性，是 AI 輔助設計流程中的關鍵議題。</p>
+<ul>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1t8umtk/how_are_people_making_the_same_character_in/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1t8umtk/how_are_people_making_the_same_character_in/</a></li>
+</ul>
+<h3>6. 我開發了一個免費工具，只需一行指令即可在任何雲端 GPU 上安裝 ComfyUI，並在會話之間保存所有設置。開源！（I built a free tool that installs ComfyUI on any cloud GPU in one command and saves your whole setup between sessions. Open source.）</h3>
+<p>分析段落：這個工具的出現，大幅簡化了在雲端環境中設置和管理 ComfyUI 的複雜性，解決了 AI 藝術創作者常見的環境配置痛點。對於使用生成式 AI 工具的設計師來說，這意味著更高效、更便捷的工作流程，能讓他們更專注於創意本身，而非繁瑣的技術設定。</p>
+<ul>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1t9gls9/i_built_a_free_tool_that_installs_comfyui_on_any/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1t9gls9/i_built_a_free_tool_that_installs_comfyui_on_any/</a></li>
+</ul>
+<h3>7. 這令人震驚的錯視藝術感覺就像純粹的巫術（This astounding optical illusion art feels like pure witchcraft）</h3>
+<p>分析段落：這篇介紹錯視藝術的文章展示了視覺創意如何超越現實，創造出令人驚嘆的效果。對於所有設計師而言，這提供了極佳的靈感來源，鼓勵我們跳脫框架思考視覺呈現的可能性，探索如何透過巧妙的構圖和色彩運用，在二維或三維空間中創造出超越感官的體驗。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/creative-inspiration/optical-illusions/this-astounding-optical-illusion-art-feels-like-pure-witchcraft" target="_blank" rel="noopener">https://www.creativebloq.com/creative-inspiration/optical-illusions/this-astounding-optical-illusion-art-feels-like-pure-witchcraft</a></li>
+</ul>
+<h2>精細分類</h2>
+<h4>AI-Powered Design Tools (AI 設計工具)</h4>
+<ul>
+<li><strong>ComfyUI 教學：HiDream-01-圖像開發 + 基礎版 | 低顯存工作流程（HiDream-01-Image Dev + Base | LOW VRAM Workflow）</strong></li>
+<li><strong>內容敘述</strong>：這篇文章介紹了針對 bf16 HiDream-01 模型設計的節點和工作流程，特別針對低顯存環境進行優化。對於資源有限但仍希望利用 AI 進行圖像生成創作的設計師來說，這提供了實際可行的解決方案，讓 AI 藝術創作不再是高階硬體的專利。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/comfyui/comments/1t9ci30/hidream01image_dev_base_low_vram_workflow/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1t9ci30/hidream01image_dev_base_low_vram_workflow/</a></li>
+<li><strong>ControlNet Tile 適用於 Anima 嗎？（ControlNet Tile for Anima?）</strong></li>
+<li><strong>內容敘述</strong>：此討論探究了 ControlNet Tile 模型是否能應用於 Anima 或 Qwen 圖像的升級工作流程中。對於專注於 AI 圖像品質提升與細節控制的設計師，這提供了關於不同 ControlNet 模型及其潛在應用場景的深入洞察，有助於他們選擇最適合的 AI 工具來優化視覺輸出。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/comfyui/comments/1t9g7ce/controlnet_tile_for_anima/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1t9g7ce/controlnet_tile_for_anima/</a></li>
+<li><strong>現在這是如何運作的？（How does this even work right now?）</strong></li>
+<li><strong>內容敘述</strong>：這篇文章探討了目前 AI 輔助設計的現狀，以及提示詞工程在生成設計稿方面的速度與品質。對於數位產品設計師而言，這是一個思考如何將 AI 作為設計助手，而非單純的替代工具的討論，有助於理解 AI 在設計流程中的角色定位與潛力。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/web_design/comments/1t9cdoo/how_does_this_even_work_right_now/" target="_blank" rel="noopener">https://www.reddit.com/r/web_design/comments/1t9cdoo/how_does_this_even_work_right_now/</a></li>
+</ul>
+<h4>Generative Art &amp; Visual AI (生成式藝術與視覺 AI)</h4>
+<ul>
+<li><strong>七〇年代膠囊旅館廣告（Seventies capsule hotel ad）</strong></li>
+<li><strong>內容敘述</strong>：這是一幅透過 Midjourney AI 生成的七〇年代膠囊旅館廣告圖像。對於尋求風格靈感或嘗試利用 AI 進行復古風格設計的藝術家和設計師來說，它展示了 AI 在創造特定時代氛圍和視覺美學方面的強大能力，提供了一個有趣的創意參考。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/midjourney/comments/1t9bfqm/seventies_capsule_hotel_ad/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1t9bfqm/seventies_capsule_hotel_ad/</a></li>
+<li><strong>永恆守望（Vigil Eternal）</strong></li>
+<li><strong>內容敘述</strong>：這是一幅由 Midjourney AI 創造的視覺藝術作品，展現了 AI 在概念藝術和奇幻主題上的生成能力。對於插畫師或概念藝術家而言，這類作品提供了豐富的視覺靈感，能激發對於構圖、色彩運用及氛圍營造的新想法，並探索 AI 在藝術創作中的協作潛力。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/midjourney/comments/1t9iq2k/vigil_eternal/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1t9iq2k/vigil_eternal/</a></li>
+<li><strong>星夜貓（Starry Night Cat）</strong></li>
+<li><strong>內容敘述</strong>：這張由 Midjourney AI 創作的圖像將梵谷的星夜風格與貓咪結合，呈現出獨特的視覺融合。對於探索風格轉換或藝術致敬的設計師來說，這展示了 AI 如何以創新的方式融合不同藝術元素，為品牌視覺或內容創作帶來新穎的表現形式。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/midjourney/comments/1t95fge/starry_night_cat/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1t95fge/starry_night_cat/</a></li>
+<li><strong>從銀河視角看（From the galactic perspective）</strong></li>
+<li><strong>內容敘述</strong>：這幅 Midjourney AI 生成的圖像呈現了宏大的銀河視角，充滿科幻與宇宙的想像。對於需要創作廣闊場景、科幻背景或抽象概念的視覺設計師來說，這提供了豐富的視覺參考，展示了 AI 在複雜細節和氛圍渲染方面的卓越能力。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/midjourney/comments/1t9ck91/from_the_galactic_perspective/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1t9ck91/from_the_galactic_perspective/</a></li>
+<li><strong>黑暗奇幻領域（Dark fantasy realms）</strong></li>
+<li><strong>內容敘述</strong>：這是一組 Midjourney AI 創作的黑暗奇幻風格圖像，充滿神秘與磅礴的氛圍。對於遊戲概念藝術家、插畫師或任何尋求創造沉浸式視覺體驗的設計師而言，這類作品是絕佳的靈感來源，展示了 AI 在建構複雜世界觀和營造特定情緒方面的潛力。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/midjourney/comments/1t90la1/dark_fantasy_realms/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1t90la1/dark_fantasy_realms/</a></li>
+</ul>
+<h4>UI/UX Research &amp; Methods (使用者研究與設計方法論)</h4>
+<ul>
+<li><strong>需要對我開發一段時間的應用程式提供回饋（Need feedback for an app I've been developing for a while）</strong></li>
+<li><strong>內容敘述</strong>：這是一則在設計社群中尋求應用程式設計回饋的帖子，突顯了設計師在開發過程中主動尋求使用者或同行意見的重要性。對於 UI/UX 設計師而言，這種開放式的回饋循環是迭代優化產品、提升用戶體驗的關鍵環節，能從多方視角發現潛在問題。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/UI_Design/comments/1t9ex24/need_feedback_for_an_app_ive_been_developing_for/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1t9ex24/need_feedback_for_an_app_ive_been_developing_for/</a></li>
+<li><strong>網站設計問題（Website design question）</strong></li>
+<li><strong>內容敘述</strong>：這篇文章展示了一個網站設計並提出具體問題，尋求關於網站載入動畫的設計回饋。對於網頁設計師來說，這是一個實際案例，學習如何判斷視覺動效的適切性，平衡美觀與用戶體驗，並透過社群討論來完善設計決策。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/UI_Design/comments/1t99yid/website_design_question/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1t99yid/website_design_question/</a></li>
+<li><strong>哪個 Steam 頁面對我的獨立恐怖遊戲看起來更好？（Which Steam page looks better for my indie horror game?）</strong></li>
+<li><strong>內容敘述</strong>：這是一個關於遊戲商店頁面設計選擇的討論，尋求社群對於兩個不同版本的視覺效果和吸引力的意見。對於 UI/UX 設計師，特別是遊戲介面或行銷頁面設計師而言，這強調了 A/B 測試和使用者偏好研究在產品展示中的關鍵作用，以確保設計能有效傳達產品價值。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/UI_Design/comments/1t92vjm/which_steam_page_looks_better_for_my_indie_horror/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1t92vjm/which_steam_page_looks_better_for_my_indie_horror/</a></li>
+</ul>
+<h4>Creative Technology (創意科技應用)</h4>
+<ul>
+<li><strong>使用 Blender 建立一個舒適的奇幻小屋，附有新手友善教學（Build a cosy fantasy house in Blender with this beginner-friendly tutorial）</strong></li>
+<li><strong>內容敘述</strong>：這份教學提供了使用 Blender 建立風格化奇幻小屋的逐步指南。對於 3D 藝術家和尋求學習新工具的設計師來說，這是一個極佳的資源，不僅能掌握 Blender 的基礎操作，更能從中汲取概念設計和場景建構的靈感，拓寬數位藝術的實踐範圍。</li>
+<li><strong>原文連結</strong>：<a href="https://www.creativebloq.com/3d/build-a-cosy-fantasy-house-in-blender-with-this-beginner-friendly-tutorial/" target="_blank" rel="noopener">https://www.creativebloq.com/3d/build-a-cosy-fantasy-house-in-blender-with-this-beginner-friendly-tutorial/</a></li>
+</ul>
+<h4>Design Inspiration &amp; Community (設計靈感與社群)</h4>
+<ul>
+<li><strong>我一直在製作一大堆實時科幻 UI，覺得你們也會喜歡！（I've been working on making a whole bunch of live sci-fi UIs, thought some of you would also enjoy!）</strong></li>
+<li><strong>內容敘述</strong>：這是一個展示動態科幻使用者介面設計作品的帖子，為廣大設計師提供了獨特的視覺靈感。對於互動設計師和概念藝術家而言，這些實時 UI 展示了未來感和功能性的結合，激發了在科幻場景中創造沉浸式視覺體驗的可能性。</li>
+<li><strong>原文連結</strong>：<a href="https://www.reddit.com/r/UI_Design/comments/1t994nv/ive_been_working_on_making_a_whole_" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1t994nv/ive_been_working_on_making_a_whole_</a> bunch_of_live/</li>
+</ul>
+<hr />
+<p><strong>English Daily Highlights</strong></p>
+<p>Today's design pulse reveals a dynamic landscape where AI continues to push creative boundaries, branding remains a critical communication tool, and core UI/UX principles are constantly debated and refined.</p>
+<p>Tesla's new logo design has garnered significant attention, highlighting the power of minimalist branding to spark public discussion and convey deeper corporate aspirations. For designers, it serves as a powerful case study in the subtle art of brand identity and market perception. Simultaneously, a deep dive into how a 3D artist leveraged insights from "The Last of Us" to master character design emphasizes the enduring value of cross-media inspiration and narrative-driven visual development, urging designers to look beyond their immediate field for growth.</p>
+<p>In the realm of UI/UX, a community discussion on the pervasive trend of side navigation versus top navigation underscores an important ongoing debate for product designers. It forces a critical evaluation of how different navigation patterns impact user experience, especially concerning screen real estate and information hierarchy in data-intensive applications. This reflects a healthy design community actively seeking to define best practices.</p>
+<p>The AI design space continues its rapid evolution with practical tutorials and tools. A ComfyUI tutorial showcasing the LTX 2.3 Video Reasoning LoRA for AI-driven motion design signals exciting advancements for motion graphic designers, opening new avenues for animation creation. Furthermore, a discussion on achieving character and background consistency in AI image generation addresses a crucial challenge for creatives, offering specific techniques like Z-Image and SDXL IP Adapter to maintain visual continuity in generative series. The development of an open-source tool to simplify ComfyUI installation and setup on cloud GPUs is a game-changer, dramatically lowering the barrier to entry for AI artists and streamlining their workflow, allowing more focus on creativity rather than technical hurdles. Lastly, a feature on astounding optical illusion art serves as a vibrant source of inspiration, challenging designers to think innovatively about visual perception and the creation of immersive, mind-bending experiences through clever composition and color manipulation.</p>
+<p>These highlights collectively paint a picture of a design industry embracing technological innovation while grounding itself in fundamental principles of user experience and visual communication. The integration of AI tools, coupled with a persistent focus on core design methodologies and community-driven insights, defines the current "design pulse."</p>
+                    <nav class="article-nav">
+                        <a href="/reports/2026-05-10_Daily_Report.html">← 2026-05-10</a>
+                        <span class="spacer"></span>
+                        <a href="/reports/2026-W15_Weekly_Digest.html">2026-W15 →</a>
+                    </nav>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Sidebar toggle (mobile)
+        document.getElementById('openSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.add('open');
+        });
+        document.getElementById('closeSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.remove('open');
+        });
+
+        // Search (filters dynamically rendered links)
+        document.getElementById('searchInput')?.addEventListener('input', (e) => {
+            const q = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.style.display = (!q || link.textContent.toLowerCase().includes(q)) ? '' : 'none';
+            });
+        });
+
+        // Dynamic sidebar from index.json
+        (async function() {
+            const navList = document.getElementById('navList');
+            try {
+                const res = await fetch('/index.json');
+                const reports = await res.json();
+                const now = new Date();
+                const sevenDaysAgo = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+                const currentPath = location.pathname;
+
+                const recent = [], weekly = [], older = {};
+                for (const r of reports) {
+                    if (r.filename.includes('Weekly')) {
+                        weekly.push(r);
+                    } else if (r.date >= sevenDaysAgo) {
+                        recent.push(r);
+                    } else {
+                        const month = r.date.slice(0, 7);
+                        (older[month] = older[month] || []).push(r);
+                    }
+                }
+
+                function section(icon, title, items, isOpen) {
+                    const cls = isOpen ? ' open' : '';
+                    let h = `<li class="nav-section${cls}"><button class="nav-section-header"><span class="icon">${icon}</span> ${title} <span class="nav-count">${items.length}</span> <span class="nav-arrow">▼</span></button><ul class="nav-items">`;
+                    for (const item of items) {
+                        const label = item.filename.includes('Weekly') ? `⭐ ${item.date}` : item.date;
+                        const href = `/reports/${item.filename.replace('.md', '.html')}`;
+                        const active = currentPath === href ? ' active' : '';
+                        h += `<li><a class="nav-link${active}" href="${href}">${label}</a></li>`;
+                    }
+                    return h + '</ul></li>';
+                }
+
+                let html = '';
+                if (recent.length) html += section('🕐', '最近日報', recent, true);
+                if (weekly.length) html += section('⭐', '每週精華', weekly, false);
+                for (const mk of Object.keys(older).sort().reverse()) {
+                    const [y, m] = mk.split('-');
+                    html += section('📂', `${y} 年 ${parseInt(m)} 月`, older[mk], false);
+                }
+                navList.innerHTML = html;
+
+                navList.querySelectorAll('.nav-section-header').forEach(btn => {
+                    btn.addEventListener('click', () => btn.closest('.nav-section').classList.toggle('open'));
+                });
+
+                const active = navList.querySelector('.nav-link.active');
+                if (active) active.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            } catch (e) {
+                console.warn('Sidebar load failed:', e);
+            }
+        })();
+    </script>
+</body>
+</html>

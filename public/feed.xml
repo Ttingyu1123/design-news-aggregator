@@ -6,7 +6,14 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 10 May 2026 07:10:07 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 11 May 2026 07:17:33 +0800</lastBuildDate>
+    <item>
+      <title>⭐ 本週設計精華回顧 - 2026年第19週 (2026-05-04 ~ 2026-05-10)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-W19_Weekly_Digest.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-W19_Weekly_Digest.html</guid>
+      <pubDate>Mon, 11 May 2026 06:00:00 +0800</pubDate>
+      <description>⭐ 本週設計精華回顧 - 2026年第19週 2026-05-04 ~ 2026-05-10 本週的設計脈動清晰地揭示了 AI 技術對設計領域的顛覆性影響，從根本性的設計思維轉變、工作流程的革新，到對 AI 生成內容品質的批判性反思。同時，使用者經驗（UX）作為企業策略性基礎的地位日益鞏固，網頁設計在視覺與互動上也持續進化，而創意工具的普及化則讓更多設計師得以探索跨媒體的表達。  本週最重要的設計大事 Most Important Design Highlights  1. AI 整合：從附加功能到核心策略的典範轉移 本週多篇文章強調，在產品設計中整合 AI，不應僅視為附加功能，而是必須從底層</description>
+    </item>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第18週 (2026-04-27 ~ 2026-05-03)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W18_Weekly_Digest.html</link>
@@ -34,6 +41,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 041 期 (2026-05-11)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html</guid>
+      <pubDate>Mon, 11 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計變革及其引發的廣泛討論。對於品牌設計師而言，這不僅是一個品牌視覺更新的案例，更是一個學習如何透過簡潔符號傳達深層意義，並引導公眾對品牌未來發展產生共鳴的絕佳機會。觀察這些猜測，也能洞察品牌與消費者之間如何透過視覺溝通建立連結與想像空間。 - 原文連結：https://www.creativ</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 039 期 (2026-05-10)</title>
@@ -132,20 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-04-27_Daily_Report.html</guid>
       <pubDate>Mon, 27 Apr 2026 06:00:00 +0800</pubDate>
       <description>yaml date: 2026-04-27 tags: AI輔助設計, 產品設計, 品牌識別, 設計系統, UX方法論   設計脈動日報 - 第 025 期 2026-04-27 數位產品設計師們，早安！今日的設計脈動日報為您精選最新的設計趨勢、工具洞察與產業分析。從 AI 輔助產品開發的新模式，到品牌策略與使用者體驗的深度思考，希望能為您的設計工作帶來靈感與啟發。  焦點設計導讀 今日精選 7 則最具影響力與討論價值的設計資訊，提供專業分析與見解：  1. 揭穿「心態編程」的迷思 Vibe Coding Myths Debunked 一篇深入探討「心態編程」（Vibe Coding）的文章，</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 023 期 (2026-04-26)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-26_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-26_Daily_Report.html</guid>
-      <pubDate>Sun, 26 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-26 tags: 品牌識別, 標誌設計, 廣告設計, 設計靈感, 視覺溝通   設計脈動日報 - 第 023 期 2026-04-26  焦點設計導讀  這家慈善機構的新標誌巧妙運用負空間 This charity's new logo uses negative space beautifully 這篇報導深入分析了慈善機構 Working Animals International 如何透過巧妙運用負空間來重新塑造其品牌識別。新的標誌設計不僅視覺上引人注目，更將機構的核心理念——協助工作動物——以簡潔而富有層次的方式呈現，提升了品牌敘事的深度與影響力。</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 022 期 (2026-04-25)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-04-25_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-04-25_Daily_Report.html</guid>
-      <pubDate>Sat, 25 Apr 2026 06:00:00 +0800</pubDate>
-      <description>yaml date: 2026-04-25 tags: AI設計, UI/UX研究, 網頁動效, 品牌識別, 字體排印   設計脈動日報 - 第 022 期 2026-04-25  焦點設計導讀  GPT 5.5 與 Opus 4.7：哪個人工智慧模型最適合產品設計？GPT 5.5 vs Opus 4.7: Which AI Model Is Best for Product Design? - 原文連結：https://uxplanet.org/gpt-5-5-vs-opus-4-7-which-ai-model-is-best-for-product-design-23752483196a</description>
     </item>
   </channel>
 </rss>
