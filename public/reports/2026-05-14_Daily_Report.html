@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✏️ 設計脈動日報 - 第 044 期 (2026-05-14)</title>
+    <meta name="description" content="設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以">
+    <meta property="og:title" content="✏️ 設計脈動日報 - 第 044 期 (2026-05-14)">
+    <meta property="og:description" content="設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html">
+    <meta property="og:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="✏️ 設計脈動日報 - 第 044 期 (2026-05-14)">
+    <meta name="twitter:description" content="設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以">
+    <meta name="twitter:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <link rel="canonical" href="https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html">
+    <meta name="theme-color" content="#E0E5EC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="alternate" type="application/rss+xml" title="設計脈動日報 RSS" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F8F7EE;
+            --cream: #F8F7EE;
+            --mint: #E3F3F1;
+            --accent: #9B7EC8;
+            --accent-dark: #7B5EA8;
+            --gold: #C9A96E;
+            --gold-light: #E8D5A8;
+            --text: #1A202C;
+            --text-muted: #4A5568;
+            --text-secondary: #718096;
+            --panel-bg: rgba(255,255,255,0.45);
+            --panel-border: rgba(255,255,255,0.7);
+            --radius: 12px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            background: var(--bg);
+            background-image:
+                radial-gradient(at 0% 0%, var(--mint) 0, transparent 55%),
+                radial-gradient(at 100% 100%, color-mix(in srgb, var(--accent) 15%, transparent) 0, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Layout === */
+        .page-wrapper {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        /* === Sidebar === */
+        .sidebar {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 40px -10px color-mix(in srgb, var(--accent) 25%, transparent);
+            z-index: 100;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+
+        .sidebar-brand {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-brand h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-brand .brand-icon {
+            font-size: 1.2rem;
+        }
+
+        .sidebar-brand a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+        .sidebar-brand a:hover { color: var(--accent); }
+
+        .mobile-close {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .sidebar-search {
+            padding: 12px 16px;
+        }
+        .sidebar-search input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.3);
+            font-size: 0.88rem;
+            font-family: inherit;
+            outline: none;
+            color: var(--text);
+        }
+        .sidebar-search input:focus {
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 16px;
+            list-style: none;
+        }
+
+        .nav-section { margin-bottom: 6px; }
+        .nav-section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+        .nav-section-header:hover { background: rgba(255,255,255,0.35); }
+        .nav-section-header .icon { color: var(--accent); font-size: 0.85rem; }
+        .nav-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.4);
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .nav-arrow {
+            font-size: 0.6rem;
+            transition: transform 0.3s;
+            color: var(--text-secondary);
+        }
+        .nav-section.open .nav-arrow { transform: rotate(180deg); }
+
+        .nav-items {
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s;
+            padding-left: 4px;
+        }
+        .nav-section.open .nav-items {
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 14px;
+            margin: 4px 0;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid transparent;
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.6);
+            color: var(--text);
+            transform: translateX(4px);
+        }
+        .nav-link.active {
+            background: rgba(255,255,255,0.9);
+            border-color: rgba(255,255,255,1);
+            color: var(--text);
+            box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 20%, transparent);
+            font-weight: 600;
+        }
+
+        .sidebar-footer {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+        .sidebar-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* === Main Content === */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px 35px;
+        }
+        .menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            color: var(--text);
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-soft);
+        }
+        .topbar-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .topbar-home {
+            margin-left: auto;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.3);
+            border: 1px solid var(--panel-border);
+            transition: all 0.3s;
+        }
+        .topbar-home:hover { color: var(--accent); background: rgba(255,255,255,0.6); }
+
+        .article-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 20px 20px;
+        }
+
+        /* === Article === */
+        .article-card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), var(--shadow-soft);
+            padding: 48px 56px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #3b4252;
+        }
+
+        /* Article typography — matching website classical style */
+        .article-card h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            border-bottom: 2px solid var(--gold-light);
+            padding-bottom: 12px;
+            margin-bottom: 1.2em;
+            line-height: 1.3;
+        }
+
+        .article-card h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+        }
+
+        .article-card h4 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 1.4em;
+            margin-bottom: 0.5em;
+        }
+
+        .article-card p {
+            margin-bottom: 1.2em;
+        }
+
+        .article-card a {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-decoration-color: var(--gold-light);
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .article-card a:hover {
+            color: var(--accent);
+        }
+
+        .article-card strong {
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .article-card ul, .article-card ol {
+            margin-bottom: 1.5em;
+            padding: 18px 18px 18px 36px;
+            background: rgba(255,255,255,0.4);
+            border-radius: var(--radius);
+        }
+
+        .article-card li {
+            margin-bottom: 1.4em;
+            line-height: 1.9;
+        }
+        .article-card li:last-child {
+            margin-bottom: 0;
+        }
+        .article-card li::marker {
+            color: var(--gold);
+        }
+
+        .article-card blockquote {
+            border-left: 3px solid var(--gold);
+            background: var(--mint);
+            padding: 14px 20px;
+            margin: 1.5em 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .article-card hr {
+            border: none;
+            height: 1px;
+            margin: 2.5em 0;
+            position: relative;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            overflow: visible;
+        }
+        .article-card hr::after {
+            content: '◆ ✦ ◆';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--panel-bg);
+            padding: 0 1.5rem;
+            color: var(--gold);
+            font-size: 0.7rem;
+            letter-spacing: 0.4em;
+        }
+
+        .article-card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+        }
+        .article-card th {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold-light);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .article-card td {
+            padding: 6px 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Prev/Next navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+            padding-top: 1.5em;
+            border-top: 1px solid var(--gold-light);
+            gap: 1em;
+        }
+        .article-nav a {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .article-nav a:hover {
+            background: rgba(255,255,255,0.8);
+            color: var(--accent-dark);
+        }
+        .article-nav .spacer { flex: 1; }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent) 60%, transparent);
+        }
+
+        /* === Mobile === */
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 0; gap: 0; }
+            .sidebar {
+                position: fixed;
+                left: 0; top: 0;
+                transform: translateX(-100%);
+                width: 85%;
+                max-width: 320px;
+                border-radius: 0;
+                background: rgba(248,247,238,0.97);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 20px 0 50px rgba(0,0,0,0.15);
+            }
+            .mobile-close { display: block; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .article-card {
+                border-radius: 0;
+                border: none;
+                padding: 24px 20px;
+                box-shadow: none;
+                background: transparent;
+            }
+            .article-card h1 { font-size: 1.5rem; }
+            .topbar { padding: 12px 16px; background: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        }
+    </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Article", "headline": "✏️ 設計脈動日報 - 第 044 期 (2026-05-14)", "datePublished": "2026-05-14", "description": "設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以", "url": "https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html", "publisher": {"@type": "Organization", "name": "tingyudeco.com", "url": "https://tingyudeco.com"}, "inLanguage": "zh-TW"}
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h2><span class="brand-icon">✏️</span> 設計脈動日報</h2>
+                <button class="mobile-close" id="closeSidebar" aria-label="關閉選單">✕</button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="searchInput" placeholder="🔍 搜尋報告...">
+            </div>
+            <nav>
+                <ul class="sidebar-nav" id="navList"></ul>
+            </nav>
+            <div class="sidebar-footer">
+                MADE BY <a href="https://tingyudeco.com" target="_blank">tingyudeco.com</a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="menu-toggle" id="openSidebar" aria-label="開啟選單">☰</button>
+                <span class="topbar-title">2026-05-14 日報</span>
+                <a href="https://tingyudeco.com/insights" class="topbar-home" title="All Insights">⌂</a>
+            </header>
+            <div class="article-scroll">
+                <article class="article-card">
+                    <h1>✏️ 設計脈動日報 - 第 044 期 (2026-05-14)</h1>
+<h2>焦點設計導讀</h2>
+<h3>1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency (Part 2)）</h3>
+<p>分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以建立使用者信任。本文深入探討如何透過揭示 AI 系統的處理過程、狀態及決策機制來提升透明度，這對於設計師在構建複雜 AI 產品時，創造可靠且負責任的用戶體驗至關重要。</p>
+<ul>
+<li>原文連結：<a href="https://smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/" target="_blank" rel="noopener">https://smashingmagazine.com/2026/05/practical-interface-patterns-ai-transparency/</a></li>
+</ul>
+<h3>2. 利用 Claude Code 進行快速原型設計（Rapid prototyping with Claude Code）</h3>
+<p>分析段落：這篇文章為設計師提供了十種利用 Claude Code 進行快速原型設計的實用技巧。在 AI 輔助設計工具快速發展的今天，掌握這類工具能顯著加速設計流程，讓設計師能更專注於概念驗證與使用者體驗的迭代，有效將想法轉化為可互動的原型。</p>
+<ul>
+<li>原文連結：<a href="https://uxplanet.org/rapid-prototyping-with-claude-code-a3da8f2338c1?source=rss----819cc2aaeee0---4" target="_blank" rel="noopener">https://uxplanet.org/rapid-prototyping-with-claude-code-a3da8f2338c1?source=rss----819cc2aaeee0---4</a></li>
+</ul>
+<h3>3. 探索 HTML-in-Canvas 提案（Exploring the HTML-in-Canvas Proposal）</h3>
+<p>分析段落：這篇文章深入探討了 HTML-in-Canvas 這項前瞻性的技術提案，展示其運作方式及潛在應用。對於網頁設計師和前端開發者而言，理解此提案可能帶來的影響至關重要，它有望為網頁上的複雜視覺和互動體驗開闢全新可能性，突破傳統網頁佈局的限制。</p>
+<ul>
+<li>原文連結：<a href="https://tympanus.net/codrops/2026/05/13/exploring-the-html-in-canvas-proposal/" target="_blank" rel="noopener">https://tympanus.net/codrops/2026/05/13/exploring-the-html-in-canvas-proposal/</a></li>
+</ul>
+<h3>4. ComfyUI v0.21.1 版本更新（ComfyUI v0.21.1）</h3>
+<p>分析段落：ComfyUI 作為視覺化生成式 AI 工作流程的強大工具，其最新版本帶來了多項新節點，特別是針對影像生成和編輯功能。這對於探索 AI 藝術創作和視覺內容生成的設計師而言是重要的更新，將提供更豐富、更精細的控制選項，助於實驗和實現複雜的生成設計概念。</p>
+<ul>
+<li>原文連結：<a href="https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.21.1" target="_blank" rel="noopener">https://github.com/Comfy-Org/ComfyUI/releases/tag/v0.21.1</a></li>
+</ul>
+<h3>5. Guardbase：擺脫恐懼的 AI 安全品牌識別設計（Guardbase: AI Security Brand Identity Without the Fear）</h3>
+<p>分析段落：PixelOrb Studio 為 AI 安全公司 Guardbase 設計的品牌識別，刻意避開了傳統上以恐懼為基礎的視覺語言，轉而擁抱信任與精確。這為品牌設計師提供了寶貴的啟示，如何在快速發展的 AI 產業中，透過色彩、字體和圖形，創造出既專業又具人性溫度的品牌形象。</p>
+<ul>
+<li>原文連結：<a href="https://abduzeedo.com/guardbase-ai-security-brand-identity-without-fear/" target="_blank" rel="noopener">https://abduzeedo.com/guardbase-ai-security-brand-identity-without-fear/</a></li>
+</ul>
+<h3>6. CSS 3D 旋轉變換函數應用（CSS 3D Rotation Transform Functions）</h3>
+<p>分析段落：CSS-Tricks 系列文章詳細介紹了 <code>rotateX()</code>、<code>rotateY()</code>、<code>rotateZ()</code> 和 <code>rotate()</code> 等 CSS 變換函數。這些函數是實作網頁互動與動態效果的基礎，能讓設計師和前端開發者在 2D 及 3D 空間中精確控制元素的旋轉，創造出豐富的視覺層次與沉浸式體驗，對於提升網頁設計的質感與動態感至關重要。</p>
+<ul>
+<li>原文連結：<ul>
+<li>rotateX(): <a href="https://css-tricks.com/almanac/functions/r/rotatex/" target="_blank" rel="noopener">https://css-tricks.com/almanac/functions/r/rotatex/</a></li>
+<li>rotateY(): <a href="https://css-tricks.com/almanac/functions/r/rotatey/" target="_blank" rel="noopener">https://css-tricks.com/almanac/functions/r/rotatey/</a></li>
+<li>rotateZ(): <a href="https://css-tricks.com/almanac/functions/r/rotatez/" target="_blank" rel="noopener">https://css-tricks.com/almanac/functions/r/rotatez/</a></li>
+<li>rotate(): <a href="https://css-tricks.com/almanac/functions/r/rotate/" target="_blank" rel="noopener">https://css-tricks.com/almanac/functions/r/rotate/</a></li>
+</ul>
+</li>
+</ul>
+<h2>精細分類</h2>
+<h4>【設計工具與 UI/UX (Design Tools &amp; UI/UX)】</h4>
+<ul>
+<li><strong>AI-Powered Design Tools (AI 設計工具)</strong><ul>
+<li><strong>中文標題</strong>：Claude Code 的提示工程最佳實踐（Prompting Best Practices for Claude Code）<ul>
+<li><strong>設計理念與實務價值</strong>：這篇文章提供了一份全面的指南，探討了針對 Claude 最新模型進行提示工程的最佳實踐。對於希望有效利用 AI 工具提升設計效率的 UI/UX 設計師來說，學習如何精準撰寫提示詞，能夠讓 AI 更好地理解設計意圖，從而生成更符合需求的原型、介面元素或程式碼片段，大幅加速設計流程。</li>
+<li><strong>原文連結</strong>：<a href="https://uxplanet.org/prompting-best-practices-for-claude-code-62a914e0fca9?source=rss----819cc2aaeee0---4" target="_blank" rel="noopener">https://uxplanet.org/prompting-best-practices-for-claude-code-62a914e0fca9?source=rss----819cc2aaeee0---4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>【網頁設計與前端 (Web Design &amp; Frontend)】</h4>
+<ul>
+<li><strong>CSS &amp; Frontend Techniques (CSS 與前端技術)</strong><ul>
+<li><strong>中文標題</strong>：如何在 Photoshop 中繪製高聳的機甲（How to paint a towering mech in Photoshop）<ul>
+<li><strong>設計理念與實務價值</strong>：JC Jongwon Park 在這篇文章中揭示了他個人在 Photoshop 中創作機械角色概念藝術的工作流程。對於尋求提升數位繪畫技能的網頁設計師或平面設計師而言，這提供了寶貴的視覺設計技巧和軟體應用實踐，雖然內容偏向概念藝術，但其中的圖層管理、筆刷應用和光影處理等技法，都能啟發設計師在網頁視覺元素或品牌形象創作上的應用。</li>
+<li><strong>原文連結</strong>：<a href="https://www.creativebloq.com/art/digital-art/how-to-create-a-towering-mech-in-photoshop" target="_blank" rel="noopener">https://www.creativebloq.com/art/digital-art/how-to-create-a-towering-mech-in-photoshop</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>【設計靈感與社群 (Design Inspiration &amp; Community)】</h4>
+<ul>
+<li><strong>Award-Winning Works (得獎作品與案例)</strong><ul>
+<li><strong>中文標題</strong>：Sua Balac 的 2024–25 年編輯插畫和商業作品（Sua Balac's 2024–25 Editorial Illustration and Commercial Work）<ul>
+<li><strong>設計理念與實務價值</strong>：斯圖加特插畫師 Sua Balac 以其 2024-25 年的編輯插畫、商業活動和個人作品集榮獲 Behance 最佳作品認可。這份包含約 20 件作品的精選集，不僅展示了插畫在商業和出版領域的廣泛應用，也為設計師提供了豐富的視覺風格與敘事手法靈感，激勵設計師在創作中突破界限，追求藝術與商業價值的結合。</li>
+<li><strong>原文連結</strong>：<a href="https://abduzeedo.com/sua-balacs-2024-25-editorial-illustration-and-commercial-work/" target="_blank" rel="noopener">https://abduzeedo.com/sua-balacs-2024-25-editorial-illustration-and-commercial-work/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Brand &amp; Identity (品牌與識別設計)</strong><ul>
+<li><strong>中文標題</strong>：Casa Macui：墨西哥刀具品牌的識別設計（Casa Macui: Mexican Knife Brand Identity by Fugitiva .co）<ul>
+<li><strong>設計理念與實務價值</strong>：由 Fugitiva .co 設計的 Casa Macui 墨西哥刀具品牌識別，巧妙地融合了前哥倫布時期的符號、赤陶色調和燙金工藝，營造出深厚的文化底蘊與精緻感。這份案例展示了品牌設計師如何透過文化元素和精選材質，為產品注入獨特的個性與故事，對於在品牌識別設計中尋求文化融合和材質表達靈感的設計師來說，是極具參考價值的範例。</li>
+<li><strong>原文連結</strong>：<a href="https://abduzeedo.com/casa-macui-mexican-knife-brand-identity-fugitiva-co/" target="_blank" rel="noopener">https://abduzeedo.com/casa-macui-mexican-knife-brand-identity-fugitiva-co/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><strong>Design Community News (設計社群動態)</strong><ul>
+<li><strong>中文標題</strong>：設計師每週更新 #556（Weekly Designers Update #556）<ul>
+<li><strong>設計理念與實務價值</strong>：Muzli 發布的第 556 期設計師每週更新，彙整了最新、最熱門的設計專案、必備工具和顛覆性產品。對於希望掌握設計界最新動態、尋找靈感或探索新工具的設計師而言，這是一個寶貴的資源，它能幫助設計師保持對產業趨勢的敏感度，並從眾多優秀作品中汲取創意養分。</li>
+<li><strong>原文連結</strong>：<a href="https://medium.muz.li/weekly-designers-update-556-f022a89048d1?source=rss----5969bf7021a3---4" target="_blank" rel="noopener">https://medium.muz.li/weekly-designers-update-556-f022a89048d1?source=rss----5969bf7021a3---4</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<h4>【設計系統與字體排印 (Design Systems &amp; Typography)】</h4>
+<ul>
+<li><strong>Typography &amp; Type Design (字體排印與字型設計)</strong><ul>
+<li><strong>中文標題</strong>：為字體增添質感：Andrew Footit 的 TypeWorks 第五輯（Adding Texture to Type: Andrew Footit's TypeWorks Vol. 5）<ul>
+<li><strong>設計理念與實務價值</strong>：Andrew Footit 在其 TypeWorks 第五輯中，透過網點、圖案和網格系統為客製化字體疊加質感。這份作品解決了如何為平面字體增加深度和透視感的問題，對於字體設計師或需要為品牌視覺增添獨特風格的設計師來說，提供了創新的紋理應用與排印實驗方法，展示了字體設計不僅限於形狀，更能透過質感傳達情緒和個性。</li>
+<li><strong>原文連結</strong>：<a href="https://abduzeedo.com/adding-texture-type-andrew-footits-typeworks-vol-5/" target="_blank" rel="noopener">https://abduzeedo.com/adding-texture-type-andrew-footits-typeworks-vol-5/</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+<hr />
+<h2>English Daily Highlights</h2>
+<p>Today's design pulse brings a strong focus on the evolving relationship between AI and design, alongside significant advancements in web technologies and fundamental design disciplines.</p>
+<p>One of the most impactful articles for product designers comes from Smashing Magazine, detailing <strong>Practical Interface Patterns for AI Transparency</strong>. As AI integration becomes ubiquitous, traditional loading states often fall short in building user trust. This piece emphasizes the importance of designing interfaces that reveal the AI system's processes, status, and decision-making, offering critical insights for creating more responsible and transparent AI-powered user experiences. Complementing this, UX Planet's guide on <strong>Rapid Prototyping with Claude Code</strong> highlights practical techniques for leveraging AI in the UX design workflow. For designers aiming to accelerate their iterative design processes and quickly validate concepts, mastering AI tools like Claude Code is becoming indispensable.</p>
+<p>In web development, Codrops offers an intriguing exploration into the <strong>HTML-in-Canvas Proposal</strong>. This potential advancement could revolutionize how complex visual and interactive elements are built on the web, breaking free from traditional DOM constraints and opening new creative possibilities for web designers and frontend developers to craft truly immersive online experiences. Meanwhile, CSS-Tricks provides a comprehensive look at <strong>CSS 3D Rotation Transform Functions</strong> (<code>rotateX()</code>, <code>rotateY()</code>, <code>rotateZ()</code>, <code>rotate()</code>). These foundational techniques are crucial for implementing sophisticated motion graphics and interactive elements in web designs, enabling designers to add depth and dynamic flair to their projects.</p>
+<p>The realm of AI-powered creative tools also saw updates, with <strong>ComfyUI v0.21.1 Release</strong> introducing new nodes for image generation and editing. For designers and artists exploring generative AI, these updates mean enhanced control and functionality for experimental art and visual content creation.</p>
+<p>Finally, brand identity design continues to innovate, as seen in Abduzeedo's feature on <strong>Guardbase: AI Security Brand Identity Without the Fear</strong>. This case study demonstrates how strategic design choices—eschewing fear-based visuals for trust and precision—can shape a brand's perception in emerging tech sectors like AI security. It's a prime example of thoughtful branding adapting to new industry needs.</p>
+<p>Collectively, these highlights underscore a landscape where designers must not only be adept with traditional design principles but also embrace AI tools and evolving web technologies to stay at the forefront of innovation.</p>
+                    <nav class="article-nav">
+                        <a href="/reports/2026-05-13_Daily_Report.html">← 2026-05-13</a>
+                        <span class="spacer"></span>
+                        <a href="/reports/2026-W15_Weekly_Digest.html">2026-W15 →</a>
+                    </nav>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Sidebar toggle (mobile)
+        document.getElementById('openSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.add('open');
+        });
+        document.getElementById('closeSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.remove('open');
+        });
+
+        // Search (filters dynamically rendered links)
+        document.getElementById('searchInput')?.addEventListener('input', (e) => {
+            const q = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.style.display = (!q || link.textContent.toLowerCase().includes(q)) ? '' : 'none';
+            });
+        });
+
+        // Dynamic sidebar from index.json
+        (async function() {
+            const navList = document.getElementById('navList');
+            try {
+                const res = await fetch('/index.json');
+                const reports = await res.json();
+                const now = new Date();
+                const sevenDaysAgo = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+                const currentPath = location.pathname;
+
+                const recent = [], weekly = [], older = {};
+                for (const r of reports) {
+                    if (r.filename.includes('Weekly')) {
+                        weekly.push(r);
+                    } else if (r.date >= sevenDaysAgo) {
+                        recent.push(r);
+                    } else {
+                        const month = r.date.slice(0, 7);
+                        (older[month] = older[month] || []).push(r);
+                    }
+                }
+
+                function section(icon, title, items, isOpen) {
+                    const cls = isOpen ? ' open' : '';
+                    let h = `<li class="nav-section${cls}"><button class="nav-section-header"><span class="icon">${icon}</span> ${title} <span class="nav-count">${items.length}</span> <span class="nav-arrow">▼</span></button><ul class="nav-items">`;
+                    for (const item of items) {
+                        const label = item.filename.includes('Weekly') ? `⭐ ${item.date}` : item.date;
+                        const href = `/reports/${item.filename.replace('.md', '.html')}`;
+                        const active = currentPath === href ? ' active' : '';
+                        h += `<li><a class="nav-link${active}" href="${href}">${label}</a></li>`;
+                    }
+                    return h + '</ul></li>';
+                }
+
+                let html = '';
+                if (recent.length) html += section('🕐', '最近日報', recent, true);
+                if (weekly.length) html += section('⭐', '每週精華', weekly, false);
+                for (const mk of Object.keys(older).sort().reverse()) {
+                    const [y, m] = mk.split('-');
+                    html += section('📂', `${y} 年 ${parseInt(m)} 月`, older[mk], false);
+                }
+                navList.innerHTML = html;
+
+                navList.querySelectorAll('.nav-section-header').forEach(btn => {
+                    btn.addEventListener('click', () => btn.closest('.nav-section').classList.toggle('open'));
+                });
+
+                const active = navList.querySelector('.nav-link.active');
+                if (active) active.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            } catch (e) {
+                console.warn('Sidebar load failed:', e);
+            }
+        })();
+    </script>
+</body>
+</html>
