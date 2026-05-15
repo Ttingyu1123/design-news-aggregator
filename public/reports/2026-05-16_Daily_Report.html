@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>✏️ 設計脈動日報 - 第 046 期 (2026-05-16)</title>
+    <meta name="description" content="設計脈動日報 - 第 046 期 2026-05-16  焦點設計導讀  1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths & Reality） 分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極">
+    <meta property="og:title" content="✏️ 設計脈動日報 - 第 046 期 (2026-05-16)">
+    <meta property="og:description" content="設計脈動日報 - 第 046 期 2026-05-16  焦點設計導讀  1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths & Reality） 分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極">
+    <meta property="og:type" content="article">
+    <meta property="og:url" content="https://design-pulse.tingyudeco.com/reports/2026-05-16_Daily_Report.html">
+    <meta property="og:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <meta property="og:image:width" content="512">
+    <meta property="og:image:height" content="512">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="✏️ 設計脈動日報 - 第 046 期 (2026-05-16)">
+    <meta name="twitter:description" content="設計脈動日報 - 第 046 期 2026-05-16  焦點設計導讀  1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths & Reality） 分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極">
+    <meta name="twitter:image" content="https://design-pulse.tingyudeco.com/icon-512.png">
+    <link rel="canonical" href="https://design-pulse.tingyudeco.com/reports/2026-05-16_Daily_Report.html">
+    <meta name="theme-color" content="#E0E5EC">
+    <link rel="manifest" href="/manifest.json">
+    <link rel="apple-touch-icon" href="/icon-192.png">
+    <link rel="alternate" type="application/rss+xml" title="設計脈動日報 RSS" href="/feed.xml">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Noto+Sans+TC:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --bg: #F8F7EE;
+            --cream: #F8F7EE;
+            --mint: #E3F3F1;
+            --accent: #9B7EC8;
+            --accent-dark: #7B5EA8;
+            --gold: #C9A96E;
+            --gold-light: #E8D5A8;
+            --text: #1A202C;
+            --text-muted: #4A5568;
+            --text-secondary: #718096;
+            --panel-bg: rgba(255,255,255,0.45);
+            --panel-border: rgba(255,255,255,0.7);
+            --radius: 12px;
+            --shadow-soft: 0 4px 20px rgba(0,0,0,0.06);
+            --shadow-card: 0 2px 12px rgba(0,0,0,0.04);
+        }
+
+        * { margin:0; padding:0; box-sizing:border-box; }
+
+        body {
+            background: var(--bg);
+            background-image:
+                radial-gradient(at 0% 0%, var(--mint) 0, transparent 55%),
+                radial-gradient(at 100% 100%, color-mix(in srgb, var(--accent) 15%, transparent) 0, transparent 50%);
+            background-attachment: fixed;
+            color: var(--text);
+            font-family: 'Noto Sans TC', system-ui, sans-serif;
+            line-height: 1.7;
+            min-height: 100vh;
+            -webkit-font-smoothing: antialiased;
+        }
+
+        /* === Layout === */
+        .page-wrapper {
+            display: flex;
+            height: 100vh;
+            overflow: hidden;
+            padding: 15px;
+            gap: 15px;
+        }
+
+        /* === Sidebar === */
+        .sidebar {
+            width: 300px;
+            height: 100%;
+            display: flex;
+            flex-direction: column;
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), 0 10px 40px -10px color-mix(in srgb, var(--accent) 25%, transparent);
+            z-index: 100;
+            transition: transform 0.4s cubic-bezier(0.16,1,0.3,1);
+        }
+
+        .sidebar-brand {
+            padding: 24px 20px 16px;
+            border-bottom: 1px solid rgba(255,255,255,0.5);
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .sidebar-brand h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1rem;
+            font-weight: 600;
+            color: var(--text);
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+
+        .sidebar-brand .brand-icon {
+            font-size: 1.2rem;
+        }
+
+        .sidebar-brand a {
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.8rem;
+            transition: color 0.2s;
+        }
+        .sidebar-brand a:hover { color: var(--accent); }
+
+        .mobile-close {
+            display: none;
+            background: none;
+            border: none;
+            font-size: 1.5rem;
+            color: var(--text-secondary);
+            cursor: pointer;
+        }
+
+        .sidebar-search {
+            padding: 12px 16px;
+        }
+        .sidebar-search input {
+            width: 100%;
+            padding: 10px 14px;
+            border: 1px solid rgba(255,255,255,0.5);
+            border-radius: 10px;
+            background: rgba(255,255,255,0.3);
+            font-size: 0.88rem;
+            font-family: inherit;
+            outline: none;
+            color: var(--text);
+        }
+        .sidebar-search input:focus {
+            border-color: var(--accent);
+            background: rgba(255,255,255,0.5);
+        }
+
+        .sidebar-nav {
+            flex: 1;
+            overflow-y: auto;
+            padding: 8px 16px;
+            list-style: none;
+        }
+
+        .nav-section { margin-bottom: 6px; }
+        .nav-section-header {
+            display: flex;
+            align-items: center;
+            gap: 8px;
+            padding: 8px 12px;
+            background: rgba(255,255,255,0.15);
+            border: none;
+            border-radius: 10px;
+            color: var(--text);
+            font-size: 0.8rem;
+            font-weight: 600;
+            font-family: inherit;
+            cursor: pointer;
+            width: 100%;
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+            transition: background 0.2s;
+        }
+        .nav-section-header:hover { background: rgba(255,255,255,0.35); }
+        .nav-section-header .icon { color: var(--accent); font-size: 0.85rem; }
+        .nav-count {
+            margin-left: auto;
+            background: rgba(255,255,255,0.4);
+            padding: 2px 8px;
+            border-radius: 8px;
+            font-size: 0.7rem;
+            font-weight: 500;
+            color: var(--text-secondary);
+        }
+        .nav-arrow {
+            font-size: 0.6rem;
+            transition: transform 0.3s;
+            color: var(--text-secondary);
+        }
+        .nav-section.open .nav-arrow { transform: rotate(180deg); }
+
+        .nav-items {
+            list-style: none;
+            overflow: hidden;
+            max-height: 0;
+            opacity: 0;
+            transition: max-height 0.4s cubic-bezier(0.16,1,0.3,1), opacity 0.3s;
+            padding-left: 4px;
+        }
+        .nav-section.open .nav-items {
+            max-height: 2000px;
+            opacity: 1;
+        }
+
+        .nav-link {
+            display: block;
+            padding: 10px 14px;
+            margin: 4px 0;
+            background: rgba(255,255,255,0.2);
+            border: 1px solid transparent;
+            border-radius: var(--radius);
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: all 0.3s cubic-bezier(0.16,1,0.3,1);
+        }
+        .nav-link:hover {
+            background: rgba(255,255,255,0.6);
+            color: var(--text);
+            transform: translateX(4px);
+        }
+        .nav-link.active {
+            background: rgba(255,255,255,0.9);
+            border-color: rgba(255,255,255,1);
+            color: var(--text);
+            box-shadow: 0 4px 15px color-mix(in srgb, var(--accent) 20%, transparent);
+            font-weight: 600;
+        }
+
+        .sidebar-footer {
+            padding: 12px 16px;
+            border-top: 1px solid rgba(255,255,255,0.5);
+            text-align: center;
+            font-size: 0.72rem;
+            color: var(--text-secondary);
+            letter-spacing: 0.5px;
+        }
+        .sidebar-footer a {
+            color: var(--accent);
+            text-decoration: none;
+        }
+
+        /* === Main Content === */
+        .main-content {
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            overflow: hidden;
+        }
+
+        .topbar {
+            display: flex;
+            align-items: center;
+            padding: 16px 35px;
+        }
+        .menu-toggle {
+            display: none;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: 10px;
+            width: 40px;
+            height: 40px;
+            color: var(--text);
+            margin-right: 15px;
+            cursor: pointer;
+            font-size: 1.1rem;
+            box-shadow: var(--shadow-soft);
+        }
+        .topbar-title {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: var(--text);
+        }
+        .topbar-home {
+            margin-left: auto;
+            color: var(--text-secondary);
+            text-decoration: none;
+            font-size: 1.5rem;
+            padding: 6px 12px;
+            border-radius: 8px;
+            background: rgba(255,255,255,0.3);
+            border: 1px solid var(--panel-border);
+            transition: all 0.3s;
+        }
+        .topbar-home:hover { color: var(--accent); background: rgba(255,255,255,0.6); }
+
+        .article-scroll {
+            flex: 1;
+            overflow-y: auto;
+            padding: 0 20px 20px;
+        }
+
+        /* === Article === */
+        .article-card {
+            background: var(--panel-bg);
+            backdrop-filter: blur(16px);
+            -webkit-backdrop-filter: blur(16px);
+            border: 1px solid var(--panel-border);
+            border-radius: 20px;
+            box-shadow: inset 0 1px 0 rgba(255,255,255,0.8), var(--shadow-soft);
+            padding: 48px 56px;
+            line-height: 1.8;
+            font-size: 1.05rem;
+            color: #3b4252;
+        }
+
+        /* Article typography — matching website classical style */
+        .article-card h1 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 2rem;
+            font-weight: 700;
+            color: var(--text);
+            border-bottom: 2px solid var(--gold-light);
+            padding-bottom: 12px;
+            margin-bottom: 1.2em;
+            line-height: 1.3;
+        }
+
+        .article-card h2 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.45rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 2em;
+            margin-bottom: 0.8em;
+            display: flex;
+            align-items: center;
+            gap: 10px;
+        }
+        .article-card h2::before {
+            content: '';
+            display: inline-block;
+            width: 5px;
+            height: 22px;
+            background: var(--accent);
+            border-radius: 3px;
+            flex-shrink: 0;
+        }
+
+        .article-card h3 {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-size: 1.2rem;
+            font-weight: 600;
+            color: var(--text);
+            margin-top: 1.8em;
+            margin-bottom: 0.6em;
+        }
+
+        .article-card h4 {
+            font-family: 'Noto Sans TC', sans-serif;
+            font-size: 1.05rem;
+            font-weight: 600;
+            color: var(--accent-dark);
+            margin-top: 1.4em;
+            margin-bottom: 0.5em;
+        }
+
+        .article-card p {
+            margin-bottom: 1.2em;
+        }
+
+        .article-card a {
+            color: var(--accent-dark);
+            text-decoration: underline;
+            text-decoration-color: var(--gold-light);
+            text-underline-offset: 3px;
+            font-weight: 500;
+            transition: color 0.2s;
+        }
+        .article-card a:hover {
+            color: var(--accent);
+        }
+
+        .article-card strong {
+            font-weight: 700;
+            color: var(--text);
+        }
+
+        .article-card ul, .article-card ol {
+            margin-bottom: 1.5em;
+            padding: 18px 18px 18px 36px;
+            background: rgba(255,255,255,0.4);
+            border-radius: var(--radius);
+        }
+
+        .article-card li {
+            margin-bottom: 1.4em;
+            line-height: 1.9;
+        }
+        .article-card li:last-child {
+            margin-bottom: 0;
+        }
+        .article-card li::marker {
+            color: var(--gold);
+        }
+
+        .article-card blockquote {
+            border-left: 3px solid var(--gold);
+            background: var(--mint);
+            padding: 14px 20px;
+            margin: 1.5em 0;
+            border-radius: 0 var(--radius) var(--radius) 0;
+            font-style: italic;
+            color: var(--text-muted);
+        }
+
+        .article-card hr {
+            border: none;
+            height: 1px;
+            margin: 2.5em 0;
+            position: relative;
+            background: linear-gradient(to right, transparent, var(--gold), transparent);
+            overflow: visible;
+        }
+        .article-card hr::after {
+            content: '◆ ✦ ◆';
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            background: var(--panel-bg);
+            padding: 0 1.5rem;
+            color: var(--gold);
+            font-size: 0.7rem;
+            letter-spacing: 0.4em;
+        }
+
+        .article-card table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5em 0;
+        }
+        .article-card th {
+            font-family: 'Playfair Display', Georgia, serif;
+            font-weight: 600;
+            color: var(--gold);
+            border-bottom: 2px solid var(--gold-light);
+            padding: 8px 12px;
+            text-align: left;
+        }
+        .article-card td {
+            padding: 6px 12px;
+            border-bottom: 1px solid rgba(0,0,0,0.05);
+        }
+
+        /* Prev/Next navigation */
+        .article-nav {
+            display: flex;
+            justify-content: space-between;
+            margin-top: 3em;
+            padding-top: 1.5em;
+            border-top: 1px solid var(--gold-light);
+            gap: 1em;
+        }
+        .article-nav a {
+            padding: 10px 20px;
+            background: rgba(255,255,255,0.5);
+            border: 1px solid var(--panel-border);
+            border-radius: var(--radius);
+            color: var(--text-muted);
+            text-decoration: none;
+            font-size: 0.9rem;
+            transition: all 0.3s;
+        }
+        .article-nav a:hover {
+            background: rgba(255,255,255,0.8);
+            color: var(--accent-dark);
+        }
+        .article-nav .spacer { flex: 1; }
+
+        /* === Scrollbar === */
+        ::-webkit-scrollbar { width: 6px; }
+        ::-webkit-scrollbar-track { background: transparent; }
+        ::-webkit-scrollbar-thumb {
+            background: color-mix(in srgb, var(--accent) 30%, transparent);
+            border-radius: 10px;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: color-mix(in srgb, var(--accent) 60%, transparent);
+        }
+
+        /* === Mobile === */
+        @media (max-width: 768px) {
+            .page-wrapper { padding: 0; gap: 0; }
+            .sidebar {
+                position: fixed;
+                left: 0; top: 0;
+                transform: translateX(-100%);
+                width: 85%;
+                max-width: 320px;
+                border-radius: 0;
+                background: rgba(248,247,238,0.97);
+            }
+            .sidebar.open {
+                transform: translateX(0);
+                box-shadow: 20px 0 50px rgba(0,0,0,0.15);
+            }
+            .mobile-close { display: block; }
+            .menu-toggle { display: flex; align-items: center; justify-content: center; }
+            .article-card {
+                border-radius: 0;
+                border: none;
+                padding: 24px 20px;
+                box-shadow: none;
+                background: transparent;
+            }
+            .article-card h1 { font-size: 1.5rem; }
+            .topbar { padding: 12px 16px; background: rgba(255,255,255,0.7); border-bottom: 1px solid rgba(0,0,0,0.05); }
+        }
+    </style>
+    <script type="application/ld+json">
+    {"@context": "https://schema.org", "@type": "Article", "headline": "✏️ 設計脈動日報 - 第 046 期 (2026-05-16)", "datePublished": "2026-05-16", "description": "設計脈動日報 - 第 046 期 2026-05-16  焦點設計導讀  1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths & Reality） 分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極", "url": "https://design-pulse.tingyudeco.com/reports/2026-05-16_Daily_Report.html", "publisher": {"@type": "Organization", "name": "tingyudeco.com", "url": "https://tingyudeco.com"}, "inLanguage": "zh-TW"}
+    </script>
+</head>
+<body>
+    <div class="page-wrapper">
+        <!-- Sidebar -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-brand">
+                <h2><span class="brand-icon">✏️</span> 設計脈動日報</h2>
+                <button class="mobile-close" id="closeSidebar" aria-label="關閉選單">✕</button>
+            </div>
+            <div class="sidebar-search">
+                <input type="text" id="searchInput" placeholder="🔍 搜尋報告...">
+            </div>
+            <nav>
+                <ul class="sidebar-nav" id="navList"></ul>
+            </nav>
+            <div class="sidebar-footer">
+                MADE BY <a href="https://tingyudeco.com" target="_blank">tingyudeco.com</a>
+            </div>
+        </aside>
+
+        <!-- Main -->
+        <main class="main-content">
+            <header class="topbar">
+                <button class="menu-toggle" id="openSidebar" aria-label="開啟選單">☰</button>
+                <span class="topbar-title">2026-05-16 日報</span>
+                <a href="https://tingyudeco.com/insights" class="topbar-home" title="All Insights">⌂</a>
+            </header>
+            <div class="article-scroll">
+                <article class="article-card">
+                    <h1>✏️ 設計脈動日報 - 第 046 期 (2026-05-16)</h1>
+<h2>焦點設計導讀</h2>
+<h3>1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths &amp; Reality）</h3>
+<p>分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極化觀點。對於數位產品設計師而言，理解 AI 在設計流程中的實際應用與潛力，有助於我們更有效地利用工具提升效率與創造力，而非被不實的預期所困擾。</p>
+<ul>
+<li>原文連結：<a href="https://uxplanet.org/ai-powered-product-design-myths-reality-399c4b1ffdca?source=rss----819cc2aaeee0---4" target="_blank" rel="noopener">https://uxplanet.org/ai-powered-product-design-myths-reality-399c4b1ffdca?source=rss----819cc2aaeee0---4</a></li>
+</ul>
+<h3>2. 精實設計系統團隊的力量（Small by Design: The Strength of Lean Design-System Teams）</h3>
+<p>分析段落：Nielsen Norman Group 強調精實的設計系統團隊若能進行策略性規劃，將能以更快速度推進、更精準地確立優先順序，並超越其規模地擴大影響力。這對於考慮組建或優化設計系統團隊的組織而言，提供了寶貴的策略方向，證明了效率與影響力不必然與團隊人數成正比。</p>
+<ul>
+<li>原文連結：<a href="https://www.nngroup.com/articles/lean-design-system-teams/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication" target="_blank" rel="noopener">https://www.nngroup.com/articles/lean-design-system-teams/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication</a></li>
+</ul>
+<h3>3. 設計師在產品團隊中的真正挑戰（What Designers Actually Struggle with on Product Teams）</h3>
+<p>分析段落：NN/g 指出，設計師在產品團隊中最大的困境並非設計技能本身，而是關於對齊、影響力以及應對組織複雜性等軟技能和流程問題。這提醒了設計師除了硬技能外，更需培養溝通協調與策略思維，以在跨職能團隊中發揮更大的價值。</p>
+<ul>
+<li>原文連結：<a href="https://www.nngroup.com/articles/designers-product-teams/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication" target="_blank" rel="noopener">https://www.nngroup.com/articles/designers-product-teams/?utm_source=rss&amp;utm_medium=feed&amp;utm_campaign=rss-syndication</a></li>
+</ul>
+<h3>4. 使用者體驗投資報酬率的十大數據支持真相（Ten Data-Backed Truths Of User Experience ROI）</h3>
+<p>分析段落：每增加一秒的使用者摩擦，都伴隨著可衡量的商業成本。這篇文章揭示了十個數據支持的 UX 事實，將使用者體驗直接與營收、用戶留存和長期增長掛鉤，為設計師提供了說服利害關係人投資 UX 的有力依據。</p>
+<ul>
+<li>原文連結：<a href="https://smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/" target="_blank" rel="noopener">https://smashingmagazine.com/2026/05/data-backed-truths-user-experience-roi/</a></li>
+</ul>
+<h3>5. 2026 年行動銀行應用程式設計趨勢（Mobile banking app design trends for 2026）</h3>
+<p>分析段落：隨著行動銀行成為人們管理財務的預設方式，了解未來的設計趨勢對於金融科技領域的設計師至關重要。這篇文章提供了 2026 年行動銀行應用程式的最新設計趨勢，有助於設計師掌握前瞻性的 UI/UX 策略，創造更具吸引力與實用性的產品。</p>
+<ul>
+<li>原文連結：<a href="https://medium.muz.li/mobile-banking-app-design-trends-for-2026-34cccad39bae?source=rss----5969bf7021a3---4" target="_blank" rel="noopener">https://medium.muz.li/mobile-banking-app-design-trends-for-2026-34cccad39bae?source=rss----5969bf7021a3---4</a></li>
+</ul>
+<h3>6. 我受夠了手動檢視網站，所以開始自動化設計系統提取（I got tired of manually inspecting websites, so I began automating design system extraction）</h3>
+<p>分析段落：這則分享展示了設計師利用自動化工具解決日常重複性工作的實例，特別是針對設計系統的提取。它強調了工具開發對於提升設計師工作效率的重要性，並為設計系統的管理與維護提供了新的思路。</p>
+<ul>
+<li>原文連結：<a href="https://www.reddit.com/r/UI_Design/comments/1tdviho/i_got_tired_of_manually_inspecting_websites_so_i/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1tdviho/i_got_tired_of_manually_inspecting_websites_so_i/</a></li>
+</ul>
+<h3>7. 新蜘蛛人標誌因一個微小細節引發粉絲不滿（New Spider-Man logo frustrates fans thanks to one tiny detail）</h3>
+<p>分析段落：這則案例提醒了品牌識別設計中細節的重要性，即使是微小的變動也可能對粉絲情感和品牌認知產生巨大影響。設計師需要深思熟慮每一次設計決策，並理解品牌資產所承載的情感連結。</p>
+<ul>
+<li>原文連結：<a href="https://www.creativebloq.com/design/logos-icons/new-spider-man-logo-frustrates-fans-thanks-to-one-tiny-detail" target="_blank" rel="noopener">https://www.creativebloq.com/design/logos-icons/new-spider-man-logo-frustrates-fans-thanks-to-one-tiny-detail</a></li>
+</ul>
+<h3>8. What’s !important #11: 3D 體素場景、飛行焦點、CSS 語法及更多（What’s !important #11: 3D Voxel Scenes, Flying Focus, CSS Syntaxes, and More）</h3>
+<p>分析段落：這篇文章深入探討了多種新穎的 CSS 技術和視覺效果，包括可風格化的 3D 體素場景和飛行焦點動畫。對於網頁設計師和前端開發者而言，這些技術提供了探索前衛互動與視覺表現的機會，將網站設計推向新的層次。</p>
+<ul>
+<li>原文連結：<a href="https://css-tricks.com/whats-important-11/" target="_blank" rel="noopener">https://css-tricks.com/whats-important-11/</a></li>
+</ul>
+<h2>精細分類</h2>
+<h3>設計工具與 UI/UX (Design Tools &amp; UI/UX)</h3>
+<h4>Design Tools Updates (設計工具動態：Figma、Sketch、Penpot 等)</h4>
+<ul>
+<li><strong>GIMP 將出席 2026 年 Linux 應用程式峰會和 ADULLACT 大會（GIMP @ Linux App Summit and ADULLACT Congress 2026）</strong></li>
+<li>GIMP 作為一款開源圖像編輯工具，其在重要會議上的亮相，預示著可能會有新功能發布或社區合作的機會。對於依賴開源工具的設計師和開源設計社群而言，這是一個值得關注的動態，代表了工具的持續發展與參與。</li>
+<li>原文連結：<a href="https://www.gimp.org/news/2026/05/15/gimp-las-adullact-2026/" target="_blank" rel="noopener">https://www.gimp.org/news/2026/05/15/gimp-las-adullact-2026/</a></li>
+<li><strong>Posthog....我真的不喜歡它（Posthog.... I really don't like it）</strong></li>
+<li>這篇文章是一位設計師針對開發者工具 Posthog 的使用者體驗提出的不滿，強調了即使是功能強大的工具，若其設計未能良好考慮使用者旅程，也會導致使用者挫折。這為設計師提供了一個反思，即設計原則應貫穿所有產品，無論其目標受眾是誰。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/web_design/comments/1tdir49/posthog_i_really_dont_like_it/" target="_blank" rel="noopener">https://www.reddit.com/r/web_design/comments/1tdir49/posthog_i_really_dont_like_it/</a></li>
+</ul>
+<h4>UI/UX Research &amp; Methods (使用者研究與設計方法論)</h4>
+<ul>
+<li><strong>兩個高維度思維之間的一維管道（The one-dimensional pipe between two high-dimensional minds）</strong></li>
+<li>文章探討了 AI 提示詞（prompts）在人機互動中的獨特作用，將其比喻為連接兩個高維度思維（人類與 AI）的一維管道。這引發了設計師對於如何更有效設計與 AI 溝通介面、優化提示詞工程的思考，以彌合人機理解的鴻溝。</li>
+<li>原文連結：<a href="https://uxdesign.cc/the-one-dimensional-pipe-between-two-high-dimensional-minds-7bc81c49627e?source=rss----138adf9c44c---4" target="_blank" rel="noopener">https://uxdesign.cc/the-one-dimensional-pipe-between-two-high-dimensional-minds-7bc81c49627e?source=rss----138adf9c44c---4</a></li>
+</ul>
+<h4>Interaction &amp; Motion Design (互動與動態設計)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h3>網頁設計與前端 (Web Design &amp; Frontend)</h3>
+<h4>Web Design Trends (網頁設計趨勢)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h4>CSS &amp; Frontend Techniques (CSS 與前端技術)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h4>No-Code &amp; Site Builders (無程式碼工具：Framer、Webflow 等)</h4>
+<ul>
+<li><strong>我做了一個免費工具，能根據地點和產業尋找沒有網站的商家！（Made a FREE tool that finds businesses without a website based on location and industry! Link in comment）</strong></li>
+<li>這款工具的出現，為網頁設計師和無程式碼建站者開闢了新的商機，幫助他們精準定位潛在客戶。它展示了自動化工具在市場分析與業務拓展方面的實用價值，尤其是對於那些希望擴展其網頁設計服務的個人或小型工作室。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/web_design/comments/1tdryyc/made_a_free_tool_that_finds_businesses_without_a/" target="_blank" rel="noopener">https://www.reddit.com/r/web_design/comments/1tdryyc/made_a_free_tool_that_finds_businesses_without_a/</a></li>
+</ul>
+<h3>AI 設計與創意科技 (AI Design &amp; Creative Tech)</h3>
+<h4>AI-Powered Design Tools (AI 設計工具)</h4>
+<ul>
+<li><strong>我建立了一個桌面工具，可透過描述搜尋 1,300 多個 ComfyUI 工作流程 — 還能使用 Claude AI 即時在 YouTube 和 CivitAI 上找到新的工作流程（I built a desktop tool that lets you search 1,300+ ComfyUI workflows by describing what they do — plus it finds new ones on YouTube and CivitAI in real time using Claude AI）</strong></li>
+<li>這個工具的開發極大地簡化了 ComfyUI 使用者尋找和管理複雜工作流程的過程，透過 AI 描述搜尋功能提高了效率。對於生成式設計師而言，這意味著更容易探索新的創作可能性和優化工作流，加快了實驗與迭代的速度。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1tduj04/i_built_a_desktop_tool_that_lets_you_search_1300/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1tduj04/i_built_a_desktop_tool_that_lets_you_search_1300/</a></li>
+<li><strong>我受夠了凌亂的 AI 圖像提示詞庫，所以我自己做了一個（I got tired of messy AI image prompt libraries, so I made my own）</strong></li>
+<li>針對 AI 圖像生成中提示詞管理混亂的痛點，這篇文章的作者自行開發了解決方案。這反映了設計師在運用 AI 工具時，對於組織化和效率提升的內在需求，也鼓勵設計師社群為自身的需求創造客製化工具。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1tdxfdw/i_got_tired_of_messy_ai_image_prompt_libraries_so/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1tdxfdw/i_got_tired_of_messy_ai_image_prompt_libraries_so/</a></li>
+<li><strong>我為 ComfyUI 使用者製作了一個前端修復工具（I made a frontend inpainting tool for ComfyUI users）</strong></li>
+<li>這個前端修復工具為 ComfyUI 使用者提供了更直觀、高效的圖像編輯體驗，尤其是在進行細節調整和局部修正時。它縮短了設計師在生成式圖像後期處理的時間，使 AI 輔助創作流程更加流暢與精準。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/comfyui/comments/1te92if/i_made_a_frontend_inpainting_tool_for_comfyui/" target="_blank" rel="noopener">https://www.reddit.com/r/comfyui/comments/1te92if/i_made_a_frontend_inpainting_tool_for_comfyui/</a></li>
+</ul>
+<h4>Generative Art &amp; Visual AI (生成式藝術與視覺 AI)</h4>
+<ul>
+<li><strong>遺忘國度（Forgotten Realms）</strong></li>
+<li>這是一系列利用 Midjourney 生成的圖像，展現了 AI 在奇幻場景與世界觀建構上的強大能力。這些作品為概念藝術家和插畫師提供了豐富的視覺靈感，拓寬了數位藝術創作的邊界。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/midjourney/comments/1te22x3/forgotten_realms/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1te22x3/forgotten_realms/</a></li>
+<li><strong>稜鏡霸權（Prism Ascendancy）</strong></li>
+<li>透過 Midjourney 創作的「稜鏡霸權」圖像，探索了抽象與未來主義的視覺風格，利用光影與色彩營造出獨特的氛圍。這類作品激發了設計師對於生成式藝術在品牌視覺、介面背景等領域應用的想像力。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/midjourney/comments/1teagk4/prism_ascendancy/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1teagk4/prism_ascendancy/</a></li>
+<li><strong>奇幻肖像 - 漫畫風格（Fantasy Portraits - Comic Style）</strong></li>
+<li>這組 Midjourney 生成的奇幻肖像以漫畫風格呈現，展現了 AI 在模仿特定藝術風格方面的能力。對於插畫師和遊戲角色設計師來說，這提供了快速產生概念圖和多樣化視覺風格的工具，極大提升了前期探索效率。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/midjourney/comments/1tdvs74/fantasy_portraits_comic_style/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1tdvs74/fantasy_portraits_comic_style/</a></li>
+<li><strong>你準備好了嗎？#128（Are U Ready ? #128）</strong></li>
+<li>這篇 Midjourney 作品展現了 AI 在生成帶有動感和敘事感的圖像方面的潛力，為設計師帶來了視覺上的刺激與創造性的啟發。它鼓勵設計師思考如何將生成式藝術融入視覺故事講述或動態圖像設計中。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/midjourney/comments/1te3ap9/are_u_ready_128/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1te3ap9/are_u_ready_128/</a></li>
+<li><strong>聖騎士誓言（Paladin Oath）</strong></li>
+<li>這幅 Midjourney 圖像以其史詩般的氛圍和細緻的奇幻元素吸引眼球，再次證明了 AI 在生成複雜、富有細節的視覺內容方面的能力。對於需要快速視覺化宏大概念的藝術家而言，AI 提供了強大的支持。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/midjourney/comments/1tdzjxq/paladin_oath/" target="_blank" rel="noopener">https://www.reddit.com/r/midjourney/comments/1tdzjxq/paladin_oath/</a></li>
+</ul>
+<h4>Creative Technology (創意科技應用)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h3>設計靈感與社群 (Design Inspiration &amp; Community)</h3>
+<h4>Award-Winning Works (得獎作品與案例)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h4>Brand &amp; Identity (品牌與識別設計)</h4>
+<ul>
+<li><strong>Tout Moi 房地產品牌識別設計（Tout Moi Real Estate Brand Identity by TMN Studios）</strong></li>
+<li>TMN Studios 為 Tout Moi 房地產設計的品牌識別，透過獨特的 TM 字母組合、大地色系配色和避免使用黑色，創造出既專業又具溫度感的形象。這是一個關於如何透過色彩與形態精準傳達品牌價值，並延伸應用於多種載體的優秀案例。</li>
+<li>原文連結：<a href="https://abduzeedo.com/tout-moi-real-estate-brand-identity-tmn-studios-0/" target="_blank" rel="noopener">https://abduzeedo.com/tout-moi-real-estate-brand-identity-tmn-studios-0/</a></li>
+<li><strong>Calliandra Cerrado：巴西酒店業的品牌塑造（Calliandra Cerrado: Branding Brazilian Hospitality）</strong></li>
+<li>Studio Amorá Lima 為巴西酒店網絡 Calliandra Cerrado 精心打造的品牌系統，成功將當地特色植物的幾何形態轉化為視覺識別。這展現了品牌設計如何從自然環境中汲取靈感，創造出既獨特又富有文化底蘊的視覺語言。</li>
+<li>原文連結：<a href="https://abduzeedo.com/calliandra-cerrado-branding-brazilian-hospitality/" target="_blank" rel="noopener">https://abduzeedo.com/calliandra-cerrado-branding-brazilian-hospitality/</a></li>
+<li><strong>終極標誌測驗：你了解 2000 年代的標誌嗎？（The ultimate logo quiz: think you know your 2000s logos?）</strong></li>
+<li>這篇標誌測驗提供了一個回顧 2000 年代設計趨勢的有趣方式，有助於設計師溫故知新，了解過去的品牌標誌如何影響至今的視覺文化。它同時也提供靈感，讓設計師從經典中學習，並應用於當代設計。</li>
+<li>原文連結：<a href="https://www.creativebloq.com/design/logos-icons/the-ultimate-logo-quiz-think-you-know-your-2000s-logos/" target="_blank" rel="noopener">https://www.creativebloq.com/design/logos-icons/the-ultimate-logo-quiz-think-you-know-your-2000s-logos/</a></li>
+<li><strong>具爭議的半場表演可能永遠改變世界盃品牌（Controversial half-time show could change World Cup branding forever）</strong></li>
+<li>這篇文章探討了一場具爭議的半場表演對世界盃品牌可能產生的長遠影響，尤其是在「美國化」足球的背景下。它提醒設計師，品牌不僅是視覺符號，更是文化、價值觀和公共形象的綜合體，需要時刻關注其社會語境。</li>
+<li>原文連結：<a href="https://www.creativebloq.com/design/branding/controversial-half-time-show-could-change-world-cup-branding-forever" target="_blank" rel="noopener">https://www.creativebloq.com/design/branding/controversial-half-time-show-could-change-world-cup-branding-forever</a></li>
+<li><strong>為我的「美學」iOS 天氣應用程式尋求標誌回饋/想法/方向（Need logo feedback/ideas/direction for my "aesthetic" iOS weather app）</strong></li>
+<li>社群討論中對 iOS 天氣應用程式標誌的回饋，展現了設計師社群互相學習與改進作品的價值。這類實務性的交流對於尋求設計方向、優化細節和理解目標使用者偏好的設計師來說，是極為寶貴的資源。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/UI_Design/comments/1tdw9ej/need_logo_feedbackideasdirection_for_my_aesthetic/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1tdw9ej/need_logo_feedbackideasdirection_for_my_aesthetic/</a></li>
+</ul>
+<h4>Design Community News (設計社群動態)</h4>
+<ul>
+<li><strong>設計師每週更新 #556（Weekly Designers Update #556）</strong></li>
+<li>Muzli 的每週更新彙整了最新的設計專案、必備工具和具突破性的產品，為設計師提供源源不絕的創意靈感。這是一個快速掌握設計界最新動態和趨勢的便捷途徑，有助於保持設計視野的開闊。</li>
+<li>原文連結：<a href="https://medium.muz.li/weekly-designers-update-556-11e65179498f?source=rss----5969bf7021a3---4" target="_blank" rel="noopener">https://medium.muz.li/weekly-designers-update-556-11e65179498f?source=rss----5969bf7021a3---4</a></li>
+<li><strong>一位藝術家將機械與有機生物質融合，創造出富有想像力的奇幻角色（From ents to tech priests, this artist fuses machinery and organic biomatter to create imaginative fantasy characters）</strong></li>
+<li>這篇文章介紹了一位藝術家如何將機械與生物元素融合，創造出獨特的奇幻角色，展現了數位藝術的無限可能性。對於追求視覺突破和跨界創意的設計師來說，這是極佳的靈感來源，鼓勵探索不同媒材與風格的結合。</li>
+<li>原文連結：<a href="https://www.creativebloq.com/art/digital-art/from-ents-to-tech-priests-this-artist-fuses-machinery-and-organic-biomatter-to-create-incredible-fantasy-creatures" target="_blank" rel="noopener">https://www.creativebloq.com/art/digital-art/from-ents-to-tech-priests-this-artist-fuses-machinery-and-organic-biomatter-to-create-incredible-fantasy-creatures</a></li>
+<li><strong>需要針對我的新 CRM 儀表板設計提供一些回饋（Need some feedback on my new CRM Dashboard Design）</strong></li>
+<li>這則來自 Reddit 社群的貼文尋求關於 CRM 儀表板設計的回饋，體現了設計師在實務工作中對同行建議的重視。社群的集體智慧能夠幫助設計師發現盲點、優化介面，並提升產品的實用性與使用者體驗。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/UI_Design/comments/1tdcmio/need_some_feedback_on_my_new_crm_dashboard_design/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1tdcmio/need_some_feedback_on_my_new_crm_dashboard_design/</a></li>
+<li><strong>根據您先前貼文的回饋進行更新！（Based on your feedback from previous post UPDATE!）</strong></li>
+<li>這篇文章展示了設計師根據社群回饋進行設計迭代的過程，強調了開放性與持續改進在設計實務中的重要性。這不僅是對社群互動的回應，也體現了設計流程中不斷吸收建議、精煉成果的專業態度。</li>
+<li>原文連結：<a href="https://www.reddit.com/r/UI_Design/comments/1td4ykm/based_on_your_feedback_from_previous_post_update/" target="_blank" rel="noopener">https://www.reddit.com/r/UI_Design/comments/1td4ykm/based_on_your_feedback_from_previous_post_update/</a></li>
+</ul>
+<h3>設計系統與字體排印 (Design Systems &amp; Typography)</h3>
+<h4>Design Systems &amp; Tokens (設計系統與 Design Tokens)</h4>
+<p><em>(本期無直接符合此子類別的內容)</em></p>
+<h4>Typography &amp; Type Design (字體排印與字型設計)</h4>
+<ul>
+<li><strong>Elena Scott（Elena Scott）</strong></li>
+<li>Typewolf 介紹了 Elena Scott 網站，特別推薦其選用 Editorial Old 和 Neue Montreal 這兩款字型。這提供了實用的字體搭配範例，對網頁設計師在選擇字體時，如何平衡古典與現代、優雅與實用性具有參考價值。</li>
+<li>原文連結：<a href="https://www.typewolf.com/site-of-the-day/elena-scott" target="_blank" rel="noopener">https://www.typewolf.com/site-of-the-day/elena-scott</a></li>
+<li><strong>Speakeasy（Speakeasy）</strong></li>
+<li>Speakeasy 網站運用了 Tobias、Diatype 和 Diatype Mono 字型，展現了如何透過不同字重的字體組合創造視覺層次感和品牌個性。這對於字體排印愛好者和設計師來說，是探索字體風格與表現力的絕佳案例。</li>
+<li>原文連結：<a href="https://www.typewolf.com/site-of-the-day/speakeasy" target="_blank" rel="noopener">https://www.typewolf.com/site-of-the-day/speakeasy</a></li>
+<li><strong>Every（Every）</strong></li>
+<li>Every 網站選用了 Signifier 和 Switzer 字型，呈現出現代且具設計感的視覺風格。這展示了字體在建立品牌形象和傳達資訊上的關鍵作用，能啟發設計師在專案中嘗試不同的字體組合以達到獨特效果。</li>
+<li>原文連結：<a href="https://www.typewolf.com/site-of-the-day/every-2025" target="_blank" rel="noopener">https://www.typewolf.com/site-of-the-day/every-2025</a></li>
+<li><strong>TR Studio（TR Studio）</strong></li>
+<li>TR Studio 網站巧妙地結合了 Arizona Flare 和 Dia 字型，營造出既前衛又具專業度的視覺感受。這提醒了設計師在字體選擇上，應考慮其與品牌調性及內容傳達的契合度，以強化整體的設計表達。</li>
+<li>原文連結：<a href="https://www.typewolf.com/site-of-the-day/tr-studio" target="_blank" rel="noopener">https://www.typewolf.com/site-of-the-day/tr-studio</a></li>
+<li><strong>Go RVing（Go RVing）</strong></li>
+<li>Go RVing 網站採用了 Agipo、Topol 和 Maison Neue 等字型，營造出戶外活動的輕鬆與現代感。這個案例展現了多種字體搭配如何支援品牌敘事，為設計師在多樣化專案中選擇字體提供了豐富的靈感。</li>
+<li>原文連結：<a href="https://www.typewolf.com/site-of-the-day/go-rving" target="_blank" rel="noopener">https://www.typewolf.com/site-of-the-day/go-rving</a></li>
+</ul>
+<hr />
+<p><strong>English Daily Highlights</strong></p>
+<p>Today's design pulse reveals a strong focus on the strategic integration of AI, the efficiency of design systems, and the evolving role of designers within product teams.</p>
+<p>One of the top stories, "AI-Powered Product Design: Myths &amp; Reality" from UX Planet, offers a crucial perspective on the practical implications of AI in design. It challenges extreme views, guiding designers to understand AI as a tool for efficiency and creativity rather than a threat or mere hype. This analysis is vital for product designers navigating the rapid advancements in AI and integrating these technologies into their workflows effectively.</p>
+<p>Nielsen Norman Group delivered two impactful articles. "Small by Design: The Strength of Lean Design-System Teams" provides strategic insights into how compact, well-planned design system teams can achieve significant impact. This emphasizes agility and focused prioritization over team size, offering valuable guidance for organizations building or refining their design system strategies. Complementing this, "What Designers Actually Struggle with on Product Teams" highlights that designers' primary challenges often lie in alignment, influence, and navigating organizational complexity, rather than design skills. This underscores the growing importance of soft skills, communication, and strategic thinking for designers aiming to thrive in cross-functional environments.</p>
+<p>From Smashing Magazine, "Ten Data-Backed Truths Of User Experience ROI" equips designers with powerful arguments for investing in UX. By linking user experience directly to business metrics like revenue and retention, it empowers designers to articulate the tangible value of their work to stakeholders, bridging the gap between design and business objectives.</p>
+<p>Looking ahead, Muzli's "Mobile banking app design trends for 2026" offers a forward-thinking overview of UI/UX strategies for the fintech sector. As mobile banking becomes ubiquitous, understanding these trends is essential for designers creating engaging and functional financial applications.</p>
+<p>Practical innovation is also a key theme, as seen in the Reddit post "I got tired of manually inspecting websites, so I began automating design system extraction." This exemplifies a designer's initiative to create tools that solve repetitive tasks, highlighting the growing trend of designers leveraging automation for efficiency in design system management.</p>
+<p>Finally, "New Spider-Man logo frustrates fans thanks to one tiny detail" from Creative Bloq serves as a potent case study on the critical importance of detail in brand identity. It reminds designers that even minor alterations can significantly impact public perception and emotional connection to a brand, necessitating careful consideration in all design decisions. Meanwhile, CSS-Tricks' "What’s !important #11: 3D Voxel Scenes, Flying Focus, CSS Syntaxes, and More" showcases advanced frontend visual techniques, opening new avenues for interactive and aesthetically rich web design.</p>
+<p>Overall, today's news emphasizes the strategic role of design in business, the transformative power of AI and automation, and the continuous need for designers to evolve both their technical and soft skills to meet future challenges.</p>
+                    <nav class="article-nav">
+                        <a href="/reports/2026-05-15_Daily_Report.html">← 2026-05-15</a>
+                        <span class="spacer"></span>
+                        <a href="/reports/2026-W15_Weekly_Digest.html">2026-W15 →</a>
+                    </nav>
+                </article>
+            </div>
+        </main>
+    </div>
+
+    <script>
+        // Sidebar toggle (mobile)
+        document.getElementById('openSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.add('open');
+        });
+        document.getElementById('closeSidebar')?.addEventListener('click', () => {
+            document.getElementById('sidebar').classList.remove('open');
+        });
+
+        // Search (filters dynamically rendered links)
+        document.getElementById('searchInput')?.addEventListener('input', (e) => {
+            const q = e.target.value.trim().toLowerCase();
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.style.display = (!q || link.textContent.toLowerCase().includes(q)) ? '' : 'none';
+            });
+        });
+
+        // Dynamic sidebar from index.json
+        (async function() {
+            const navList = document.getElementById('navList');
+            try {
+                const res = await fetch('/index.json');
+                const reports = await res.json();
+                const now = new Date();
+                const sevenDaysAgo = new Date(now - 7 * 86400000).toISOString().slice(0, 10);
+                const currentPath = location.pathname;
+
+                const recent = [], weekly = [], older = {};
+                for (const r of reports) {
+                    if (r.filename.includes('Weekly')) {
+                        weekly.push(r);
+                    } else if (r.date >= sevenDaysAgo) {
+                        recent.push(r);
+                    } else {
+                        const month = r.date.slice(0, 7);
+                        (older[month] = older[month] || []).push(r);
+                    }
+                }
+
+                function section(icon, title, items, isOpen) {
+                    const cls = isOpen ? ' open' : '';
+                    let h = `<li class="nav-section${cls}"><button class="nav-section-header"><span class="icon">${icon}</span> ${title} <span class="nav-count">${items.length}</span> <span class="nav-arrow">▼</span></button><ul class="nav-items">`;
+                    for (const item of items) {
+                        const label = item.filename.includes('Weekly') ? `⭐ ${item.date}` : item.date;
+                        const href = `/reports/${item.filename.replace('.md', '.html')}`;
+                        const active = currentPath === href ? ' active' : '';
+                        h += `<li><a class="nav-link${active}" href="${href}">${label}</a></li>`;
+                    }
+                    return h + '</ul></li>';
+                }
+
+                let html = '';
+                if (recent.length) html += section('🕐', '最近日報', recent, true);
+                if (weekly.length) html += section('⭐', '每週精華', weekly, false);
+                for (const mk of Object.keys(older).sort().reverse()) {
+                    const [y, m] = mk.split('-');
+                    html += section('📂', `${y} 年 ${parseInt(m)} 月`, older[mk], false);
+                }
+                navList.innerHTML = html;
+
+                navList.querySelectorAll('.nav-section-header').forEach(btn => {
+                    btn.addEventListener('click', () => btn.closest('.nav-section').classList.toggle('open'));
+                });
+
+                const active = navList.querySelector('.nav-link.active');
+                if (active) active.scrollIntoView({ block: 'center', behavior: 'smooth' });
+            } catch (e) {
+                console.warn('Sidebar load failed:', e);
+            }
+        })();
+    </script>
+</body>
+</html>
