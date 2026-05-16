@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 16 May 2026 07:16:58 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 17 May 2026 07:12:52 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第19週 (2026-05-04 ~ 2026-05-10)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W19_Weekly_Digest.html</link>
@@ -41,6 +41,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 047 期 (2026-05-17)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-17_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-17_Daily_Report.html</guid>
+      <pubDate>Sun, 17 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 047 期 2026-05-17 各位數位產品設計師們，早安！今日的「設計脈動日報」為您匯集了最新的設計趨勢、工具洞察與靈感分享。從 AI 產品的介面挑戰，到品牌識別的策略革新，再到設計社群的實務討論，本期內容旨在為您的設計旅程提供前瞻性的視角與實用的啟發。讓我們一同探索今日設計領域的關鍵發展。   焦點設計導讀  1. AI 產品中的「復原」問題（The undo problem in AI products） 分析段落：這篇文章深入探討了 AI 產品中「復原」（Undo）功能的設計挑戰。傳統軟體中的復原操作簡單明確，但在生成式 AI 的語境下，每次生成都可能帶來巨大的</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 046 期 (2026-05-16)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-03_Daily_Report.html</guid>
       <pubDate>Sun, 03 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 031 期 2026-05-03   焦點設計導讀  1. 什麼是代理型使用者體驗 Agentic UX：設計 AI 代理介面（What is Agentic UX: Designing AI Agent Interfaces） 分析段落：這篇文章深入探討了代理型使用者體驗 Agentic UX，這是一種讓 AI 系統主動理解使用者意圖、自行決策並執行任務的設計方法。對於數位產品設計師而言，理解如何設計透明且可控的 AI 代理介面至關重要，因為 AI 將日益融入使用者旅程中，這不僅影響互動模式，也重新定義了使用者對產品的信任與期望。 - 原文連結：https://medi</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 030 期 (2026-05-02)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-02_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-02_Daily_Report.html</guid>
-      <pubDate>Sat, 02 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 030 期 2026-05-02  焦點設計導讀  1. Claude 設計：優點、缺點與不足之處（Claude Design: Good, Bad, and Ugly） 分析段落：這篇文章深入剖析了 Anthropic 最新推出的 AI 設計工具 Claude Design，檢視其在設計流程中的潛力與侷限。對於數位產品設計師而言，了解這類 AI 工具的真實能力，有助於我們評估如何在工作流中有效整合 AI，提升效率並識別當前的痛點。 - 原文連結：https://uxplanet.org/claude-design-good-bad-and-ugly-f60d9edb4a</description>
     </item>
   </channel>
 </rss>
