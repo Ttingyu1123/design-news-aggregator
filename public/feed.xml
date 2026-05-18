@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 18 May 2026 07:19:47 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 19 May 2026 07:38:24 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第20週 (2026-05-11 ~ 2026-05-17)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W20_Weekly_Digest.html</link>
@@ -48,6 +48,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 050 期 (2026-05-19)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-19_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-19_Daily_Report.html</guid>
+      <pubDate>Tue, 19 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 050 期 2026-05-19  焦點設計導讀  1. Claude Haiku：市場上最被低估的 AI 模型（Claude Haiku: The Most Underrated AI Model on the Market） 分析段落：這篇文章深入探討了 Anthropic 的 Claude Haiku 模型在產品設計領域的潛力與應用，對於數位產品設計師而言，了解如何有效整合這類輕量級、高效能的 AI 模型到設計工作流程中，將能顯著提升工作效率與創意可能性。它強調了 AI 在產品設計中的實際操作價值，而非僅限於概念層面。 - 原文連結：https://uxplanet</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 049 期 (2026-05-18)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-06_Daily_Report.html</guid>
       <pubDate>Wed, 06 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 035 期 2026-05-06  焦點設計導讀  1. 為端到端設計流程設計 AI 提示，讓您工作更快（Designed a prompt end-to-end for the design process and it will make you faster） - 分析與影響：這篇文章介紹了一個涵蓋從研究到交付的詳細 AI 提示設計，旨在提升設計流程的效率。它揭示了 AI 在設計工作流程中，不僅能輔助單一任務，更能透過結構化的提示，實現從概念發想、使用者研究到最終交付的全面加速。 - 設計師啟示：對於數位產品設計師而言，這意味著學習如何撰寫精準且全面的 AI 提示詞</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 034 期 (2026-05-05)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-05_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-05_Daily_Report.html</guid>
-      <pubDate>Tue, 05 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 034 期 2026-05-05  焦點設計導讀 資深產品設計師為您精選今日最具影響力與趨勢洞察的設計新聞：  1. 當 AI 決策，人類核准時 When AI decides and human signs off 分析段落：這篇文章深入探討了高風險 AI 產品中的核心設計問題，即 AI 應作為決策支援而非最終決策者。對於數位產品設計師而言，這強調了設計人機協作介面時，必須明確劃分 AI 提供資訊與人類最終判斷的職責，以確保信任與責任歸屬。 - 原文連結：https://uxdesign.cc/when-ai-decides-and-human-signs-off-90</description>
     </item>
   </channel>
 </rss>
