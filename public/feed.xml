@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 20 May 2026 07:40:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 21 May 2026 07:47:45 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第20週 (2026-05-11 ~ 2026-05-17)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W20_Weekly_Digest.html</link>
@@ -48,6 +48,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 052 期 (2026-05-21)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-21_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-21_Daily_Report.html</guid>
+      <pubDate>Thu, 21 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 052 期 2026-05-21  焦點設計導讀  1. Figma 在您的檔案中內建了 AI 代理。這到底有什麼作用？ Figma Just Put an Agent Inside Your File. Here’s What It Actually Does. 分析段落：Figma 將 AI 代理直接整合到設計畫布中，這項革新代表 AI 不再僅是側邊欄工具，而是深度參與設計流程的協作者。它能理解設計系統並直接編輯檔案，將顯著改變設計師的工作方式，加速從概念到實踐的轉化效率。 - 原文連結：https://medium.muz.li/figma-just-put-an-</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 051 期 (2026-05-20)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-08_Daily_Report.html</guid>
       <pubDate>Fri, 08 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 037 期 2026-05-08  焦點設計導讀  1. 什麼是 DESIGN.md 以及如何運用它（What is DESIGN.md and How To Use It） 分析段落：DESIGN.md 旨在為 AI 設計生成工具提供一致的輸出規範，解決了 AI 輔助設計中長期存在的「不穩定性」挑戰。對於數位產品設計師而言，掌握這個新興標準有助於在團隊中更有效率地整合 AI，確保設計資產與設計系統保持高度同步，進而提升設計工作流程的效率與品質。 - 原文連結：https://uxplanet.org/what-is-design-md-and-how-to-use-it</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 036 期 (2026-05-07)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-07_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-07_Daily_Report.html</guid>
-      <pubDate>Thu, 07 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 036 期 2026-05-07  焦點設計導讀  1. AI 不會取代你，但使用 AI 的設計師會：2026 年使用者經驗的新法則（AI Won’t Replace You But Designers Who Use AI Will: The New Rule of UX in 2026） 分析段落：這篇文章深入探討了 AI 時代下，UX 設計師如何透過擁抱 AI 工具來保持競爭力。對於數位產品設計師而言，這不僅是對未來趨勢的預警，更是職涯發展的關鍵指引，強調了學習與應用 AI 技能的重要性，以提升工作效率和創新能力。 - 原文連結：https://medium.muz</description>
     </item>
   </channel>
 </rss>
