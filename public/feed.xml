@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 23 May 2026 07:41:06 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 24 May 2026 07:14:43 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第20週 (2026-05-11 ~ 2026-05-17)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W20_Weekly_Digest.html</link>
@@ -48,6 +48,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 055 期 (2026-05-24)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-24_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-24_Daily_Report.html</guid>
+      <pubDate>Sun, 24 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 055 期 2026-05-24  焦點設計導讀  1. 探討設計師如何掌握 AI（Designing how designers master AI） 分析段落：這篇文章深入探討了設計師面對 AI 工具時的心態與學習路徑，強調掌握 AI 並非僅限於學習其操作，而是將其融入個人思維模式，創造獨特且持續演進的應用方式。對於數位產品設計師而言，這意味著我們應跳脫單純的工具指令操作，轉而思考如何利用 AI 擴展創意邊界與效率，將其視為個人設計流程的延伸。 - 原文連結：https://uxdesign.cc/designing-how-designers-master-ai-6</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 054 期 (2026-05-23)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html</guid>
       <pubDate>Mon, 11 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計變革及其引發的廣泛討論。對於品牌設計師而言，這不僅是一個品牌視覺更新的案例，更是一個學習如何透過簡潔符號傳達深層意義，並引導公眾對品牌未來發展產生共鳴的絕佳機會。觀察這些猜測，也能洞察品牌與消費者之間如何透過視覺溝通建立連結與想像空間。 - 原文連結：https://www.creativ</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 039 期 (2026-05-10)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-10_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-10_Daily_Report.html</guid>
-      <pubDate>Sun, 10 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 039 期 2026-05-10  焦點設計導讀  1. 左撇子的繩結（The left-handed rope） 分析段落：這篇文章深入探討了設計模式中看似微小的反轉，實則如何影響使用者的心理認知與行為習慣，強調設計師在創造通用介面時，應考慮不同群體的使用習慣與既定心智模型。這對於打造更具包容性與直覺性的數位產品介面至關重要，提醒我們細微的設計決策能產生深遠的使用體驗影響。 - 原文連結：https://uxdesign.cc/the-left-handed-rope-1875c30ad62e?source=rss----138adf9c44c---4  2. 《星際火</description>
     </item>
   </channel>
 </rss>
