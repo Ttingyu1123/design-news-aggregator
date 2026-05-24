@@ -6,7 +6,14 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 24 May 2026 07:14:43 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 25 May 2026 07:30:43 +0800</lastBuildDate>
+    <item>
+      <title>⭐ 本週設計精華回顧 - 2026年第21週 (2026-05-18 ~ 2026-05-24)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</guid>
+      <pubDate>Mon, 25 May 2026 06:00:00 +0800</pubDate>
+      <description>⭐ 本週設計精華回顧 - 2026年第21週 2026-05-18 ~ 2026-05-24  本週最重要的設計大事 本週的設計脈動清晰揭示了 AI 技術如何以前所未有的速度與深度，重塑數位產品設計的每一個層面。從核心設計工具的變革，到設計師角色職能的轉型，再到使用者體驗的全新挑戰與機遇，AI 的影響力無所不在。同時，品牌與設計系統的策略性演進，也為設計師提供了在快速變遷環境中保持競爭力的重要視角。  1. Figma 設計代理功能：設計工作流的顛覆性創新 Figma 本週兩度被提及其全新的「設計代理」（Design Agent）功能，被譽為自「自動排版」（Auto Layout）以來最具影響</description>
+    </item>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第20週 (2026-05-11 ~ 2026-05-17)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W20_Weekly_Digest.html</link>
@@ -48,6 +55,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 057 期 (2026-05-25)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-25_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-25_Daily_Report.html</guid>
+      <pubDate>Mon, 25 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 057 期 2026-05-25  焦點設計導讀 以下是本日最值得數位產品設計師關注的 7 條設計脈動：  1. 你不再是使用者，而是主事人。（You are no longer the user. You are the principal.） 分析段落：這篇文章探討了 Google 提升使用者角色至「主事人」的觀點，暗示著 AI 代理人可能代勞許多自動化任務。這對 UI/UX 設計師來說是典範轉移的警示，我們需要思考如何設計介面，讓使用者能更有效地管理這些 AI 代理人，而非僅僅與傳統介面互動。這也促使我們重新評估使用者旅程的定義與設計重心。 - 原文連結：https</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 055 期 (2026-05-24)</title>
@@ -132,20 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-13_Daily_Report.html</guid>
       <pubDate>Wed, 13 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 043 期 2026-05-13  焦點設計導讀  1. AI 產品中「空狀態」的消亡（The death of the empty state in AI products） 分析段落：這篇文章深入探討了 AI 產品如何重新定義使用者體驗中的「空狀態」。傳統上，空狀態設計旨在引導用戶、減少困惑，但在 AI 驅動的產品中，提示框的直接互動模式正逐漸取代這種需求，這對設計師提出了新的挑戰，需要重新思考互動模式與用戶引導策略。 - 原文連結：https://uxdesign.cc/the-death-of-the-empty-state-in-ai-products-2026</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 042 期 (2026-05-12)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-12_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-12_Daily_Report.html</guid>
-      <pubDate>Tue, 12 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 042 期 2026-05-12  焦點設計導讀  1. 提示非介面、將消失的 UI 模式，以及如何讓 Claude 遵循你的設計…（Prompt is not interface, UI patterns that won’t survive, how to make Claude follow your design…） 分析段落：這篇文章深刻探討了 AI 時代下，提示指令（Prompt）與使用者介面（UI）之間的核心差異，並預測了某些現有 UI 模式可能面臨的淘汰命運。對於數位產品設計師而言，理解如何將設計系統與 AI 工具（如 Claude）結合，確保 AI 產出</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 041 期 (2026-05-11)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-11_Daily_Report.html</guid>
-      <pubDate>Mon, 11 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 041 期 2026-05-11  焦點設計導讀  1. 特斯拉神秘新標誌設計引發意外猜測（Tesla's mysterious new logo design has sparked some surprising theories） 分析段落：這則新聞聚焦於科技巨擘特斯拉新標誌的設計變革及其引發的廣泛討論。對於品牌設計師而言，這不僅是一個品牌視覺更新的案例，更是一個學習如何透過簡潔符號傳達深層意義，並引導公眾對品牌未來發展產生共鳴的絕佳機會。觀察這些猜測，也能洞察品牌與消費者之間如何透過視覺溝通建立連結與想像空間。 - 原文連結：https://www.creativ</description>
     </item>
   </channel>
 </rss>
