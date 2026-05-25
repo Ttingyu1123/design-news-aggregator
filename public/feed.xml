@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 25 May 2026 07:30:43 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 26 May 2026 07:36:21 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第21週 (2026-05-18 ~ 2026-05-24)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</link>
@@ -55,6 +55,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 058 期 (2026-05-26)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-26_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-26_Daily_Report.html</guid>
+      <pubDate>Tue, 26 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 058 期 2026-05-26  焦點設計導讀 今日設計脈動聚焦於 AI 如何持續重塑使用者體驗與設計工具，以及網頁前端技術的演進如何提升互動層次。同時，品牌識別的深層影響與社群對設計趨勢的討論，也提醒著設計師需時刻關注產業脈絡與使用者心聲。  1. 我應該為人類還是機器設計？（Should I design for humans or machines?） - 專業分析：這篇文章探討了在 AI 時代下，「使用者」定義的轉變，從傳統的人類擴展到機器與自動化代理。對於設計師而言，這意味著我們需要重新思考設計原則與設計系統的建構方式，以適應機器作為「使用者」的需求，這將深刻</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 057 期 (2026-05-25)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html</guid>
       <pubDate>Thu, 14 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以建立使用者信任。本文深入探討如何透過揭示 AI 系統的處理過程、狀態及決策機制來提升透明度，這對於設計師在構建複雜 AI 產品時，創造可靠且負責任的用戶體驗至關重要。 - 原文連結：https://smashingmagazine.com/2026/05/practical-interfa</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 043 期 (2026-05-13)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-13_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-13_Daily_Report.html</guid>
-      <pubDate>Wed, 13 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 043 期 2026-05-13  焦點設計導讀  1. AI 產品中「空狀態」的消亡（The death of the empty state in AI products） 分析段落：這篇文章深入探討了 AI 產品如何重新定義使用者體驗中的「空狀態」。傳統上，空狀態設計旨在引導用戶、減少困惑，但在 AI 驅動的產品中，提示框的直接互動模式正逐漸取代這種需求，這對設計師提出了新的挑戰，需要重新思考互動模式與用戶引導策略。 - 原文連結：https://uxdesign.cc/the-death-of-the-empty-state-in-ai-products-2026</description>
     </item>
   </channel>
 </rss>
