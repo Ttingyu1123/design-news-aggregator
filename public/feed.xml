@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 26 May 2026 07:36:21 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 27 May 2026 07:40:54 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第21週 (2026-05-18 ~ 2026-05-24)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</link>
@@ -55,6 +55,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 059 期 (2026-05-27)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-27_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-27_Daily_Report.html</guid>
+      <pubDate>Wed, 27 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 059 期 2026-05-27  焦點設計導讀  1. AI 與 XR 天作之合：將現實視為多層次畫布（AI &amp; XR are made for each other 3: Reality as a Multi-Layered Canvas） 分析段落：這篇文章探討了 AI 與擴增實境（XR）的深度融合，將現實世界轉變為動態且多層次的數位畫布。對於數位產品設計師而言，這不僅預示著未來互動介面的巨大變革，更挑戰我們重新思考空間設計與使用者體驗的無限可能性。 - 原文連結：https://uxplanet.org/ai-xr-are-made-for-each-other-</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 058 期 (2026-05-26)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-15_Daily_Report.html</guid>
       <pubDate>Fri, 15 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 045 期 2026-05-15  焦點設計導讀  1. Figma 在 AI 設計時代還有用嗎？ Is Figma Still Relevant in the AI Design Era? 分析段落：隨著 AI 設計工具的快速發展，本文探討了 Figma 在新時代的角色與價值。它提醒設計師，Figma 仍是協作與精細控制的強大平台，但需與 AI 工具結合，才能最大化效率與創意，而非完全被取代。這對數位產品設計師來說，意味著技能組的演變，將更注重策略思維與工具整合能力。 - 原文連結：https://uxplanet.org/is-figma-still-relevant</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 044 期 (2026-05-14)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-14_Daily_Report.html</guid>
-      <pubDate>Thu, 14 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 044 期 2026-05-14  焦點設計導讀  1. 實現 AI 透明度的實用介面模式（第二部分）（Practical Interface Patterns For AI Transparency Part 2） 分析段落：隨著 AI 技術日益普及於使用者介面，傳統的載入模式已不足以建立使用者信任。本文深入探討如何透過揭示 AI 系統的處理過程、狀態及決策機制來提升透明度，這對於設計師在構建複雜 AI 產品時，創造可靠且負責任的用戶體驗至關重要。 - 原文連結：https://smashingmagazine.com/2026/05/practical-interfa</description>
     </item>
   </channel>
 </rss>
