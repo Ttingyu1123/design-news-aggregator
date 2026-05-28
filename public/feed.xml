@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 28 May 2026 07:42:07 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 29 May 2026 07:47:10 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第21週 (2026-05-18 ~ 2026-05-24)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</link>
@@ -55,6 +55,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 061 期 (2026-05-29)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-29_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-29_Daily_Report.html</guid>
+      <pubDate>Fri, 29 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 061 期 2026-05-29   焦點設計導讀  1. 演算法主題引擎：運用 contrast-color 建立自我校正的色彩系統 Algorithmic Theming Engines: Building Self-Correcting Color Systems With contrast-color 分析段落：這篇文章深入探討了 CSS 新提案 contrast-color 如何幫助設計師和開發者自動建立符合 WCAG 無障礙規範的色彩系統。它不僅提升了設計系統的自動化程度，更從根本上解決了網頁無障礙設計中常見的對比度問題，是未來前端視覺技術與包容性設計的重大突</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 060 期 (2026-05-28)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-17_Daily_Report.html</guid>
       <pubDate>Sun, 17 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 047 期 2026-05-17 各位數位產品設計師們，早安！今日的「設計脈動日報」為您匯集了最新的設計趨勢、工具洞察與靈感分享。從 AI 產品的介面挑戰，到品牌識別的策略革新，再到設計社群的實務討論，本期內容旨在為您的設計旅程提供前瞻性的視角與實用的啟發。讓我們一同探索今日設計領域的關鍵發展。   焦點設計導讀  1. AI 產品中的「復原」問題（The undo problem in AI products） 分析段落：這篇文章深入探討了 AI 產品中「復原」（Undo）功能的設計挑戰。傳統軟體中的復原操作簡單明確，但在生成式 AI 的語境下，每次生成都可能帶來巨大的</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 046 期 (2026-05-16)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-16_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-16_Daily_Report.html</guid>
-      <pubDate>Sat, 16 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 046 期 2026-05-16  焦點設計導讀  1. AI 驅動產品設計：迷思與現實（AI-Powered Product Design: Myths &amp; Reality） 分析段落：這篇文章探討了 AI 如何快速改變產品設計領域，並澄清了關於 AI 將取代設計師或僅為過度炒作的兩極化觀點。對於數位產品設計師而言，理解 AI 在設計流程中的實際應用與潛力，有助於我們更有效地利用工具提升效率與創造力，而非被不實的預期所困擾。 - 原文連結：https://uxplanet.org/ai-powered-product-design-myths-reality-399c4</description>
     </item>
   </channel>
 </rss>
