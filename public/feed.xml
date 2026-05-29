@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Fri, 29 May 2026 07:47:10 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 30 May 2026 07:46:39 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第21週 (2026-05-18 ~ 2026-05-24)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W21_Weekly_Digest.html</link>
@@ -55,6 +55,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 062 期 (2026-05-30)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-05-30_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-30_Daily_Report.html</guid>
+      <pubDate>Sat, 30 May 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 062 期 2026-05-30  焦點設計導讀  1. 為 AI 設計，意味著回歸 1999 年的設計思維（Designing for AI means designing like it’s 1999） 分析段落：這篇文章深入探討了 AI 時代的設計應如何借鑒網路初期「未完成、手工製作」的思維，呼籲設計師重新思考人機互動的本質。對於數位產品設計師而言，這提醒我們應跳脫既有框架，重新擁抱實驗性與開放性，而非一味追求完美或過度自動化，這對設計師在開發 AI 產品時的思維模式具有啟發性。 - 原文連結：https://uxdesign.cc/designing-for-ai</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 061 期 (2026-05-29)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-18_Daily_Report.html</guid>
       <pubDate>Mon, 18 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 049 期 2026-05-18  焦點設計導讀 Featured Design Insights  1. 兩個齒輪，一個指南針：在高速設計中維持品質（Two gears, one compass: designing at velocity while sustaining quality） 分析段落：這篇文章深入探討了如何在擁抱 AI 增強設計實踐的同時，維持設計工作的品質與效率。對於數位產品設計師而言，如何在快速迭代的過程中，不犧牲使用者體驗和介面精緻度，是當前極具挑戰性的課題，其提出的思維轉變為設計團隊提供了寶貴的策略方向。 - 原文連結：https://uxde</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 047 期 (2026-05-17)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-17_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-17_Daily_Report.html</guid>
-      <pubDate>Sun, 17 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 047 期 2026-05-17 各位數位產品設計師們，早安！今日的「設計脈動日報」為您匯集了最新的設計趨勢、工具洞察與靈感分享。從 AI 產品的介面挑戰，到品牌識別的策略革新，再到設計社群的實務討論，本期內容旨在為您的設計旅程提供前瞻性的視角與實用的啟發。讓我們一同探索今日設計領域的關鍵發展。   焦點設計導讀  1. AI 產品中的「復原」問題（The undo problem in AI products） 分析段落：這篇文章深入探討了 AI 產品中「復原」（Undo）功能的設計挑戰。傳統軟體中的復原操作簡單明確，但在生成式 AI 的語境下，每次生成都可能帶來巨大的</description>
     </item>
   </channel>
 </rss>
