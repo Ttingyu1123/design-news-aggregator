@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 01 Jun 2026 07:35:26 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 02 Jun 2026 07:47:26 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 066 期 (2026-06-02)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-02_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-02_Daily_Report.html</guid>
+      <pubDate>Tue, 02 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 066 期 2026-06-02  焦點設計導讀  1. 複雜動畫效果的 Claude Code 設計（Complex Animated Effects Design in Claude Code） 分析段落：這篇文章深入探討了如何利用 AI 程式碼工具（如 Claude Code）來創造複雜的動態效果。對於數位產品設計師而言，這揭示了 AI 在互動設計與動態圖形領域的巨大潛力，讓複雜的動畫製作變得更高效、更易實現，同時也挑戰設計師如何在 AI 輔助下維持獨特創意與品質。 - 原文連結：https://uxplanet.org/complex-animated-effec</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 065 期 (2026-06-01)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-22_Daily_Report.html</guid>
       <pubDate>Fri, 22 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 053 期 2026-05-22 數位產品設計師們，大家好！今日的設計脈動日報為您精選了近期最重要的設計趨勢與技術動態。人工智慧持續深化於設計工具與工作流程中，從搜尋引擎的體驗變革到 No-Code 平台的 AI 整合，無一不顯示 AI 正重塑我們的設計實踐。同時，設計系統的演進與前端技術的創新也值得我們深入探討。  焦點設計導讀  1. Google 搜尋已死，Google 搜尋萬歲。（Google Search is Dead. Long Live Google Search.） 分析段落：這篇文章探討了 Google 搜尋體驗的根本性轉變，從傳統的「藍色連結列表」過</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 052 期 (2026-05-21)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-21_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-21_Daily_Report.html</guid>
-      <pubDate>Thu, 21 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 052 期 2026-05-21  焦點設計導讀  1. Figma 在您的檔案中內建了 AI 代理。這到底有什麼作用？ Figma Just Put an Agent Inside Your File. Here’s What It Actually Does. 分析段落：Figma 將 AI 代理直接整合到設計畫布中，這項革新代表 AI 不再僅是側邊欄工具，而是深度參與設計流程的協作者。它能理解設計系統並直接編輯檔案，將顯著改變設計師的工作方式，加速從概念到實踐的轉化效率。 - 原文連結：https://medium.muz.li/figma-just-put-an-</description>
     </item>
   </channel>
 </rss>
