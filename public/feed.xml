@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 04 Jun 2026 08:13:23 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 05 Jun 2026 07:41:50 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 069 期 (2026-06-05)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-05_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-05_Daily_Report.html</guid>
+      <pubDate>Fri, 05 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 069 期 2026-06-05  焦點設計導讀  1. 建立人工智慧就緒的設計系統：清單（Creating AI-Ready Design System: Checklist） 分析段落：隨著人工智慧日益融入產品開發流程，設計系統也必須隨之演進。這篇文章提供了實用的檢查清單，幫助設計師評估並優化現有設計系統，使其能更好地支援AI驅動的設計工作流程，確保元件的模組化、語義化與數據可連結性，是現代設計師不可或缺的知識。 - 原文連結：https://uxplanet.org/creating-ai-ready-design-system-checklist-547a0256</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 068 期 (2026-06-04)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-25_Daily_Report.html</guid>
       <pubDate>Mon, 25 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 057 期 2026-05-25  焦點設計導讀 以下是本日最值得數位產品設計師關注的 7 條設計脈動：  1. 你不再是使用者，而是主事人。（You are no longer the user. You are the principal.） 分析段落：這篇文章探討了 Google 提升使用者角色至「主事人」的觀點，暗示著 AI 代理人可能代勞許多自動化任務。這對 UI/UX 設計師來說是典範轉移的警示，我們需要思考如何設計介面，讓使用者能更有效地管理這些 AI 代理人，而非僅僅與傳統介面互動。這也促使我們重新評估使用者旅程的定義與設計重心。 - 原文連結：https</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 055 期 (2026-05-24)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-24_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-24_Daily_Report.html</guid>
-      <pubDate>Sun, 24 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 055 期 2026-05-24  焦點設計導讀  1. 探討設計師如何掌握 AI（Designing how designers master AI） 分析段落：這篇文章深入探討了設計師面對 AI 工具時的心態與學習路徑，強調掌握 AI 並非僅限於學習其操作，而是將其融入個人思維模式，創造獨特且持續演進的應用方式。對於數位產品設計師而言，這意味著我們應跳脫單純的工具指令操作，轉而思考如何利用 AI 擴展創意邊界與效率，將其視為個人設計流程的延伸。 - 原文連結：https://uxdesign.cc/designing-how-designers-master-ai-6</description>
     </item>
   </channel>
 </rss>
