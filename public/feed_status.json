@@ -1,5 +1,5 @@
 {
-  "last_check": "2026-06-05T07:40:30",
+  "last_check": "2026-06-06T07:41:19",
   "total": 36,
   "ok": 22,
   "error": 14,
@@ -8,10 +8,9 @@
       "name": "Figma Blog",
       "url": "https://www.figma.com/blog/feed/",
       "category": "UI_UX_Design_Tools",
-      "status": "ok",
-      "entries": 0,
-      "latest": null,
-      "response_time": 0.2
+      "status": "error",
+      "error": "<unknown>:12:25: not well-formed (invalid token)",
+      "response_time": 0.73
     },
     {
       "name": "Adobe Blog",
@@ -19,7 +18,7 @@
       "category": "UI_UX_Design_Tools",
       "status": "error",
       "error": "<unknown>:3:0: XML or text declaration not at start of entity",
-      "response_time": 0.12
+      "response_time": 0.2
     },
     {
       "name": "Sketch Blog",
@@ -28,7 +27,7 @@
       "status": "ok",
       "entries": 25,
       "latest": "2026-02-20",
-      "response_time": 0.32
+      "response_time": 0.51
     },
     {
       "name": "UX Planet",
@@ -36,8 +35,8 @@
       "category": "UI_UX_Design_Tools",
       "status": "ok",
       "entries": 10,
-      "latest": "2026-06-04",
-      "response_time": 0.19
+      "latest": "2026-06-05",
+      "response_time": 0.3
     },
     {
       "name": "Nielsen Norman Group",
@@ -45,8 +44,8 @@
       "category": "UI_UX_Design_Tools",
       "status": "ok",
       "entries": 20,
-      "latest": "2026-06-03",
-      "response_time": 0.16
+      "latest": "2026-06-05",
+      "response_time": 0.34
     },
     {
       "name": "UX Collective",
@@ -54,8 +53,8 @@
       "category": "UI_UX_Design_Tools",
       "status": "ok",
       "entries": 10,
-      "latest": "2026-06-04",
-      "response_time": 0.2
+      "latest": "2026-06-05",
+      "response_time": 0.33
     },
     {
       "name": "Penpot Blog",
@@ -63,7 +62,7 @@
       "category": "UI_UX_Design_Tools",
       "status": "error",
       "error": "<unknown>:2:0: syntax error",
-      "response_time": 0.5
+      "response_time": 0.65
     },
     {
       "name": "Prototypr",
@@ -72,7 +71,7 @@
       "status": "ok",
       "entries": 10,
       "latest": "2026-03-29",
-      "response_time": 1.63
+      "response_time": 0.27
     },
     {
       "name": "Smashing Magazine",
@@ -81,15 +80,16 @@
       "status": "ok",
       "entries": 40,
       "latest": "2026-06-03",
-      "response_time": 0.62
+      "response_time": 0.69
     },
     {
       "name": "CSS-Tricks",
       "url": "https://css-tricks.com/feed/",
       "category": "Web_Design_and_NoCode",
-      "status": "error",
-      "error": "<unknown>:7:2: mismatched tag",
-      "response_time": 0.17
+      "status": "ok",
+      "entries": 15,
+      "latest": "2026-06-04",
+      "response_time": 1.09
     },
     {
       "name": "A List Apart",
@@ -98,7 +98,7 @@
       "status": "ok",
       "entries": 20,
       "latest": "2026-04-23",
-      "response_time": 0.22
+      "response_time": 0.34
     },
     {
       "name": "Webflow Blog",
@@ -107,7 +107,7 @@
       "status": "ok",
       "entries": 100,
       "latest": "2026-06-04",
-      "response_time": 0.18
+      "response_time": 0.36
     },
     {
       "name": "Framer Blog",
@@ -115,7 +115,7 @@
       "category": "Web_Design_and_NoCode",
       "status": "error",
       "error": "<unknown>:2:0: syntax error",
-      "response_time": 0.36
+      "response_time": 0.46
     },
     {
       "name": "Codrops",
@@ -123,8 +123,8 @@
       "category": "Web_Design_and_NoCode",
       "status": "ok",
       "entries": 10,
-      "latest": "2026-06-04",
-      "response_time": 1.05
+      "latest": "2026-06-05",
+      "response_time": 0.93
     },
     {
       "name": "The Verge - AI",
@@ -132,8 +132,8 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "ok",
       "entries": 10,
-      "latest": "2026-06-04",
-      "response_time": 0.19
+      "latest": "2026-06-05",
+      "response_time": 0.17
     },
     {
       "name": "It's Nice That",
@@ -141,7 +141,7 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "error",
       "error": "<unknown>:2:0: syntax error",
-      "response_time": 0.4
+      "response_time": 0.53
     },
     {
       "name": "Creative Bloq",
@@ -149,8 +149,8 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "ok",
       "entries": 25,
-      "latest": "2026-06-04",
-      "response_time": 0.12
+      "latest": "2026-06-05",
+      "response_time": 0.29
     },
     {
       "name": "Digital Arts",
@@ -158,7 +158,7 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "error",
       "error": "<unknown>:28:0: undefined entity",
-      "response_time": 0.48
+      "response_time": 0.57
     },
     {
       "name": "Runway Blog",
@@ -166,7 +166,7 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "error",
       "error": "text/html; charset=utf-8 is not an XML media type",
-      "response_time": 0.63
+      "response_time": 0.51
     },
     {
       "name": "ComfyUI Releases",
@@ -175,7 +175,7 @@
       "status": "ok",
       "entries": 10,
       "latest": "2026-06-04",
-      "response_time": 0.95
+      "response_time": 1.22
     },
     {
       "name": "Krita News",
@@ -184,7 +184,7 @@
       "status": "ok",
       "entries": 20,
       "latest": "2026-06-02",
-      "response_time": 1.07
+      "response_time": 1.31
     },
     {
       "name": "GIMP News",
@@ -192,7 +192,7 @@
       "category": "AI_Design_and_Creative_Tech",
       "status": "error",
       "error": "document declared as us-ascii, but parsed as utf-8",
-      "response_time": 1.21
+      "response_time": 1.22
     },
     {
       "name": "Blender Releases",
@@ -201,7 +201,7 @@
       "status": "ok",
       "entries": 10,
       "latest": "2026-05-18",
-      "response_time": 0.15
+      "response_time": 0.3
     },
     {
       "name": "Awwwards Blog",
@@ -209,7 +209,7 @@
       "category": "Design_Inspiration_and_Community",
       "status": "error",
       "error": "text/html; charset=UTF-8 is not an XML media type",
-      "response_time": 0.51
+      "response_time": 0.68
     },
     {
       "name": "Dribbble Stories",
@@ -218,7 +218,7 @@
       "status": "ok",
       "entries": 20,
       "latest": "2026-04-28",
-      "response_time": 0.29
+      "response_time": 0.43
     },
     {
       "name": "Brand New",
@@ -226,7 +226,7 @@
       "category": "Design_Inspiration_and_Community",
       "status": "error",
       "error": "HTTP 500",
-      "response_time": 0.23
+      "response_time": 0.38
     },
     {
       "name": "SiteInspire",
@@ -234,7 +234,7 @@
       "category": "Design_Inspiration_and_Community",
       "status": "error",
       "error": "<unknown>:2:39: not well-formed (invalid token)",
-      "response_time": 0.13
+      "response_time": 0.22
     },
     {
       "name": "Muzli Design Inspiration",
@@ -243,7 +243,7 @@
       "status": "ok",
       "entries": 10,
       "latest": "2026-06-04",
-      "response_time": 0.23
+      "response_time": 0.33
     },
     {
       "name": "Reddit r/web_design",
@@ -251,8 +251,8 @@
       "category": "Design_Inspiration_and_Community",
       "status": "ok",
       "entries": 25,
-      "latest": "2026-05-29",
-      "response_time": 0.68
+      "latest": "2026-06-05",
+      "response_time": 1.16
     },
     {
       "name": "Reddit r/comfyui",
@@ -261,7 +261,7 @@
       "status": "ok",
       "entries": 25,
       "latest": "2026-06-03",
-      "response_time": 1.1
+      "response_time": 1.15
     },
     {
       "name": "Reddit r/UI_Design",
@@ -270,7 +270,7 @@
       "status": "ok",
       "entries": 25,
       "latest": "2026-06-02",
-      "response_time": 0.96
+      "response_time": 1.03
     },
     {
       "name": "Reddit r/midjourney",
@@ -279,7 +279,7 @@
       "status": "ok",
       "entries": 25,
       "latest": "2026-04-14",
-      "response_time": 0.94
+      "response_time": 1.09
     },
     {
       "name": "Google Design",
@@ -287,7 +287,7 @@
       "category": "Design_Systems_and_Typography",
       "status": "error",
       "error": "<unknown>:2:20762: not well-formed (invalid token)",
-      "response_time": 0.19
+      "response_time": 0.33
     },
     {
       "name": "Typewolf",
@@ -295,7 +295,7 @@
       "category": "Design_Systems_and_Typography",
       "status": "error",
       "error": "text/html; charset=UTF-8 is not an XML media type",
-      "response_time": 0.28
+      "response_time": 0.34
     },
     {
       "name": "Fonts In Use",
@@ -303,7 +303,7 @@
       "category": "Design_Systems_and_Typography",
       "status": "error",
       "error": "<unknown>:69:2: mismatched tag",
-      "response_time": 0.57
+      "response_time": 0.94
     },
     {
       "name": "Abduzeedo",
@@ -311,8 +311,8 @@
       "category": "Design_Systems_and_Typography",
       "status": "ok",
       "entries": 50,
-      "latest": "2026-06-04",
-      "response_time": 0.19
+      "latest": "2026-06-05",
+      "response_time": 0.24
     }
   ]
 }
