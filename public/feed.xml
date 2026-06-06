@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 06 Jun 2026 07:42:46 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 07 Jun 2026 07:33:10 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 071 期 (2026-06-07)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-07_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-07_Daily_Report.html</guid>
+      <pubDate>Sun, 07 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 071 期 2026-06-07  焦點設計導讀 今日的設計脈動中，我們觀察到業界對於專案管理、使用者中心原則、AI 倫理與工具應用，以及設計同質化趨勢的深入反思。同時，新穎的設計輔助工具與實際的 UI/UX 案例研究也為設計師提供了寶貴的實務啟示。  1. 快速推進的心理代價（The psychological cost of moving too fast） 分析段落：這篇文章探討了在 AI 時代中，專案快速推進可能帶來的心理壓力和對「探索」（discovery）階段的忽視。對於數位產品設計師而言，這提醒我們應重新審視設計流程中研究的重要性，確保在追求速度的同時不犧牲</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 070 期 (2026-06-06)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-27_Daily_Report.html</guid>
       <pubDate>Wed, 27 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 059 期 2026-05-27  焦點設計導讀  1. AI 與 XR 天作之合：將現實視為多層次畫布（AI &amp; XR are made for each other 3: Reality as a Multi-Layered Canvas） 分析段落：這篇文章探討了 AI 與擴增實境（XR）的深度融合，將現實世界轉變為動態且多層次的數位畫布。對於數位產品設計師而言，這不僅預示著未來互動介面的巨大變革，更挑戰我們重新思考空間設計與使用者體驗的無限可能性。 - 原文連結：https://uxplanet.org/ai-xr-are-made-for-each-other-</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 058 期 (2026-05-26)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-26_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-26_Daily_Report.html</guid>
-      <pubDate>Tue, 26 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 058 期 2026-05-26  焦點設計導讀 今日設計脈動聚焦於 AI 如何持續重塑使用者體驗與設計工具，以及網頁前端技術的演進如何提升互動層次。同時，品牌識別的深層影響與社群對設計趨勢的討論，也提醒著設計師需時刻關注產業脈絡與使用者心聲。  1. 我應該為人類還是機器設計？（Should I design for humans or machines?） - 專業分析：這篇文章探討了在 AI 時代下，「使用者」定義的轉變，從傳統的人類擴展到機器與自動化代理。對於設計師而言，這意味著我們需要重新思考設計原則與設計系統的建構方式，以適應機器作為「使用者」的需求，這將深刻</description>
     </item>
   </channel>
 </rss>
