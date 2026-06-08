@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 08 Jun 2026 07:33:47 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 09 Jun 2026 07:41:12 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 073 期 (2026-06-09)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-09_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-09_Daily_Report.html</guid>
+      <pubDate>Tue, 09 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 073 期 2026-06-09  焦點設計導讀  Figma skills for Claude Code: Complete Guide Figma 技能用於 Claude Code：完整指南 這篇文章深入探討如何在 Claude Code 中有效運用 Figma 的設計技巧，對於依賴 Figma 進行設計並希望與 AI 協作開發的設計師來說，提供了實用的指引。它強調了設計師在 AI 時代的關鍵技能，以及如何將設計資產無縫轉移至 AI 開發流程中。 - 原文連結：https://uxplanet.org/figma-skills-for-claude-code-com</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 072 期 (2026-06-08)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-29_Daily_Report.html</guid>
       <pubDate>Fri, 29 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 061 期 2026-05-29   焦點設計導讀  1. 演算法主題引擎：運用 contrast-color 建立自我校正的色彩系統 Algorithmic Theming Engines: Building Self-Correcting Color Systems With contrast-color 分析段落：這篇文章深入探討了 CSS 新提案 contrast-color 如何幫助設計師和開發者自動建立符合 WCAG 無障礙規範的色彩系統。它不僅提升了設計系統的自動化程度，更從根本上解決了網頁無障礙設計中常見的對比度問題，是未來前端視覺技術與包容性設計的重大突</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 060 期 (2026-05-28)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-28_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-28_Daily_Report.html</guid>
-      <pubDate>Thu, 28 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 060 期 2026-05-28  焦點設計導讀 今日設計脈動日報為數位產品設計師們精選了八條最具影響力與趨勢性的設計新聞，涵蓋了 AI 在設計中的倫理與實踐、設計工具的進化、互動設計的深度探討，以及重要的設計方法論。  1. AI 與人類之間的信任鴻溝（The trust gap between AI and humans） 分析段落：隨著 AI 技術的日益普及，建立使用者對 AI 系統的信任成為設計師面臨的關鍵挑戰。這篇文章深入剖析了 AI 產品在導入初期可能遇到的信任障礙，並強調了設計師在透過直觀介面和透明溝通來彌合這一鴻溝、確保 AI 解決方案能被有效採納方面的核</description>
     </item>
   </channel>
 </rss>
