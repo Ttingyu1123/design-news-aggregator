@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 09 Jun 2026 07:41:12 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 10 Jun 2026 07:49:36 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 074 期 (2026-06-10)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-10_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-10_Daily_Report.html</guid>
+      <pubDate>Wed, 10 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 074 期 2026-06-10  焦點設計導讀  1. AI 並未取代設計師——它提升了設計師的職位（AI didn’t replace designers-it promoted them） 分析段落：這篇文章深入探討了 AI 如何重新定義產品設計師的角色，將其從單純的規格制定者提升為系統架構師。對於數位產品設計師而言，這意味著我們應將重點從執行性任務轉向策略思考與系統規劃，利用 AI 工具強化效率並專注於更高層次的設計決策。這項趨勢強調了設計師需不斷進化技能樹，以應對 AI 帶來的產業轉型。 - 原文連結：https://uxdesign.cc/ai-didnt-r</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 073 期 (2026-06-09)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-30_Daily_Report.html</guid>
       <pubDate>Sat, 30 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 062 期 2026-05-30  焦點設計導讀  1. 為 AI 設計，意味著回歸 1999 年的設計思維（Designing for AI means designing like it’s 1999） 分析段落：這篇文章深入探討了 AI 時代的設計應如何借鑒網路初期「未完成、手工製作」的思維，呼籲設計師重新思考人機互動的本質。對於數位產品設計師而言，這提醒我們應跳脫既有框架，重新擁抱實驗性與開放性，而非一味追求完美或過度自動化，這對設計師在開發 AI 產品時的思維模式具有啟發性。 - 原文連結：https://uxdesign.cc/designing-for-ai</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 061 期 (2026-05-29)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-29_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-29_Daily_Report.html</guid>
-      <pubDate>Fri, 29 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 061 期 2026-05-29   焦點設計導讀  1. 演算法主題引擎：運用 contrast-color 建立自我校正的色彩系統 Algorithmic Theming Engines: Building Self-Correcting Color Systems With contrast-color 分析段落：這篇文章深入探討了 CSS 新提案 contrast-color 如何幫助設計師和開發者自動建立符合 WCAG 無障礙規範的色彩系統。它不僅提升了設計系統的自動化程度，更從根本上解決了網頁無障礙設計中常見的對比度問題，是未來前端視覺技術與包容性設計的重大突</description>
     </item>
   </channel>
 </rss>
