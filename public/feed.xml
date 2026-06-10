@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 10 Jun 2026 07:49:36 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 11 Jun 2026 07:57:50 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第22週 (2026-05-25 ~ 2026-05-31)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W22_Weekly_Digest.html</link>
@@ -62,6 +62,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 075 期 (2026-06-11)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-11_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-11_Daily_Report.html</guid>
+      <pubDate>Thu, 11 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 075 期 2026-06-11  焦點設計導讀  Claude Fable 5 for Product Designers Claude Fable 5 於產品設計師的應用 分析段落： Anthropic 推出的 Claude Fable 5 模型，標榜為其迄今為止最強大的 AI 模型，並強調其在生物學等領域的技能。然而，一篇報導指出該模型在面對基本生物學問題時，反而會轉介至舊模型。這凸顯了即便強大的 AI 工具，在特定應用場景下仍有其侷限性，提醒設計師需審慎評估 AI 工具的實際效益與可靠性，而非一味追求最新技術。 - 原文連結：https://uxplanet.or</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 074 期 (2026-06-10)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-05-31_Daily_Report.html</guid>
       <pubDate>Sun, 31 May 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 063 期 2026-05-31  焦點設計導讀  1. 情感科技的未來：促進成長與自我覺察的「舒適網站」（The Future of Emotional Technology: Comfort Websites for Growth and Self-Awareness） 分析段落：這篇文章深入探討了如何透過有意識的設計，創造出能支持用戶情感成長與自我覺察的「舒適網站」。在 AI 日益普及的世界中，設計師應思考如何將人本關懷與情感連結融入數位體驗，超越單純的功能性，以提升用戶的心理福祉。 - 原文連結：https://tympanus.net/codrops/2026/</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 062 期 (2026-05-30)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-05-30_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-05-30_Daily_Report.html</guid>
-      <pubDate>Sat, 30 May 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 062 期 2026-05-30  焦點設計導讀  1. 為 AI 設計，意味著回歸 1999 年的設計思維（Designing for AI means designing like it’s 1999） 分析段落：這篇文章深入探討了 AI 時代的設計應如何借鑒網路初期「未完成、手工製作」的思維，呼籲設計師重新思考人機互動的本質。對於數位產品設計師而言，這提醒我們應跳脫既有框架，重新擁抱實驗性與開放性，而非一味追求完美或過度自動化，這對設計師在開發 AI 產品時的思維模式具有啟發性。 - 原文連結：https://uxdesign.cc/designing-for-ai</description>
     </item>
   </channel>
 </rss>
