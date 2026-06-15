@@ -22,6 +22,7 @@ with open("config.json", "r", encoding="utf-8") as f:
     config = json.load(f)
 
 MODEL_NAME = config.get("summary", {}).get("model", "gemini-1.5-pro-latest")
+FALLBACK_MODEL = config.get("summary", {}).get("fallback_model", "")
 
 def get_week_reports():
     """取得過去 7 天的日報內容"""
@@ -92,7 +93,18 @@ def generate_weekly_digest(reports):
         response = model.generate_content(prompt)
         return response.text
     except Exception as e:
-        print(f"❌ Gemini API 呼叫失敗: {e}")
+        print(f"⚠️ {MODEL_NAME} 呼叫失敗: {e}")
+        if FALLBACK_MODEL:
+            print(f"🔄 切換到 fallback 模型: {FALLBACK_MODEL}")
+            try:
+                fallback = genai.GenerativeModel(
+                    FALLBACK_MODEL,
+                    system_instruction=model._system_instruction,
+                )
+                response = fallback.generate_content(prompt)
+                return response.text
+            except Exception as e2:
+                print(f"❌ Fallback 也失敗: {e2}")
         return None
 
 def strip_code_fence(text):
