@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 16 Jun 2026 08:05:59 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 17 Jun 2026 07:56:07 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第24週 (2026-06-08 ~ 2026-06-14)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W24_Weekly_Digest.html</link>
@@ -69,6 +69,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 082 期 (2026-06-17)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-17_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-17_Daily_Report.html</guid>
+      <pubDate>Wed, 17 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 082 期 2026-06-17  焦點設計導讀 今日設計脈動聚焦於 AI 如何持續重塑我們的設計實踐，從工具應用到深層思維模式的轉變。同時，對基礎設計元素如作品集和使用者體驗的本質探討，也提醒我們在科技浪潮中，不忘以人為本的核心價值。  1. 2026 年最古老設計作品集格式的變革之道（How one of the oldest design portfolio formats needs to change in 2026） 分析段落：這篇文章探討了現有設計作品集格式的不足之處，並提出在 2026 年應如何演進，以更有效展示設計師的能力和專案影響力。對於正在尋求職涯發</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 081 期 (2026-06-16)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-07_Daily_Report.html</guid>
       <pubDate>Sun, 07 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 071 期 2026-06-07  焦點設計導讀 今日的設計脈動中，我們觀察到業界對於專案管理、使用者中心原則、AI 倫理與工具應用，以及設計同質化趨勢的深入反思。同時，新穎的設計輔助工具與實際的 UI/UX 案例研究也為設計師提供了寶貴的實務啟示。  1. 快速推進的心理代價（The psychological cost of moving too fast） 分析段落：這篇文章探討了在 AI 時代中，專案快速推進可能帶來的心理壓力和對「探索」（discovery）階段的忽視。對於數位產品設計師而言，這提醒我們應重新審視設計流程中研究的重要性，確保在追求速度的同時不犧牲</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 070 期 (2026-06-06)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-06_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-06_Daily_Report.html</guid>
-      <pubDate>Sat, 06 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 070 期 2026-06-06  焦點設計導讀  1. AI 迄今創造的四種設計職位（The Four Design Jobs AI Created So Far） 分析段落：這篇文章深入探討了 AI 技術對設計產業帶來的衝擊，以及因此催生出的四種新型設計職位。對於數位產品設計師而言，理解這些職位演變有助於提前規劃個人職涯路徑，並思考如何將 AI 技能融入自身專業，以應對未來的設計生態。 - 原文連結：https://www.nngroup.com/articles/design-jobs-ai-created/?utmsource=rss&amp;utmmedium=feed</description>
     </item>
   </channel>
 </rss>
