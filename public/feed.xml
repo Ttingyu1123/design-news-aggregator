@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 17 Jun 2026 07:56:07 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 18 Jun 2026 07:54:13 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第24週 (2026-06-08 ~ 2026-06-14)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W24_Weekly_Digest.html</link>
@@ -69,6 +69,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 083 期 (2026-06-18)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-18_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-18_Daily_Report.html</guid>
+      <pubDate>Thu, 18 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 083 期 2026-06-18  焦點設計導讀  1. 當大家都在談論 AI 時，設計正在崛起（While everyone talks about AI, design is gaining power） 分析段落：這篇文章指出，儘管 AI 技術引發廣泛討論，全球頂尖科技公司正悄然將設計從支援職能提升至戰略地位。對於數位產品設計師而言，這意味著設計在產品開發與商業決策中扮演越來越核心的角色，強調了設計師需具備更宏觀的策略思維與商業洞察力。這趨勢預示著設計領域的影響力將持續擴大，為設計師帶來更多成長與領導的機會。 - 原文連結：https://uxdesign.cc/w</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 082 期 (2026-06-17)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-08_Daily_Report.html</guid>
       <pubDate>Mon, 08 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 072 期 2026-06-08  焦點設計導讀  1. 你仍在歸檔，但你的檔案已成為基質（You’re still archiving. Your files have already become substrate.） 分析段落：這篇文章深入探討了數位檔案管理思維的轉變，從單純的歸檔轉向將檔案視為不斷演進的「基質」。對於設計師而言，這意味著需要重新思考設計資產的生命週期與其在設計系統中的動態角色，強調更靈活、適應性強的檔案管理策略。 - 原文連結：https://uxdesign.cc/youre-still-archiving-your-files-have-al</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 071 期 (2026-06-07)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-07_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-07_Daily_Report.html</guid>
-      <pubDate>Sun, 07 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 071 期 2026-06-07  焦點設計導讀 今日的設計脈動中，我們觀察到業界對於專案管理、使用者中心原則、AI 倫理與工具應用，以及設計同質化趨勢的深入反思。同時，新穎的設計輔助工具與實際的 UI/UX 案例研究也為設計師提供了寶貴的實務啟示。  1. 快速推進的心理代價（The psychological cost of moving too fast） 分析段落：這篇文章探討了在 AI 時代中，專案快速推進可能帶來的心理壓力和對「探索」（discovery）階段的忽視。對於數位產品設計師而言，這提醒我們應重新審視設計流程中研究的重要性，確保在追求速度的同時不犧牲</description>
     </item>
   </channel>
 </rss>
