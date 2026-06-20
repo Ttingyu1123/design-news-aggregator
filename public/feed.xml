@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sat, 20 Jun 2026 07:32:47 +0800</lastBuildDate>
+    <lastBuildDate>Sun, 21 Jun 2026 07:39:53 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第24週 (2026-06-08 ~ 2026-06-14)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W24_Weekly_Digest.html</link>
@@ -69,6 +69,13 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-W15_Weekly_Digest.html</guid>
       <pubDate>Mon, 13 Apr 2026 06:00:00 +0800</pubDate>
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
+    </item>
+    <item>
+      <title>✏️ 設計脈動日報 - 第 086 期 (2026-06-21)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-21_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-21_Daily_Report.html</guid>
+      <pubDate>Sun, 21 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 086 期 2026-06-21  今日焦點設計導讀  1. 設計學院學不到，但你真正需要知道的四件事 4 things you won't learn in design school but you really need to know 分析段落：這篇文章深入探討了設計教育中常被忽略的軟實力與實務知識，例如有效的溝通、商業策略思維以及如何在團隊中協作。對於數位產品設計師而言，這些能力是推動專案成功、建立專業影響力並在複雜職場中脫穎而出的關鍵要素，提醒設計師需將學習視野擴展至技能以外的領域。 - 原文連結：https://www.creativebloq.com/pr</description>
     </item>
     <item>
       <title>✏️ 設計脈動日報 - 第 085 期 (2026-06-20)</title>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-11_Daily_Report.html</guid>
       <pubDate>Thu, 11 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 075 期 2026-06-11  焦點設計導讀  Claude Fable 5 for Product Designers Claude Fable 5 於產品設計師的應用 分析段落： Anthropic 推出的 Claude Fable 5 模型，標榜為其迄今為止最強大的 AI 模型，並強調其在生物學等領域的技能。然而，一篇報導指出該模型在面對基本生物學問題時，反而會轉介至舊模型。這凸顯了即便強大的 AI 工具，在特定應用場景下仍有其侷限性，提醒設計師需審慎評估 AI 工具的實際效益與可靠性，而非一味追求最新技術。 - 原文連結：https://uxplanet.or</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 074 期 (2026-06-10)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-10_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-10_Daily_Report.html</guid>
-      <pubDate>Wed, 10 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 074 期 2026-06-10  焦點設計導讀  1. AI 並未取代設計師——它提升了設計師的職位（AI didn’t replace designers-it promoted them） 分析段落：這篇文章深入探討了 AI 如何重新定義產品設計師的角色，將其從單純的規格制定者提升為系統架構師。對於數位產品設計師而言，這意味著我們應將重點從執行性任務轉向策略思考與系統規劃，利用 AI 工具強化效率並專注於更高層次的設計決策。這項趨勢強調了設計師需不斷進化技能樹，以應對 AI 帶來的產業轉型。 - 原文連結：https://uxdesign.cc/ai-didnt-r</description>
     </item>
   </channel>
 </rss>
