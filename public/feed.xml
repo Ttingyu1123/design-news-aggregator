@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 24 Jun 2026 07:33:33 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 25 Jun 2026 07:37:42 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第25週 (2026-06-15 ~ 2026-06-21)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W25_Weekly_Digest.html</link>
@@ -78,6 +78,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 091 期 (2026-06-25)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-25_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-25_Daily_Report.html</guid>
+      <pubDate>Thu, 25 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 091 期 2026-06-25  焦點設計導讀  1. Figma 現已推出 AI 動態圖形與著色器工具（Figma now has AI motion graphics and shader tools） 分析段落：Figma 在年度 Config 大會上推出多項結合 AI 的新功能，特別是動態圖形與著色器工具，這預示著設計流程的進一步自動化與視覺表現力的提升。這將賦予設計師更強大的能力，能快速迭代複雜的視覺效果，同時加速從概念到實作的過程，尤其是在跨團隊協作中將能見到顯著效率提升。 - 原文連結：https://www.theverge.com/tech/95583</description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 090 期 (2026-06-24)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-06-24_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-24_Daily_Report.html</guid>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-16_Daily_Report.html</guid>
       <pubDate>Tue, 16 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 081 期 2026-06-16  焦點設計導讀  1. 我用相同提示測試的 6 款最佳 AI UI 設計工具 2026 Review 分析段落：這篇深度評測為產品設計師提供了 2026 年市場上六款主流 AI UI 設計工具的實用比較，透過統一的提示語來評估它們在真實專案中的表現。它直接影響設計師對新工具的選擇與導入策略，對於提升工作效率及探索 AI 輔助設計的潛力至關重要。 - 原文連結：https://medium.muz.li/6-best-ai-ui-design-tools-i-tested-with-the-same-prompt-2026-review-b</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 080 期 (2026-06-15)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-15_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-15_Daily_Report.html</guid>
-      <pubDate>Mon, 15 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 080 期 2026-06-15  焦點設計導讀 Featured Design Insights  1. 設計師須知：存取權並非精通 Access is not mastery 分析段落：這篇文章深入探討了 GUI 和提示介面如何普及了運算技術，但也提出了「普及不等於精通」的觀點。對於數位產品設計師而言，這提醒我們在設計 AI 驅動的介面時，不僅要追求易用性，更要思考如何協助使用者達到真正的熟練與掌控，而非僅僅是入門級的互動。這對於未來 AI 工具的 UX 設計策略至關重要。 - 原文連結：https://uxdesign.cc/access-is-not-master</description>
     </item>
   </channel>
 </rss>
