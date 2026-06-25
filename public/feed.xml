@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Thu, 25 Jun 2026 07:37:42 +0800</lastBuildDate>
+    <lastBuildDate>Fri, 26 Jun 2026 07:48:46 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第25週 (2026-06-15 ~ 2026-06-21)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W25_Weekly_Digest.html</link>
@@ -78,6 +78,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 092 期 (2026-06-26)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-26_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-26_Daily_Report.html</guid>
+      <pubDate>Fri, 26 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 092 期 2026-06-26  焦點設計導讀  1. Figma Config 2026 回顧 Figma Config 2026 Recap 分析段落：這篇文章深入回顧了 Figma 年度盛會 Config 2026 的重要發佈，揭示了協作設計工具的最新進化方向。對於數位產品設計師而言，掌握這些更新將直接影響日常工作流程與效率，特別是在設計系統、原型建構及開發者交接方面的改進。這些新功能預示著 Figma 將持續強化其在整個產品開發生命週期中的核心地位。 - 原文連結：https://uxplanet.org/figma-config-2026-recap-1852</description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 091 期 (2026-06-25)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-06-25_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-25_Daily_Report.html</guid>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-17_Daily_Report.html</guid>
       <pubDate>Wed, 17 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 082 期 2026-06-17  焦點設計導讀 今日設計脈動聚焦於 AI 如何持續重塑我們的設計實踐，從工具應用到深層思維模式的轉變。同時，對基礎設計元素如作品集和使用者體驗的本質探討，也提醒我們在科技浪潮中，不忘以人為本的核心價值。  1. 2026 年最古老設計作品集格式的變革之道（How one of the oldest design portfolio formats needs to change in 2026） 分析段落：這篇文章探討了現有設計作品集格式的不足之處，並提出在 2026 年應如何演進，以更有效展示設計師的能力和專案影響力。對於正在尋求職涯發</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 081 期 (2026-06-16)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-16_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-16_Daily_Report.html</guid>
-      <pubDate>Tue, 16 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 081 期 2026-06-16  焦點設計導讀  1. 我用相同提示測試的 6 款最佳 AI UI 設計工具 2026 Review 分析段落：這篇深度評測為產品設計師提供了 2026 年市場上六款主流 AI UI 設計工具的實用比較，透過統一的提示語來評估它們在真實專案中的表現。它直接影響設計師對新工具的選擇與導入策略，對於提升工作效率及探索 AI 輔助設計的潛力至關重要。 - 原文連結：https://medium.muz.li/6-best-ai-ui-design-tools-i-tested-with-the-same-prompt-2026-review-b</description>
     </item>
   </channel>
 </rss>
