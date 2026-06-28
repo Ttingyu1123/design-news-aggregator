@@ -1,378 +1,477 @@
 [
   {
+    "date": "2026-W26",
+    "filename": "2026-W26_Weekly_Digest.md",
+    "type": "weekly"
+  },
+  {
     "date": "2026-W25",
-    "filename": "2026-W25_Weekly_Digest.md"
+    "filename": "2026-W25_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W24",
-    "filename": "2026-W24_Weekly_Digest.md"
+    "filename": "2026-W24_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W22",
-    "filename": "2026-W22_Weekly_Digest.md"
+    "filename": "2026-W22_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W21",
-    "filename": "2026-W21_Weekly_Digest.md"
+    "filename": "2026-W21_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W20",
-    "filename": "2026-W20_Weekly_Digest.md"
+    "filename": "2026-W20_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W19",
-    "filename": "2026-W19_Weekly_Digest.md"
+    "filename": "2026-W19_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W18",
-    "filename": "2026-W18_Weekly_Digest.md"
+    "filename": "2026-W18_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W17",
-    "filename": "2026-W17_Weekly_Digest.md"
+    "filename": "2026-W17_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W16",
-    "filename": "2026-W16_Weekly_Digest.md"
+    "filename": "2026-W16_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-W15",
-    "filename": "2026-W15_Weekly_Digest.md"
+    "filename": "2026-W15_Weekly_Digest.md",
+    "type": "weekly"
   },
   {
     "date": "2026-06-28",
-    "filename": "2026-06-28_Daily_Report.md"
+    "filename": "2026-06-28_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-27",
-    "filename": "2026-06-27_Daily_Report.md"
+    "filename": "2026-06-27_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-26",
-    "filename": "2026-06-26_Daily_Report.md"
+    "filename": "2026-06-26_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-25",
-    "filename": "2026-06-25_Daily_Report.md"
+    "filename": "2026-06-25_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-24",
-    "filename": "2026-06-24_Daily_Report.md"
+    "filename": "2026-06-24_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-23",
-    "filename": "2026-06-23_Daily_Report.md"
+    "filename": "2026-06-23_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-22",
-    "filename": "2026-06-22_Daily_Report.md"
+    "filename": "2026-06-22_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-21",
-    "filename": "2026-06-21_Daily_Report.md"
+    "filename": "2026-06-21_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-20",
-    "filename": "2026-06-20_Daily_Report.md"
+    "filename": "2026-06-20_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-19",
-    "filename": "2026-06-19_Daily_Report.md"
+    "filename": "2026-06-19_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-18",
-    "filename": "2026-06-18_Daily_Report.md"
+    "filename": "2026-06-18_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-17",
-    "filename": "2026-06-17_Daily_Report.md"
+    "filename": "2026-06-17_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-16",
-    "filename": "2026-06-16_Daily_Report.md"
+    "filename": "2026-06-16_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-15",
-    "filename": "2026-06-15_Daily_Report.md"
+    "filename": "2026-06-15_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-14",
-    "filename": "2026-06-14_Daily_Report.md"
+    "filename": "2026-06-14_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-13",
-    "filename": "2026-06-13_Daily_Report.md"
+    "filename": "2026-06-13_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-12",
-    "filename": "2026-06-12_Daily_Report.md"
+    "filename": "2026-06-12_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-11",
-    "filename": "2026-06-11_Daily_Report.md"
+    "filename": "2026-06-11_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-10",
-    "filename": "2026-06-10_Daily_Report.md"
+    "filename": "2026-06-10_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-09",
-    "filename": "2026-06-09_Daily_Report.md"
+    "filename": "2026-06-09_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-08",
-    "filename": "2026-06-08_Daily_Report.md"
+    "filename": "2026-06-08_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-07",
-    "filename": "2026-06-07_Daily_Report.md"
+    "filename": "2026-06-07_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-06",
-    "filename": "2026-06-06_Daily_Report.md"
+    "filename": "2026-06-06_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-05",
-    "filename": "2026-06-05_Daily_Report.md"
+    "filename": "2026-06-05_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-04",
-    "filename": "2026-06-04_Daily_Report.md"
+    "filename": "2026-06-04_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-03",
-    "filename": "2026-06-03_Daily_Report.md"
+    "filename": "2026-06-03_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-02",
-    "filename": "2026-06-02_Daily_Report.md"
+    "filename": "2026-06-02_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-06-01",
-    "filename": "2026-06-01_Daily_Report.md"
+    "filename": "2026-06-01_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-31",
-    "filename": "2026-05-31_Daily_Report.md"
+    "filename": "2026-05-31_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-30",
-    "filename": "2026-05-30_Daily_Report.md"
+    "filename": "2026-05-30_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-29",
-    "filename": "2026-05-29_Daily_Report.md"
+    "filename": "2026-05-29_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-28",
-    "filename": "2026-05-28_Daily_Report.md"
+    "filename": "2026-05-28_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-27",
-    "filename": "2026-05-27_Daily_Report.md"
+    "filename": "2026-05-27_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-26",
-    "filename": "2026-05-26_Daily_Report.md"
+    "filename": "2026-05-26_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-25",
-    "filename": "2026-05-25_Daily_Report.md"
+    "filename": "2026-05-25_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-24",
-    "filename": "2026-05-24_Daily_Report.md"
+    "filename": "2026-05-24_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-23",
-    "filename": "2026-05-23_Daily_Report.md"
+    "filename": "2026-05-23_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-22",
-    "filename": "2026-05-22_Daily_Report.md"
+    "filename": "2026-05-22_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-21",
-    "filename": "2026-05-21_Daily_Report.md"
+    "filename": "2026-05-21_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-20",
-    "filename": "2026-05-20_Daily_Report.md"
+    "filename": "2026-05-20_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-19",
-    "filename": "2026-05-19_Daily_Report.md"
+    "filename": "2026-05-19_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-18",
-    "filename": "2026-05-18_Daily_Report.md"
+    "filename": "2026-05-18_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-17",
-    "filename": "2026-05-17_Daily_Report.md"
+    "filename": "2026-05-17_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-16",
-    "filename": "2026-05-16_Daily_Report.md"
+    "filename": "2026-05-16_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-15",
-    "filename": "2026-05-15_Daily_Report.md"
+    "filename": "2026-05-15_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-14",
-    "filename": "2026-05-14_Daily_Report.md"
+    "filename": "2026-05-14_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-13",
-    "filename": "2026-05-13_Daily_Report.md"
+    "filename": "2026-05-13_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-12",
-    "filename": "2026-05-12_Daily_Report.md"
+    "filename": "2026-05-12_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-11",
-    "filename": "2026-05-11_Daily_Report.md"
+    "filename": "2026-05-11_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-10",
-    "filename": "2026-05-10_Daily_Report.md"
+    "filename": "2026-05-10_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-09",
-    "filename": "2026-05-09_Daily_Report.md"
+    "filename": "2026-05-09_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-08",
-    "filename": "2026-05-08_Daily_Report.md"
+    "filename": "2026-05-08_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-07",
-    "filename": "2026-05-07_Daily_Report.md"
+    "filename": "2026-05-07_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-06",
-    "filename": "2026-05-06_Daily_Report.md"
+    "filename": "2026-05-06_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-05",
-    "filename": "2026-05-05_Daily_Report.md"
+    "filename": "2026-05-05_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-04",
-    "filename": "2026-05-04_Daily_Report.md"
+    "filename": "2026-05-04_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-03",
-    "filename": "2026-05-03_Daily_Report.md"
+    "filename": "2026-05-03_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-02",
-    "filename": "2026-05-02_Daily_Report.md"
+    "filename": "2026-05-02_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-05-01",
-    "filename": "2026-05-01_Daily_Report.md"
+    "filename": "2026-05-01_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-30",
-    "filename": "2026-04-30_Daily_Report.md"
+    "filename": "2026-04-30_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-29",
-    "filename": "2026-04-29_Daily_Report.md"
+    "filename": "2026-04-29_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-28",
-    "filename": "2026-04-28_Daily_Report.md"
+    "filename": "2026-04-28_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-27",
-    "filename": "2026-04-27_Daily_Report.md"
+    "filename": "2026-04-27_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-26",
-    "filename": "2026-04-26_Daily_Report.md"
+    "filename": "2026-04-26_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-25",
-    "filename": "2026-04-25_Daily_Report.md"
+    "filename": "2026-04-25_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-24",
-    "filename": "2026-04-24_Daily_Report.md"
+    "filename": "2026-04-24_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-23",
-    "filename": "2026-04-23_Daily_Report.md"
+    "filename": "2026-04-23_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-22",
-    "filename": "2026-04-22_Daily_Report.md"
+    "filename": "2026-04-22_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-20",
-    "filename": "2026-04-20_Daily_Report.md"
+    "filename": "2026-04-20_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-19",
-    "filename": "2026-04-19_Daily_Report.md"
+    "filename": "2026-04-19_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-18",
-    "filename": "2026-04-18_Daily_Report.md"
+    "filename": "2026-04-18_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-17",
-    "filename": "2026-04-17_Daily_Report.md"
+    "filename": "2026-04-17_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-16",
-    "filename": "2026-04-16_Daily_Report.md"
+    "filename": "2026-04-16_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-15",
-    "filename": "2026-04-15_Daily_Report.md"
+    "filename": "2026-04-15_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-14",
-    "filename": "2026-04-14_Daily_Report.md"
+    "filename": "2026-04-14_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-13",
-    "filename": "2026-04-13_Daily_Report.md"
+    "filename": "2026-04-13_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-12",
-    "filename": "2026-04-12_Daily_Report.md"
+    "filename": "2026-04-12_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-11",
-    "filename": "2026-04-11_Daily_Report.md"
+    "filename": "2026-04-11_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-10",
-    "filename": "2026-04-10_Daily_Report.md"
+    "filename": "2026-04-10_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-09",
-    "filename": "2026-04-09_Daily_Report.md"
+    "filename": "2026-04-09_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-08",
-    "filename": "2026-04-08_Daily_Report.md"
+    "filename": "2026-04-08_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-07",
-    "filename": "2026-04-07_Daily_Report.md"
+    "filename": "2026-04-07_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-06",
-    "filename": "2026-04-06_Daily_Report.md"
+    "filename": "2026-04-06_Daily_Report.md",
+    "type": "daily"
   },
   {
     "date": "2026-04-05",
-    "filename": "2026-04-05_Daily_Report.md"
+    "filename": "2026-04-05_Daily_Report.md",
+    "type": "daily"
   }
 ]
