@@ -6,7 +6,14 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Sun, 28 Jun 2026 07:32:23 +0800</lastBuildDate>
+    <lastBuildDate>Mon, 29 Jun 2026 07:38:36 +0800</lastBuildDate>
+    <item>
+      <title>⭐ 本週設計精華回顧 - 2026年第26週 (2026-06-22 ~ 2026-06-28)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-W26_Weekly_Digest.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-W26_Weekly_Digest.html</guid>
+      <pubDate>Mon, 29 Jun 2026 06:00:00 +0800</pubDate>
+      <description>⭐ 本週設計精華回顧 - 2026年第26週 2026-06-22 ~ 2026-06-28 作為資深數位產品設計師與設計趨勢分析師，本週設計領域的脈動展現了 AI 與核心設計原則之間日益複雜且關鍵的互動。Figma Config 的年度盛會再次證明了其在設計生態系統中的領導地位，而 Adobe 的戰略性收購則預示著 AI 影像技術的未來。同時，關於設計師在 AI 時代的定位、倫理考量，以及 UX 策略的轉變，都成為了社群熱烈討論的焦點。以下是本週最值得關注的設計大事、趨勢分析與後續發展建議。  本週最重要的設計大事 Top Design Highlights of the Week  1. </description>
+    </item>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第25週 (2026-06-15 ~ 2026-06-21)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W25_Weekly_Digest.html</link>
@@ -78,6 +85,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 096 期 (2026-06-29)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-29_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-29_Daily_Report.html</guid>
+      <pubDate>Mon, 29 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 096 期 2026-06-29  焦點設計導讀  1. 什麼是 Hypertokens？專為 AI 代理重建，介於 Token 與元件之間的新層級（What are hypertokens? The layer between tokens and components, rebuilt for agents） 分析段落：這篇文章探討了設計系統中一個前瞻性的概念「Hypertokens」，它旨在填補設計 Token 與完整 UI 元件之間的空白。隨著 AI 代理在設計工作流程中的整合日益深入，理解並應用 Hypertokens 將能幫助設計師創建更具彈性、更能被 AI </description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 094 期 (2026-06-28)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-06-28_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-28_Daily_Report.html</guid>
@@ -132,20 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-21_Daily_Report.html</guid>
       <pubDate>Sun, 21 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 086 期 2026-06-21  今日焦點設計導讀  1. 設計學院學不到，但你真正需要知道的四件事 4 things you won't learn in design school but you really need to know 分析段落：這篇文章深入探討了設計教育中常被忽略的軟實力與實務知識，例如有效的溝通、商業策略思維以及如何在團隊中協作。對於數位產品設計師而言，這些能力是推動專案成功、建立專業影響力並在複雜職場中脫穎而出的關鍵要素，提醒設計師需將學習視野擴展至技能以外的領域。 - 原文連結：https://www.creativebloq.com/pr</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 085 期 (2026-06-20)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-20_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-20_Daily_Report.html</guid>
-      <pubDate>Sat, 20 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 085 期 2026-06-20  焦點設計導讀  1. Claude Code 設計專案結構（Claude Code Project Structure for Design Project） 分析段落：這篇文章探討如何為設計專案建立強健的 Claude Code 工作區結構，強調人工智慧在優化設計師工作流程上的潛力。透過系統化的專案管理，設計師能更有效率地與 AI 協作，提升整體設計產出的品質與速度，是 AI 輔助設計工具發展的重要方向。 - 原文連結：https://uxplanet.org/claude-code-project-structure-for-des</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 084 期 (2026-06-19)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-19_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-19_Daily_Report.html</guid>
-      <pubDate>Fri, 19 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 084 期 2026-06-19  焦點設計導讀 今日設計脈動聚焦於 AI 如何持續重塑設計產業，從 AI 助理整合至 Adobe 主流工具，到設計師生存所需的關鍵技能，都預示著未來工作模式的深刻轉變。同時，前端技術與使用者體驗優化依然是設計師不可忽視的核心能力。  1. 一項技能將決定設計師在 2026 年後能否生存（One skill separates the designers who survive 2026 from the ones who don’t） 分析段落：面對 AI 的崛起，UX 設計師必須超越傳統的介面設計思維，轉型成為「建構者、創造者與系統思考</description>
     </item>
   </channel>
 </rss>
