@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Mon, 29 Jun 2026 07:38:36 +0800</lastBuildDate>
+    <lastBuildDate>Tue, 30 Jun 2026 07:35:30 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第26週 (2026-06-22 ~ 2026-06-28)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W26_Weekly_Digest.html</link>
@@ -85,6 +85,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 097 期 (2026-06-30)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-06-30_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-30_Daily_Report.html</guid>
+      <pubDate>Tue, 30 Jun 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 097 期 2026-06-30  焦點設計導讀  1. Figma 讓你的設計系統債務成為所有人的問題。現在就加以利用。（Figma just made your design system debt everyone’s problem. Now use it.） 分析段落：這篇文章深入探討了 Figma 如何透過其最新功能，將設計系統的技術債務問題從設計團隊內部擴展至整個組織，使其成為一個需要全員關注的議題。這對於推動設計系統的採用與維護至關重要，鼓勵設計師更積極地利用工具來標準化設計資產。 - 原文連結：https://uxdesign.cc/figma-just</description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 096 期 (2026-06-29)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-06-29_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-29_Daily_Report.html</guid>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-22_Daily_Report.html</guid>
       <pubDate>Mon, 22 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 088 期 2026-06-22  焦點設計導讀  1. 為何使用者流程中最美好的部分並非終點（Why the best part of the flow isn't the end） 分析段落：這篇文章探討了使用者體驗設計中，將焦點從最終「交易」結果轉移到「體驗過程」本身的創新思維。透過韓國「多巴胺網站」的案例，啟發設計師重新思考使用者流程的本質，強調即便移除傳統的完成目標，體驗的價值依然存在，這對於我們理解使用者深層動機與設計更具吸引力的產品流程具有重要意義。 - 原文連結：https://uxdesign.cc/why-the-best-part-of-the-fl</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 086 期 (2026-06-21)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-21_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-21_Daily_Report.html</guid>
-      <pubDate>Sun, 21 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 086 期 2026-06-21  今日焦點設計導讀  1. 設計學院學不到，但你真正需要知道的四件事 4 things you won't learn in design school but you really need to know 分析段落：這篇文章深入探討了設計教育中常被忽略的軟實力與實務知識，例如有效的溝通、商業策略思維以及如何在團隊中協作。對於數位產品設計師而言，這些能力是推動專案成功、建立專業影響力並在複雜職場中脫穎而出的關鍵要素，提醒設計師需將學習視野擴展至技能以外的領域。 - 原文連結：https://www.creativebloq.com/pr</description>
     </item>
   </channel>
 </rss>
