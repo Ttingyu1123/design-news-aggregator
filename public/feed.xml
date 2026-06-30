@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Tue, 30 Jun 2026 07:35:30 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 01 Jul 2026 07:45:04 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第26週 (2026-06-22 ~ 2026-06-28)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W26_Weekly_Digest.html</link>
@@ -85,6 +85,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 098 期 (2026-07-01)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-07-01_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-07-01_Daily_Report.html</guid>
+      <pubDate>Wed, 01 Jul 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 098 期 2026-07-01 數位產品設計師們，大家好！今天是 2026 年 7 月 1 日，為您帶來最新的設計脈動日報。今日焦點圍繞在 AI 對設計流程與原則的深遠影響、系統思考在 UX 領域的崛起，以及前端技術在視覺互動上的新突破。同時，我們也將探討設計師在快速迭代時代下，如何定義「足夠好」的設計標準，並重新審視無障礙設計的核心價值。  焦點設計導讀  1. 設計人機 AI 互動的 39 條原則（39 principles for designing human-AI interaction） 分析段落：這篇文章為設計師提供了在 AI 時代下，建立與 AI 系統良</description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 097 期 (2026-06-30)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-06-30_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-30_Daily_Report.html</guid>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-23_Daily_Report.html</guid>
       <pubDate>Tue, 23 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 089 期 2026-06-23  焦點設計導讀  1. 組織中低品味的代價（The organizational cost of low taste） 這篇文章點出設計品質與品味在組織營運中的關鍵作用。當組織缺乏一致的品質標準，將導致決策緩慢、流程複雜、人才流失，最終影響產品表現與整體效益。對於設計師而言，這強調了提升自身品味並在組織內推動設計標準的重要性，以確保設計投資能帶來實質的商業價值。 - 原文連結：https://uxdesign.cc/the-organizational-cost-of-low-taste-135cb8b10c34?source=rss--</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 088 期 (2026-06-22)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-22_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-22_Daily_Report.html</guid>
-      <pubDate>Mon, 22 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 088 期 2026-06-22  焦點設計導讀  1. 為何使用者流程中最美好的部分並非終點（Why the best part of the flow isn't the end） 分析段落：這篇文章探討了使用者體驗設計中，將焦點從最終「交易」結果轉移到「體驗過程」本身的創新思維。透過韓國「多巴胺網站」的案例，啟發設計師重新思考使用者流程的本質，強調即便移除傳統的完成目標，體驗的價值依然存在，這對於我們理解使用者深層動機與設計更具吸引力的產品流程具有重要意義。 - 原文連結：https://uxdesign.cc/why-the-best-part-of-the-fl</description>
     </item>
   </channel>
 </rss>
