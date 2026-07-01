@@ -6,7 +6,7 @@
     <description>設計脈動日報 — 每日自動彙整</description>
     <language>zh-TW</language>
     <atom:link href="https://design-pulse.tingyudeco.com/feed.xml" rel="self" type="application/rss+xml"/>
-    <lastBuildDate>Wed, 01 Jul 2026 07:45:04 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 02 Jul 2026 07:48:56 +0800</lastBuildDate>
     <item>
       <title>⭐ 本週設計精華回顧 - 2026年第26週 (2026-06-22 ~ 2026-06-28)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-W26_Weekly_Digest.html</link>
@@ -85,6 +85,13 @@
       <description>⭐ 本週設計精華回顧 - 2026年第15週 2026-04-06 ~ 2026-04-12 本週的設計脈動清晰揭示了 AI 技術在數位產品設計領域的全面滲透與深度重塑。從設計師工作角色的轉變，到工具的進化，再到倫理與信任議題的浮現，設計界正經歷一場前所未有的典範轉移。同時，設計師們也積極探索如何透過更精緻的互動與更深層的文化理解，為使用者創造獨特且有意義的體驗。   本週設計關鍵亮點 7 件  1. AI 對設計師角色的重塑與價值轉移：從視覺執行者到策略與系統思考家 本週多篇文章共同指出，隨著 AI 介面生成工具（如 Google Stitch）的普及與「氛圍編碼」的崛起，單純依賴像素級視覺</description>
     </item>
     <item>
+      <title>✏️ 設計脈動日報 - 第 099 期 (2026-07-02)</title>
+      <link>https://design-pulse.tingyudeco.com/reports/2026-07-02_Daily_Report.html</link>
+      <guid>https://design-pulse.tingyudeco.com/reports/2026-07-02_Daily_Report.html</guid>
+      <pubDate>Thu, 02 Jul 2026 06:00:00 +0800</pubDate>
+      <description>設計脈動日報 - 第 099 期 2026-07-02  焦點設計導讀  1. 設計師如何應對 AI 驅動的世界（How designers need to change for an AI-powered world） 分析段落：隨著 AI 技術日益成熟，設計師的角色與工作流程正經歷深刻變革。這篇文章深入探討了設計師需要發展的新技能和思維模式，強調從工具操作者轉變為策略思考者和 AI 協作者的重要性，對於設計專業的未來發展方向具有前瞻性指導意義。 - 原文連結：https://uxdesign.cc/how-designers-need-to-change-for-an-ai-powered</description>
+    </item>
+    <item>
       <title>✏️ 設計脈動日報 - 第 098 期 (2026-07-01)</title>
       <link>https://design-pulse.tingyudeco.com/reports/2026-07-01_Daily_Report.html</link>
       <guid>https://design-pulse.tingyudeco.com/reports/2026-07-01_Daily_Report.html</guid>
@@ -139,13 +146,6 @@
       <guid>https://design-pulse.tingyudeco.com/reports/2026-06-24_Daily_Report.html</guid>
       <pubDate>Wed, 24 Jun 2026 06:00:00 +0800</pubDate>
       <description>設計脈動日報 - 第 090 期 2026-06-24  焦點設計導讀  1. DesignOps 角色如何因應新優先事項而改變 How DesignOps roles are changing with new priorities 分析段落：隨著 AI 深度整合設計流程，DesignOps 的角色正從單純的效率管理轉向策略性地培養設計願景與創新。這篇文章點出了設計師在 AI 時代更需強調策略思維與價值創造，以應對工具帶來的流程變革，確保設計團隊能在快速變動的環境中保持競爭力與影響力。 - 原文連結：https://uxdesign.cc/how-designops-roles-are-ch</description>
-    </item>
-    <item>
-      <title>✏️ 設計脈動日報 - 第 089 期 (2026-06-23)</title>
-      <link>https://design-pulse.tingyudeco.com/reports/2026-06-23_Daily_Report.html</link>
-      <guid>https://design-pulse.tingyudeco.com/reports/2026-06-23_Daily_Report.html</guid>
-      <pubDate>Tue, 23 Jun 2026 06:00:00 +0800</pubDate>
-      <description>設計脈動日報 - 第 089 期 2026-06-23  焦點設計導讀  1. 組織中低品味的代價（The organizational cost of low taste） 這篇文章點出設計品質與品味在組織營運中的關鍵作用。當組織缺乏一致的品質標準，將導致決策緩慢、流程複雜、人才流失，最終影響產品表現與整體效益。對於設計師而言，這強調了提升自身品味並在組織內推動設計標準的重要性，以確保設計投資能帶來實質的商業價值。 - 原文連結：https://uxdesign.cc/the-organizational-cost-of-low-taste-135cb8b10c34?source=rss--</description>
     </item>
   </channel>
 </rss>
